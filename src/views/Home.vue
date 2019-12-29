@@ -1,0 +1,38 @@
+<template>
+  <div>
+    <Navbar />
+    <router-view></router-view>
+    <CustomerInfo />
+    <Footer />
+    <BottomMenu />
+    <BigMenu />
+    <FilterPage />
+    <GoTop />
+  </div>
+</template>
+
+<script>
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CustomerInfo from "@/components/CustomerInfo";
+import BottomMenu from "@/components/BottomMenu";
+import BigMenu from "@/components/BigMenu";
+import FilterPage from "@/components/FilterPage";
+import GoTop from "@/components/GoTop";
+
+export default {
+  components: {
+    Navbar,
+    Footer,
+    CustomerInfo,
+    BottomMenu,
+    BigMenu,
+    GoTop,
+    FilterPage
+  }
+};
+</script>
+
+<style lang="scss">
+// @import "@/assets/all.scss";
+</style>
