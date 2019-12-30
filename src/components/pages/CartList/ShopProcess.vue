@@ -1,14 +1,16 @@
 <template>
   <div class="shop-process">
-    <div class="the-item list-item">
-      <p>購物車清單</p>
-    </div>
-    <div class="the-item deliver-way-item">
-      <p>配送方式</p>
-    </div>
-    <div class="the-item finish-oreder-item">
-      <p>完成訂購</p>
-    </div>
+    <ul class="shop-process-bar">
+      <li class="the-item list-item">
+        <a>購物車清單</a>
+      </li>
+      <li class="the-item deliver-way-item">
+        <a>配送方式</a>
+      </li>
+      <li class="the-item finish-oreder-item">
+        <a>完成訂購</a>
+      </li>
+    </ul>
   </div>
 </template>
 
