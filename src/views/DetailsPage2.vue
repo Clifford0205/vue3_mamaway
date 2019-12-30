@@ -8,6 +8,7 @@
       <Recommend />
       <RelatedProducts />
       <BrowsingHistory />
+      <router-view name="addincartmobile"></router-view>
     </div>
   </div>
 </template>

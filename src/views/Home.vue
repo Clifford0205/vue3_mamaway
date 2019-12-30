@@ -4,6 +4,7 @@
     <router-view></router-view>
     <CustomerInfo />
     <Footer />
+
     <BottomMenu />
     <BigMenu />
     <FilterPage />

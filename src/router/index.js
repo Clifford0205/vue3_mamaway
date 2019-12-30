@@ -5,12 +5,14 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home';
 import SortMenu from '@/components/SortMenu';
 import SortMenuImg from '@/components/SortMenuImg';
-import ProductDetails from '@/components/ProductDetails'
+import ProductDetails from '@/views/ProductDetails'
 import DetailsPage from '@/views/DetailsPage'
 import DetailsPage2 from '@/views/DetailsPage2'
+import AddInCartMobile from '@/components/AddInCartMobile'
 import HomeIndex from '@/views/HomeIndex'
 import ProductList from '@/views/ProductList'
 import ProductIntro from '@/views/ProductIntro'
+import CartList from '@/views/CartList'
 
 //自訂的分頁文件
 
@@ -50,7 +52,16 @@ export default new VueRouter({
                 {
                     name:'商品詳細頁2',
                     path:'/product_details2',
+                    components:{
+                        default:DetailsPage2,
+                        addincartmobile:AddInCartMobile,
+                    }
                     
+                },
+                {
+                    name:'購物車清單',
+                    path:'/cart-list',
+                    component:CartList,
                 }
             ]
         },

@@ -34,16 +34,16 @@ export default {
 };
 </script>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
 @import "@/assets/helpers/_myset.scss";
-body {
+.details-page {
   .breadcrumb {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 
     @include lg {
-      display: none;
+      display: none !important;
     }
   }
 }

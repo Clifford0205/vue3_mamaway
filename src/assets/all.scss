@@ -4641,6 +4641,111 @@ body {
 
     //產品介紹頁面結束
 
+    //結帳：購物車清單頁
+    .cart-list-page {
+        max-width: 1200px;
+        width: 90%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0 auto;
+        color: #525B67;
+
+        .shop-process {
+            display: flex;
+            justify-content: space-between;
+
+            .the-item {
+                flex: 0 0 33.33333%;
+                font-size: 18px;
+
+                border: 1px solid #D3D8DE;
+                border-radius: 5px;
+                padding: 7px;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .list-item {
+                background-color: #A7ACB2;
+                color: #FFFFFF;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    right: -33px;
+                    bottom: -1px;
+                    border: transparent 17px solid;
+                    border-left: #A7ACB3 17px solid;
+                }
+            }
+
+            .deliver-way-item {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    right: -33px;
+                    bottom: -1px;
+                    border: transparent 17px solid;
+                    border-left: #A7ACB3 17px solid;
+                }
+            }
+
+
+        }
+
+        .shop-cart-detail {
+            .in-cart {
+                .in-cart-item {
+                    display: flex;
+
+                    .cart-img {
+                        max-width: 95px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .cart-text {
+                        .row1 {
+                            display: flex;
+                            justify-content: center;
+
+                            .two-icon {
+                                button {
+                                    background-color: unset;
+                                    border: none;
+                                    padding: 0;
+
+                                    .like {
+                                        fill: none;
+                                    }
+
+                                    ;
+
+                                    .delete {
+                                        fill: none;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     //手機版篩選頁面開始
     .filter-page {

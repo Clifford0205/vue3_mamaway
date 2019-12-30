@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import CustomerInfo from "./CustomerInfo";
-import BottomMenuCart from "./BottomMenuCart";
-import AddInCartMobile from "./AddInCartMobile";
-import BigMenu from "./BigMenu";
-import FilterPage from "./FilterPage";
-import GoTop from "./GoTop";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CustomerInfo from "@/components/CustomerInfo";
+import BottomMenuCart from "@/components/BottomMenuCart";
+import AddInCartMobile from "@/components/AddInCartMobile";
+import BigMenu from "@/components/BigMenu";
+import FilterPage from "@/components/FilterPage";
+import GoTop from "@/components/GoTop";
 
 export default {
   components: {
