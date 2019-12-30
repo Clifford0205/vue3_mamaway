@@ -4,8 +4,8 @@
     <router-view></router-view>
     <CustomerInfo />
     <Footer />
-
     <BottomMenu />
+    <router-view name="addincartmobile"></router-view>
     <BigMenu />
     <FilterPage />
     <GoTop />

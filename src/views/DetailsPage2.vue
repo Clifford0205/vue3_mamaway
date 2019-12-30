@@ -1,14 +1,14 @@
 <template>
   <div class="details-page">
     <div>
-      <Breadcrumb class="breadcrumb" />
+      <Breadcrumb />
       <AddInCart />
       <ProductContent />
       <SeeSharing />
       <Recommend />
       <RelatedProducts />
       <BrowsingHistory />
-      <router-view name="addincartmobile"></router-view>
+      <!-- <router-view name="addincartmobile"></router-view> -->
     </div>
   </div>
 </template>
@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
 @import "@/assets/helpers/_myset.scss";
 body {
   .breadcrumb {
@@ -44,7 +44,7 @@ body {
     margin-bottom: 20px;
 
     @include lg {
-      display: none;
+      display: none !important;
     }
   }
 }
