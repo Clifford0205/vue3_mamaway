@@ -1,7 +1,7 @@
 <template>
   <div class="single-product col-lg-3 col-6">
     <div class="item">
-      <router-link to="/product_details">
+      <router-link :to="{name:'商品詳細頁'}">
         <div class="img-area">
           <img
             :src="product.img"
@@ -41,9 +41,6 @@
               <img :src="product.carouselImg" alt />
             </div>
           </carousel>
-
-          <!-- <button @click.capture="test">></button> -->
-
           <div class="circle">
             <object>
               <a href="https://github.com/dashboard" class="love-area">
@@ -91,11 +88,10 @@
 
 <script>
 import $ from "jquery";
-// import carousel from "vue-owl-carousel";
+
 import carousel from "@/components/library/Carousel";
 
 export default {
-  // props: ['product'],
   props: {
     product: {
       require: true,
@@ -118,8 +114,6 @@ export default {
       e.preventDefault();
       vm.isImgShow = "none";
       vm.isCaShow = "block";
-      // setTimeout(function() {
-      // }, 500);
     },
 
     sliderMove: function() {
@@ -128,18 +122,7 @@ export default {
 
     preventRoute: function(e) {
       e.preventDefault();
-
-      // alert("test");
     }
-    // test: function(e) {
-    //   e.preventDefault();
-    //   console.log(e.target.parentNode.querySelector(".owl-next"));
-    //   let next = e.target.parentNode.querySelector(".owl-next");
-    //   next.click();
-    // }
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>

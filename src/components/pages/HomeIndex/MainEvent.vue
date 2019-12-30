@@ -19,7 +19,7 @@
         }"
       >
         <div class="item">
-          <router-link to="/product_list">
+          <router-link :to="{name:'商品列表'}">
             <div class="img-area">
               <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>
@@ -27,7 +27,7 @@
           </router-link>
         </div>
         <div class="item">
-          <router-link to="/product_intro">
+          <router-link :to="{name:'商品介紹頁'}">
             <div class="img-area">
               <img src="~@/assets/img/photos/蒙版组 2@3x@2x.png" alt />
             </div>

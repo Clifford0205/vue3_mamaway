@@ -66,9 +66,6 @@
       <div class="formobile">
         <div class="line"></div>
         <p>WORLD MAMAWAY</p>
-        <!-- <select name="" id="">
-                    <option  value="GLOBAL">GLOBAL</option>
-        </select>-->
 
         <select style="width:100%" class="tech" name="tech" id="tech" onchange="showValue(this)">
           <option value="calendar" data-image="~@/assets/img/photos/圖層 10@2x.png">GLOBAL</option>
@@ -83,16 +80,6 @@
           <option value="calendar" data-image="~@/assets/img/photos/馬來西亞.png">馬來西亞</option>
           <option value="calendar" data-image="~@/assets/img/photos/澳大利亞@2x.png">美國</option>
         </select>
-
-        <!-- <v-select :options="options" v-model="defaultSelected" label="title" return-object>
-          <template slot="option" slot-scope="option">
-            <v-list-tile-avatar>
-              <img :src="option.cardImage" />
-            </v-list-tile-avatar>
-            {{ option.title }}
-            {{ option.title2 }}
-          </template>
-        </v-select>-->
 
         <select title="Select your surfboard" class="selectpicker">
           <option>Select...</option>
@@ -136,10 +123,7 @@ export default {
         }
       ]
     };
-  },
-  components: {}
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>

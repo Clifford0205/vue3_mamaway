@@ -21,7 +21,7 @@
         }"
       >
         <div class="item">
-          <router-link to="/product_list">
+          <router-link :to="{name:'商品列表'}">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
@@ -323,7 +323,6 @@ export default {
       let vm = this;
       vm.isShow = !vm.isShow;
       e.target.parentNode.querySelector(".black");
-      console.log(e.target.parentNode.querySelector(".black"));
     }
   }
 };

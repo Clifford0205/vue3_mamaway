@@ -9,7 +9,6 @@ import router from './router/index';
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
 
-
 new Vue({
   router,
   render: h => h(App)

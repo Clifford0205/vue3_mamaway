@@ -169,7 +169,6 @@ import carousel from "vue-owl-carousel";
 export default {
   data() {
     return {
-      route: this.$route.path,
       schNoShow: false,
       schBarShow: false,
       isMemActive: false,
@@ -202,7 +201,6 @@ export default {
           vm.schBarShow = !vm.schBarShow;
         }, 200);
       }, 200);
-      console.log(e.target.parentNode);
     },
 
     hideInput: function(e) {
@@ -220,7 +218,7 @@ export default {
     },
 
     sortChange: function() {
-      if (this.$route.path == "/product_intro") {
+      if (this.$route.name == "商品介紹頁") {
         $(".makeup-block").addClass("two-sort");
       } else {
         $(".makeup-block").removeClass("two-sort");
@@ -243,15 +241,6 @@ export default {
   },
 
   watch: {
-    // $route(to, from) {
-    //   alert("路徑改變");
-    //   console.log("路徑改變");
-    //   if (this.$route.path == "/product_intro") {
-    //     $(".makeup-block").addClass("two-sort");
-    //   } else {
-    //     $(".makeup-block").removeClass("two-sort");
-    //   }
-    // }
     isMemActive: function() {
       this.watchMem();
     }
@@ -259,21 +248,13 @@ export default {
 
   updated() {
     this.sortChange();
-    // console.log(this.$route);
-    // console.log(this.$route.path);
-    // if (this.$route.path !== "/") {
-    //   $(".makeup-block").addClass("no-sort");
-    // }
-    // if (this.$route.path == "/product_intro") {
-    //   $(".makeup-block").addClass("two-sort");
-    // }
   },
 
   mounted() {
     let vm = this;
     vm.sortChange();
     let body = document.body;
-    console.log(body);
+
     body.addEventListener(
       "click",
       function() {
@@ -282,20 +263,9 @@ export default {
       },
       false
     );
-    // console.log(this.$route);
-    // console.log(this.$route.path);
-    // if (this.$route.path !== "/" || this.$route.path !== "/product_intro") {
-    //   $(".makeup-block").addClass("no-sort");
-    // }
-    // if (this.$route.path == "/product_intro") {
-    //   $(".makeup-block").addClass("two-sort");
-    // }
-    // if ($(".sort-menu").length == 0) {
-    //   $(".makeup-block").addClass("no-sort");
-    // }
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+
