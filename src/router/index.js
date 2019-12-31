@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home';
 import SortMenu from '@/components/SortMenu';
 import SortMenuImg from '@/components/SortMenuImg';
+import CheckoutBottomMenu from '@/components/CheckoutBottomMenu';
 import ProductDetails from '@/views/ProductDetails'
 import DetailsPage from '@/views/DetailsPage'
 import DetailsPage2 from '@/views/DetailsPage2'
@@ -13,6 +14,7 @@ import HomeIndex from '@/views/HomeIndex'
 import ProductList from '@/views/ProductList'
 import ProductIntro from '@/views/ProductIntro'
 import CartList from '@/views/CartList'
+
 
 //自訂的分頁文件
 
@@ -61,7 +63,10 @@ export default new VueRouter({
                 {
                     name:'購物車清單',
                     path:'/cart-list',
-                    component:CartList,
+                    components:{
+                        default:CartList,
+                        checkoutbottommenu:CheckoutBottomMenu,
+                    }
                 }
             ]
         },

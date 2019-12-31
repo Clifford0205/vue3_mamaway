@@ -31,6 +31,12 @@ body {
       margin-bottom: 10px;
     }
   }
+
+  .BottomMenu {
+    @include lg {
+      display: none;
+    }
+  }
 }
 </style>
 
