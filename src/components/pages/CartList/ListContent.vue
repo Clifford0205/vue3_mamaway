@@ -9,7 +9,7 @@
           <FullGift2000 />
           <FullGift5000 />
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 check-out-part">
           <CheckOut />
         </div>
       </div>

@@ -24,7 +24,7 @@
           :responsive="{
           0: {
             items: 2,
-            autoWidth:true,
+            
             nav: false,
             
             margin: 20

@@ -27,7 +27,8 @@ body {
     padding: 0;
 
     @include lg {
-      // display: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 }
