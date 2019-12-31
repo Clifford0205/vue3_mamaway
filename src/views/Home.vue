@@ -3,6 +3,7 @@
     <Navbar />
     <router-view></router-view>
     <CustomerInfo />
+    <FloatMedia />
     <Footer />
     <BottomMenu />
     <router-view name="addincartmobile"></router-view>
@@ -16,6 +17,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomerInfo from "@/components/CustomerInfo";
+import FloatMedia from "@/components/FloatMedia";
 import BottomMenu from "@/components/BottomMenu";
 import BigMenu from "@/components/BigMenu";
 import FilterPage from "@/components/FilterPage";
@@ -29,7 +31,8 @@ export default {
     BottomMenu,
     BigMenu,
     GoTop,
-    FilterPage
+    FilterPage,
+    FloatMedia
   }
 };
 </script>

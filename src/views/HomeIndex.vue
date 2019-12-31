@@ -10,7 +10,6 @@
     <Witness />
     <IgArea />
     <MemberInfo />
-    <FloatMedia />
   </div>
 </template>
 
@@ -25,7 +24,7 @@ import MomWiki from "@/components/pages/HomeIndex/MomWiki";
 import Witness from "@/components/pages/HomeIndex/Witness";
 import IgArea from "@/components/pages/HomeIndex/IgArea";
 import MemberInfo from "@/components/pages/HomeIndex/MemberInfo";
-import FloatMedia from "@/components/pages/HomeIndex/FloatMedia";
+
 export default {
   components: {
     MainKv,
@@ -37,8 +36,7 @@ export default {
     MomWiki,
     Witness,
     IgArea,
-    MemberInfo,
-    FloatMedia
+    MemberInfo
   }
 };
 </script>
