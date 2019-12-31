@@ -32,11 +32,39 @@
           </div>
 
           <div class="row2">
-            <p class="pd-name">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</p>
+            <div class="name-and-style">
+              <p class="pd-name">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</p>
+              <p class="color"></p>
+            </div>
+
             <div class="p-and-number">
               <div class="price">NT99,000$</div>
-              <div class="number"></div>
+              <div class="count">
+                <button class="minus">-</button>
+                <input type="text" placeholder="0" />
+                <button class="plus">+</button>
+              </div>
             </div>
+          </div>
+
+          <div class="row3">
+            <p>卡其色-S(820)</p>
+          </div>
+
+          <div class="mobile-p-and-number">
+            <div class="p-and-number">
+              <div class="price">NT99,000$</div>
+              <div class="count">
+                <button class="minus">-</button>
+                <input type="text" placeholder="0" />
+                <button class="plus">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row4 add-price-row">
+            <div class="add-price">加價購</div>
+            <p class="no-include">不列入滿額計算</p>
           </div>
         </div>
       </div>

@@ -4780,6 +4780,8 @@ body {
             .in-cart {
                 .in-cart-item {
                     display: flex;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid #D3D8DE;
 
                     .cart-img {
                         max-width: 95px;
@@ -4790,9 +4792,15 @@ body {
                     }
 
                     .cart-text {
+                        flex-grow: 1;
+                        margin-left: 10px;
+
                         .row1 {
+                            margin-top: 5px;
                             display: flex;
-                            justify-content: center;
+                            font-size: 14px;
+                            justify-content: space-between;
+                            align-items: center;
 
                             .two-icon {
                                 button {
@@ -4810,9 +4818,138 @@ body {
                                         fill: none;
                                     }
                                 }
+
+                                button:nth-child(2) {
+                                    margin-left: 10px;
+                                }
                             }
 
 
+                        }
+
+                        .row2 {
+                            margin-top: 7px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+
+
+
+                            .p-and-number {
+                                display: flex;
+                                align-items: center;
+
+                                @include lg {
+                                    display: none;
+                                }
+
+                                .price {
+                                    color: #FD4337;
+                                }
+
+                                .count {
+                                    height: 26px;
+                                    margin-left: 38px;
+                                    display: flex;
+
+                                    button {
+                                        // padding: 14px 17px;
+                                        width: 30px;
+                                        height: 26px;
+                                        background-color: #D3D8DE;
+                                        border-radius: 5px;
+                                        font-size: 14px;
+
+                                    }
+
+                                    .minus {
+                                        border-radius: 4px 0px 0px 4px;
+                                    }
+
+                                    .plus {
+                                        border-radius: 0px 4px 4px 0px;
+                                    }
+
+                                    input {
+                                        text-align: center;
+                                        height: 100%;
+                                        width: 30px;
+                                        flex-grow: 1;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .row3 {
+                            margin-top: 7px;
+                        }
+
+                        .mobile-p-and-number {
+                            .p-and-number {
+                                align-items: center;
+                                justify-content: space-between;
+                                display: none;
+
+                                @include lg {
+                                    display: flex;
+                                }
+
+                                .price {
+                                    color: #FD4337;
+                                }
+
+                                .count {
+                                    height: 26px;
+                                    margin-left: 38px;
+                                    display: flex;
+
+                                    button {
+                                        // padding: 14px 17px;
+                                        width: 30px;
+                                        height: 26px;
+                                        background-color: #D3D8DE;
+                                        border-radius: 5px;
+                                        font-size: 14px;
+
+                                    }
+
+                                    .minus {
+                                        border-radius: 4px 0px 0px 4px;
+                                    }
+
+                                    .plus {
+                                        border-radius: 0px 4px 4px 0px;
+                                    }
+
+                                    input {
+                                        text-align: center;
+                                        height: 100%;
+                                        width: 30px;
+                                        flex-grow: 1;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .row4 {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 12px;
+
+                            .add-price {
+                                font-size: 12px;
+                                background-color: #006ABC;
+                                color: #fff;
+                                padding: 3px 5px;
+                            }
+
+                            .no-include {
+                                font-size: 12px;
+                                margin-left: 5px;
+                            }
                         }
                     }
                 }
