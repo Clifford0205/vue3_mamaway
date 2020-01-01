@@ -9,6 +9,7 @@
             @click.capture="showSlider"
             class="start-img"
             :style="{display:isImgShow}"
+            v-if="isImgShow"
           />
           <carousel
             :items="1"
@@ -16,7 +17,7 @@
             :nav="false"
             class="the-carousel"
             :loop="true"
-            :style="{display:isCaShow}"
+            v-if="!isImgShow"
           >
             <template slot="prev">
               <button class="prev" @click="preventRoute">
@@ -102,7 +103,7 @@ export default {
     return {
       isThreeCol: false,
       isCaShow: "none",
-      isImgShow: "block"
+      isImgShow: true
     };
   },
   components: {
@@ -110,10 +111,9 @@ export default {
   },
   methods: {
     showSlider: function(e) {
-      let vm = this;
       e.preventDefault();
-      vm.isImgShow = "none";
-      vm.isCaShow = "block";
+      let vm = this;
+      vm.isImgShow = false;
     },
 
     sliderMove: function() {
