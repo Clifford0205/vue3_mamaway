@@ -5255,7 +5255,8 @@ body {
                 .full-gift-5000,
                 .choose-pay-way,
                 .choose-delivery-way,
-                .recipient-information {
+                .recipient-information,
+                .invoice-info {
                     margin-top: 10px;
                     padding: 20px;
                     box-shadow: 0px 3px 6px #00000029;
@@ -6180,6 +6181,142 @@ body {
                                 background-color: #525B67;
                             }
 
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+            .invoice-info {
+                font-size: 14px;
+
+                .text-input {
+                    border: none;
+                    border-bottom: 1px solid #A7ACB2;
+                    padding: 13px 10px;
+                    margin-top: 13px;
+
+                    &::placeholder {
+                        color: #A7ACB2;
+                    }
+                }
+
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                .choose-invoive-type {
+                    .invoive-type {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+
+                        a {
+                            color: #C6352E;
+                            border-bottom: 1px solid #C6352E;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .select-part {
+                        border-bottom: 1px solid #A7ACB2;
+                        width: 50%;
+
+                        .invoice-select {
+                            appearance: none;
+                            color: #525B67;
+                            font-size: 16px;
+                            width: 100%;
+                            padding: 13px 10px;
+                            border: none;
+                            background: url(/img/icn_arrow_d.04f772a8.svg) no-repeat right center transparent;
+                        }
+                    }
+
+
+                }
+
+                .grey-area {
+                    margin-top: 10px;
+                    background-color: #F3F4F7;
+                    border-radius: 5px;
+                    padding: 15px 20px;
+
+                    .mail-and-phone {
+                        margin-top: 10px;
+                        display: flex;
+
+                        .single-item {
+                            flex-grow: 1;
+
+                            input {
+                                width: 100%;
+                                background-color: transparent;
+                            }
+                        }
+
+                        .phone {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .pickup-method {
+                    font-size: 16px;
+                    margin-top: 20px;
+
+                    .little-title {
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                    }
+
+                    .options {
+                        display: flex;
+
+                        .single-option {
+                            display: flex;
+                            margin-right: 30px;
+
+                            .text {
+                                margin-left: 10px;
+
+                                .red-text {
+                                    font-size: 14px;
+                                    color: #FD4337;
+                                    margin-top: 5px;
+                                }
+                            }
+
+
+                        }
+
+
+                    }
+                }
+
+                #orderModal {
+                    .modal-dialog {
+                        margin-top: 20%;
+
+                        .modal-footer {
+                            justify-content: center;
+
+                            button {
+                                background-color: #FD4337;
+                                border: none;
+                                width: 265px;
+                                padding: 12px 0;
+
+                                &:focus {
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
                         }
                     }
 
