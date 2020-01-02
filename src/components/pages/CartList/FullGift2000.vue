@@ -40,7 +40,7 @@
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
-                  <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
+                  <a class="love-area">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -55,7 +55,6 @@
                     </svg>
                     <svg
                       class="black transition"
-                      :class="{show:isShow}"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20.16"
@@ -92,7 +91,7 @@
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
-                  <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
+                  <a class="love-area">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -107,7 +106,6 @@
                     </svg>
                     <svg
                       class="black transition"
-                      :class="{show:isShow}"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20.16"
@@ -144,7 +142,7 @@
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
-                  <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
+                  <a class="love-area">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -159,7 +157,6 @@
                     </svg>
                     <svg
                       class="black transition"
-                      :class="{show:isShow}"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20.16"
@@ -196,7 +193,7 @@
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
-                  <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
+                  <a class="love-area">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -211,7 +208,6 @@
                     </svg>
                     <svg
                       class="black transition"
-                      :class="{show:isShow}"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20.16"
@@ -248,7 +244,7 @@
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <div class="circle">
                 <object>
-                  <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
+                  <a class="love-area">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -263,7 +259,6 @@
                     </svg>
                     <svg
                       class="black transition"
-                      :class="{show:isShow}"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20.16"

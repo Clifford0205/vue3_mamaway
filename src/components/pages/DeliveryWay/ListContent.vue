@@ -5,9 +5,8 @@
         <div class="col-lg-8">
           <ShopProcess />
           <ChoosePayWay />
-          <AddPriceBuy />
-          <FullGift2000 />
-          <FullGift5000 />
+          <ChooseDeliveryWay />
+          <RecipientInformation />
         </div>
         <div class="col-lg-4 check-out-part">
           <CheckOut />
@@ -20,18 +19,16 @@
 <script>
 import ShopProcess from "./ShopProcess";
 import ChoosePayWay from "./ChoosePayWay";
-import AddPriceBuy from "./AddPriceBuy";
-import FullGift2000 from "./FullGift2000";
-import FullGift5000 from "./FullGift5000";
+import ChooseDeliveryWay from "./ChooseDeliveryWay";
+import RecipientInformation from "./RecipientInformation";
 import CheckOut from "./CheckOut";
 
 export default {
   components: {
     ShopProcess,
     ChoosePayWay,
-    AddPriceBuy,
-    FullGift2000,
-    FullGift5000,
+    ChooseDeliveryWay,
+    RecipientInformation,
     CheckOut
   }
 };
