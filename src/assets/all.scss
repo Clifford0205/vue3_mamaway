@@ -731,7 +731,8 @@ body {
 
         .checkout-bottom-menu {
             display: none;
-            border-top: 1px solid #D3D8DE;
+            box-shadow: 0px -4px 6px #00000029;
+
 
             @include lg {
                 background-color: #fd4337;
@@ -739,80 +740,116 @@ body {
                 bottom: 0;
                 width: 100%;
                 // padding: 5px 15px;
-                display: flex;
+                display: block;
                 z-index: 200;
             }
 
-            .menu-btn {
-                background-color: unset;
-                border: none;
-                flex: 0 1 20%;
-                position: relative;
-                padding: 8px 0;
-
-                img {
-                    width: 28px;
-                    height: 28px;
-                }
-
-                .num {
-                    position: absolute;
-                    top: 10px;
-                    right: 12px;
-                    font-size: 10px;
-                    width: 18px;
-                    // height: 14px;
-                    padding: 1px 0;
-                    border-radius: 10px;
-                    background-color: #000;
-                    color: #fff;
-
-                    @include lg {
-                        right: 35%;
-                    }
-
-                    @include md {
-                        right: 26%;
-                    }
-                }
-
-                p {
-                    color: #fff;
-                    margin-top: 5px;
-                    white-space: nowrap;
-                }
-            }
-
-            .subtotal {
-                flex: 0 0 40%;
+            .coupon-dis-bar {
+                display: flex;
                 background-color: #fff;
+                justify-content: space-between;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                align-items: center;
+                font-size: 14px;
+                color: #525B67;
 
-                p {
-                    color: #525B67;
-                    font-size: 14px;
+                .dis-bar-text {
+                    flex: 0 0 40%;
+                    text-align: center;
+                }
 
-                    .price {
-                        font-size: 16px;
+                .dis-nu {
+                    display: flex;
+                    align-items: center;
+                    flex: 0 0 30%;
+                    justify-content: center;
+
+                    .num {
                         color: #FD4337;
                     }
-                }
 
-            }
-
-            .checkout {
-                flex: 0 0 30%;
-            }
-
-
-            .keep-shop {
-                background-color: #000000;
-                padding: 5px 15px;
-                flex: 0 0 30%;
-
-                p {
-                    font-size: 18px;
+                    .arrow {}
                 }
             }
+
+            .btns {
+                display: flex;
+                border-top: 1px solid #D3D8DE;
+
+                .menu-btn {
+                    background-color: unset;
+                    border: none;
+                    flex: 0 1 20%;
+                    position: relative;
+                    padding: 8px 0;
+
+                    img {
+                        width: 28px;
+                        height: 28px;
+                    }
+
+                    .num {
+                        position: absolute;
+                        top: 10px;
+                        right: 12px;
+                        font-size: 10px;
+                        width: 18px;
+                        // height: 14px;
+                        padding: 1px 0;
+                        border-radius: 10px;
+                        background-color: #000;
+                        color: #fff;
+
+                        @include lg {
+                            right: 35%;
+                        }
+
+                        @include md {
+                            right: 26%;
+                        }
+                    }
+
+                    p {
+                        color: #fff;
+                        margin-top: 5px;
+                        white-space: nowrap;
+                    }
+                }
+
+                .subtotal {
+                    flex: 0 0 40%;
+                    background-color: #fff;
+
+                    p {
+                        color: #525B67;
+                        font-size: 14px;
+
+                        .price {
+                            font-size: 16px;
+                            color: #FD4337;
+                        }
+                    }
+
+                }
+
+                .checkout {
+                    flex: 0 0 30%;
+                }
+
+
+                .keep-shop {
+                    background-color: #000000;
+                    padding: 5px 15px;
+                    flex: 0 0 30%;
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+
         }
 
         .add-in-cart-mobile {
@@ -2827,15 +2864,31 @@ body {
             }
         }
 
+        .mobile-block-checkout {
+            width: 100%;
+            height: 84px;
+            display: none;
+
+            @include lg {
+                display: block;
+            }
+        }
+
         //產品列表頁開始
 
         .breadcrumb {
-            display: none;
+            display: flex;
             font-size: 14px;
             padding: 10px;
             color: #525C68;
             background-color: unset;
             margin: 0;
+            padding-left: 0;
+
+            @include lg {
+                display: flex;
+                padding-left: 0;
+            }
 
             .breadcrumb-item+.breadcrumb-item::before {
                 display: inline-block;
@@ -2852,10 +2905,7 @@ body {
                 }
             }
 
-            @include lg {
-                display: flex;
 
-            }
         }
 
         .product-kv {
@@ -4744,6 +4794,10 @@ body {
             margin: 0 auto;
             color: #525B67;
 
+            @include lg {
+                margin-bottom: 120px;
+            }
+
             .shop-process-bar {
                 display: flex;
                 justify-content: space-between;
@@ -5452,6 +5506,20 @@ body {
                     }
 
 
+                }
+
+                .mobile-line {
+                    max-width: 2000px;
+                    height: 10px;
+                    background-color: #F3F4F7;
+                    display: none;
+                    margin-top: 10px;
+                    margin-right: -5.5%;
+                    margin-left: -5.5%;
+
+                    @include lg {
+                        display: block;
+                    }
                 }
 
             }

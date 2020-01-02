@@ -24,7 +24,6 @@
           :responsive="{
           0: {
             items: 2,
-            
             nav: false,
             
             margin: 20
@@ -295,6 +294,7 @@
         </carousel>
       </div>
     </div>
+    <div class="mobile-line price-buy-line"></div>
   </div>
 </template>
 
@@ -308,4 +308,9 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+.price-buy-line {
+  margin-top: 40px !important;
+}
+</style>
 

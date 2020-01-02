@@ -282,6 +282,8 @@
         </div>
       </div>
     </div>
+
+    <div class="mobile-line"></div>
   </div>
 </template>
 

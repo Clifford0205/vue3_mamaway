@@ -1,21 +1,34 @@
 <template>
   <div class="CheckoutBottom">
     <!-- fixed留白區域 -->
-    <div class="mobile-block-mobile"></div>
+    <div class="mobile-block-checkout"></div>
     <!-- fixed留白區域 -->
+
     <div class="checkout-bottom-menu">
-      <button class="menu-btn subtotal">
-        <p>
-          小計
-          <span class="price">＄100,000</span>
-        </p>
-      </button>
-      <button class="menu-btn keep-shop">
-        <p>繼續購物</p>
-      </button>
-      <button class="menu-btn checkout">
-        <p>結帳(1)</p>
-      </button>
+      <a class="coupon-dis-bar">
+        <p class="dis-bar-text">使用優惠折抵</p>
+        <div class="dis-nu">
+          <div class="num">-$10,000</div>
+          <div class="arrow">
+            <img src="~@/assets/img/icons/icn_arrow_r.svg" alt />
+          </div>
+        </div>
+      </a>
+
+      <div class="btns">
+        <button class="menu-btn subtotal">
+          <p>
+            小計
+            <span class="price">＄100,000</span>
+          </p>
+        </button>
+        <button class="menu-btn keep-shop">
+          <p>繼續購物</p>
+        </button>
+        <button class="menu-btn checkout">
+          <p>結帳(1)</p>
+        </button>
+      </div>
     </div>
   </div>
 </template>

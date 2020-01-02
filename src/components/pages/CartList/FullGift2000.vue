@@ -6,15 +6,13 @@
         <p class="title-text">2000元滿額贈</p>
         <div class="the-line"></div>
       </div>
-
       <div class="purchase-conditions">
         <p>
           結帳金額滿
-          <span class="red-text">$500元</span> ，可加購
+          <span class="red-text">$500元</span>，可加購
           <span class="red-text">1</span>件。
         </p>
       </div>
-
       <div class="carousel-area">
         <carousel
           :dots="false"
@@ -22,17 +20,20 @@
           :margin="25"
           :loop="true"
           :responsive="{
-          0: {
-            items: 2,
-            autoWidth:true,
-            nav: false,
-            center: true,
-            margin: 20
-          },
-          996: {
-            items: 3
-          }
-        }"
+0: {
+  items: 3,
+    nav: false,
+    center: true,
+    margin: 20
+}
+
+,
+996: {
+  items: 3
+}
+}
+
+"
         >
           <div class="item">
             <div class="img-area">
@@ -75,7 +76,6 @@
               <p class="o-price">NT$1380</p>
               <p class="new-price">NT$990</p>
             </div>
-
             <div class="style-select">
               <select name id>
                 <option value selected disabled>選擇尺寸</option>
@@ -87,7 +87,6 @@
               </select>
             </div>
           </div>
-
           <div class="item">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
@@ -129,7 +128,6 @@
               <p class="o-price">NT$1380</p>
               <p class="new-price">NT$990</p>
             </div>
-
             <div class="style-select">
               <select name id>
                 <option value selected disabled>選擇尺寸</option>
@@ -141,7 +139,6 @@
               </select>
             </div>
           </div>
-
           <div class="item">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
@@ -183,7 +180,6 @@
               <p class="o-price">NT$1380</p>
               <p class="new-price">NT$990</p>
             </div>
-
             <div class="style-select">
               <select name id>
                 <option value selected disabled>選擇尺寸</option>
@@ -195,7 +191,6 @@
               </select>
             </div>
           </div>
-
           <div class="item">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
@@ -237,7 +232,6 @@
               <p class="o-price">NT$1380</p>
               <p class="new-price">NT$990</p>
             </div>
-
             <div class="style-select">
               <select name id>
                 <option value selected disabled>選擇尺寸</option>
@@ -249,7 +243,6 @@
               </select>
             </div>
           </div>
-
           <div class="item">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
@@ -291,7 +284,6 @@
               <p class="o-price">NT$1380</p>
               <p class="new-price">NT$990</p>
             </div>
-
             <div class="style-select">
               <select name id>
                 <option value selected disabled>選擇尺寸</option>
@@ -307,9 +299,7 @@
       </div>
     </div>
   </div>
-</template>
-
-<script>
+</template><script>
 import carousel from "vue-owl-carousel";
 
 export default {
@@ -318,4 +308,3 @@ export default {
   }
 };
 </script>
-
