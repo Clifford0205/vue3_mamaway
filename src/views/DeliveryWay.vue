@@ -1,5 +1,5 @@
 <template>
-  <div class="cart-list-page">
+  <div class="deliver-way">
     <Breadcrumb class="breadcrumb" />
     <ListContent />
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 import Breadcrumb from "@/components/Breadcrumb";
-import ListContent from "@/components/pages/CartList/ListContent";
+import ListContent from "@/components/pages/DeliveryWay/ListContent";
 
 export default {
   components: {

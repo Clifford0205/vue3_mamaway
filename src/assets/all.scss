@@ -4786,7 +4786,8 @@ body {
         //產品介紹頁面結束
 
         //結帳：購物車清單頁
-        .cart-list-page {
+        .cart-list-page,
+        .deliver-way {
             max-width: 1200px;
             width: 90%;
             padding-right: 0px;
@@ -4840,6 +4841,7 @@ body {
                         // float: left;
                         display: inline-block;
                         position: relative;
+                        font-weight: 400;
 
                         @include lg {
                             height: 25px;
@@ -5250,7 +5252,8 @@ body {
 
                 .add-price-buy,
                 .full-gift-2000,
-                .full-gift-5000 {
+                .full-gift-5000,
+                .choose-pay-way {
                     margin-top: 10px;
                     padding: 20px;
                     box-shadow: 0px 3px 6px #00000029;
@@ -5524,6 +5527,8 @@ body {
 
             }
 
+
+
             .check-out-part {
 
                 @include lg {
@@ -5744,6 +5749,127 @@ body {
                         font-size: 18px;
                         padding: 7px 0;
                         margin-top: 20px;
+                    }
+                }
+            }
+
+            .choose-pay-way {
+                h3 {
+                    font-size: 18px;
+                }
+
+                .two-part {
+                    display: flex;
+                    margin-top: 10px;
+
+                    input {
+                        &::placeholder {
+                            color: #B2B7BD;
+                        }
+                    }
+
+                    .grey-area {
+                        background-color: #F3F4F7;
+                        font-size: 14px;
+                        padding: 20px;
+                        border-radius: 10px;
+                        // flex-grow: 1;
+                        // flex: 0 0 50%;
+
+                        .discount-item {
+                            margin-bottom: 15px;
+
+                            .title {
+                                margin-bottom: 10px;
+                            }
+
+                            .balance {
+                                .red-text {
+                                    color: #FD4337;
+                                }
+                            }
+
+                            .purchase-money-form {
+                                display: flex;
+                                margin-top: 10px;
+
+                                .money-input {
+                                    border: 1px solid #525B67;
+                                    font-size: 14px;
+                                    padding: 8px 15px;
+                                    max-width: 210px;
+                                    width: 210px;
+                                }
+
+                                .money-btn {
+                                    background-color: #525B67;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    flex-grow: 1;
+                                    border: none;
+                                    padding: 0 33px;
+
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .white-area {
+                        margin-left: 20px;
+                        flex-grow: 1;
+                        // flex: 0 0 50%;
+
+                        .the-pay-way {
+                            .radio-btn {
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .credit-card-part {
+
+                            .card-part-item {
+
+                                margin-bottom: 20px;
+
+                                input {
+                                    width: 100%;
+                                    border: none;
+                                    border-bottom: 1px solid #A7ACB2;
+                                    padding: 13px 10px;
+
+                                }
+                            }
+
+                            .eff-date {
+
+                                .two-select {
+                                    display: flex;
+
+                                    .select-part {
+                                        flex-grow: 1;
+                                        border-bottom: 1px solid #A7ACB2;
+                                    }
+
+                                    .select-part:nth-child(2) {
+                                        margin-left: 15px;
+                                    }
+
+                                    .the-select {
+                                        appearance: none;
+                                        border-bottom: 1px solid #A7ACB2;
+                                        border: none;
+                                        padding: 13px 10px;
+                                        background: url(/img/icn_arrow_d.04f772a8.svg) no-repeat right center transparent;
+                                        width: 100%;
+
+                                    }
+                                }
+
+                            }
+
+                        }
                     }
                 }
             }
