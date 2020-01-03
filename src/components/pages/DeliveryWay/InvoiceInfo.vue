@@ -58,27 +58,29 @@
       </div>
 
       <div class="grey-area">
-        <div class="choose-invoive-type">
-          <div class="invoive-type">
-            <p class="text little-title">使用載具</p>
+        <div class="choose-invoive-type"></div>
+
+        <div class="mail-and-phone">
+          <div class="mail single-item">
+            <div class="little-title">姓名</div>
+            <input type="text" placeholder="請輸入姓名" class="email-input text-input" />
           </div>
 
-          <div class="select-part">
-            <select name="invoice" id class="invoice-select">
-              <option value selected>雲端發票</option>
-            </select>
+          <div class="phone single-item">
+            <div class="little-title">行動電話</div>
+            <input type="text" placeholder="請輸入行動電話" class="phone-input text-input" />
           </div>
         </div>
 
         <div class="mail-and-phone">
           <div class="mail single-item">
-            <div class="little-title">載具條碼</div>
-            <input type="text" placeholder="請輸入載具條碼" class="email-input text-input" />
+            <div class="little-title">姓名</div>
+            <input type="text" placeholder="請輸入姓名" class="email-input text-input" />
           </div>
 
           <div class="phone single-item">
-            <div class="little-title">確認載具條碼</div>
-            <input type="text" placeholder="請再次輸入載具條碼" class="phone-input text-input" />
+            <div class="little-title">行動電話</div>
+            <input type="text" placeholder="請輸入行動電話" class="phone-input text-input" />
           </div>
         </div>
       </div>
