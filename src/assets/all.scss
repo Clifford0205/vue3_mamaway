@@ -5829,6 +5829,11 @@ body {
                     display: flex;
                     margin-top: 10px;
 
+                    @include lg {
+                        flex-wrap: wrap;
+
+                    }
+
                     input {
                         &::placeholder {
                             color: #B2B7BD;
@@ -5840,8 +5845,11 @@ body {
                         font-size: 14px;
                         padding: 20px;
                         border-radius: 10px;
-                        // flex-grow: 1;
-                        // flex: 0 0 50%;
+
+                        @include lg {
+                            flex-basis: 100%;
+                        }
+
 
                         .discount-item {
                             margin-bottom: 15px;
@@ -5866,6 +5874,11 @@ body {
                                     padding: 8px 15px;
                                     max-width: 210px;
                                     width: 210px;
+
+                                    @include lg {
+                                        flex-grow: 1;
+                                        max-width: unset;
+                                    }
                                 }
 
                                 .money-btn {
@@ -5875,6 +5888,10 @@ body {
                                     flex-grow: 1;
                                     border: none;
                                     padding: 0 33px;
+
+                                    @include lg {
+                                        flex-grow: unset;
+                                    }
 
                                 }
                             }
@@ -5886,7 +5903,11 @@ body {
                     .white-area {
                         margin-left: 20px;
                         flex-grow: 1;
+
                         // flex: 0 0 50%;
+                        @include lg {
+                            flex-basis: 100%;
+                        }
 
                         .the-pay-way {
                             .radio-btn {
@@ -5925,11 +5946,11 @@ body {
 
                                     .the-select {
                                         appearance: none;
-
                                         border: none;
                                         padding: 13px 10px;
                                         background: url(/img/icn_arrow_d.04f772a8.svg) no-repeat right center transparent;
                                         width: 100%;
+                                        color: #A7ACB2;
 
                                     }
                                 }
@@ -5991,9 +6012,17 @@ body {
                     .options {
                         display: flex;
 
+                        @include lg {
+                            display: block;
+                        }
+
                         .single-option {
                             display: flex;
                             margin-right: 30px;
+
+                            @include lg {
+                                margin-top: 15px;
+                            }
 
                             .text {
                                 margin-left: 10px;
@@ -6077,6 +6106,10 @@ body {
 
                     input {
                         width: 48.5%;
+
+                        @include lg {
+                            width: 100%;
+                        }
                     }
                 }
 
@@ -6084,8 +6117,16 @@ body {
                     margin-top: 10px;
                     display: flex;
 
+                    @include lg {
+                        flex-wrap: wrap;
+                    }
+
                     .single-item {
                         flex-grow: 1;
+
+                        @include lg {
+                            flex-basis: 100%;
+                        }
 
                         input {
                             width: 100%;
@@ -6094,6 +6135,11 @@ body {
 
                     .phone {
                         margin-left: 20px;
+
+                        @include lg {
+                            margin-left: 0;
+                            margin-top: 20px;
+                        }
                     }
                 }
 
@@ -6116,9 +6162,19 @@ body {
                     .select-address {
                         display: flex;
 
+                        @include lg {
+                            flex-wrap: wrap;
+                        }
+
                         .select-part {
                             border-bottom: 1px solid #A7ACB2;
                             padding-top: 23px;
+
+                            width: 165px;
+
+                            @include lg {
+                                flex-basis: 50%;
+                            }
 
                             .country-select {
                                 appearance: none;
@@ -6127,7 +6183,19 @@ body {
                                 width: 100%;
                                 padding: 5px 10px;
                                 border: none;
-                                width: 165px;
+                                width: 100%;
+                                flex-grow: 1;
+                                background: url(/img/icn_arrow_d.04f772a8.svg) no-repeat right center transparent;
+                            }
+
+                            .zone-select {
+                                appearance: none;
+                                color: #A7ACB2;
+                                font-size: 16px;
+                                width: 100%;
+                                padding: 5px 10px;
+                                border: none;
+                                width: 100%;
                                 flex-grow: 1;
                                 background: url(/img/icn_arrow_d.04f772a8.svg) no-repeat right center transparent;
                             }
@@ -6135,11 +6203,22 @@ body {
 
                         .select-zone {
                             margin: 0 27px;
+
+                            @include lg {
+                                margin: 0;
+                                margin-left: 20px;
+                                flex-basis: unset;
+                                flex-grow: 1;
+                            }
                         }
 
                         .address-input {
                             flex-grow: 1;
                             font-size: 16px;
+
+                            @include lg {
+                                flex-basis: 100%;
+                            }
                         }
                     }
                 }
@@ -6292,6 +6371,10 @@ body {
                         border-bottom: 1px solid #A7ACB2;
                         width: 50%;
 
+                        @include lg {
+                            width: 100%;
+                        }
+
                         .invoice-select {
                             appearance: none;
                             color: #525B67;
@@ -6314,14 +6397,27 @@ body {
 
 
 
-                    .mail-and-phone {
+                    .bar-code-out,
+                    .invoice-send,
+                    .address-part {
                         margin-top: 10px;
                         display: flex;
+
+                        @include lg {
+                            margin-top: 20px;
+                            flex-wrap: wrap;
+                        }
 
 
 
                         .single-item {
                             flex-grow: 1;
+
+                            @include lg {
+                                flex-grow: unset;
+                                flex-basis: 100%;
+
+                            }
 
                             input {
                                 width: 100%;
@@ -6329,8 +6425,14 @@ body {
                             }
                         }
 
+                        .bar-code-again,
                         .phone {
                             margin-left: 20px;
+
+                            @include lg {
+                                margin-left: 0;
+                                margin-top: 20px;
+                            }
                         }
                     }
 
@@ -6345,6 +6447,10 @@ body {
                             .single-item {
                                 flex-grow: 1;
                                 flex-basis: 50%;
+
+                                @include lg {
+                                    flex-basis: 100%;
+                                }
                             }
 
                             .select-part {
@@ -6365,7 +6471,15 @@ body {
                             }
 
                             .address {
+                                font-size: 16px;
                                 margin-left: 20px;
+
+                                @include lg {
+                                    margin-left: 0;
+                                    margin-top: 20px;
+                                }
+
+
                             }
                         }
 

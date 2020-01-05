@@ -35,8 +35,8 @@
             </select>
           </div>
           <div class="select-part select-zone">
-            <select name="country" id class="country-select">
-              <option value selected>請選擇縣市</option>
+            <select name="country" id class="zone-select">
+              <option value selected>請選擇區域</option>
             </select>
           </div>
 

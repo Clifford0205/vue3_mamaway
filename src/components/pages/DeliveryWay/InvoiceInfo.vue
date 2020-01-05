@@ -22,18 +22,18 @@
 
           <div class="select-part">
             <select name="invoice" id class="invoice-select">
-              <option value selected>雲端發票</option>
+              <option value selected>自然人憑證條碼</option>
             </select>
           </div>
         </div>
 
-        <div class="mail-and-phone">
-          <div class="mail single-item">
+        <div class="mail-and-phone bar-code-out">
+          <div class="bar-code single-item">
             <div class="little-title">載具條碼</div>
             <input type="text" placeholder="請輸入載具條碼" class="email-input text-input" />
           </div>
 
-          <div class="phone single-item">
+          <div class="bar-code-again single-item">
             <div class="little-title">確認載具條碼</div>
             <input type="text" placeholder="請再次輸入載具條碼" class="phone-input text-input" />
           </div>
@@ -60,7 +60,7 @@
       <div class="grey-area">
         <div class="choose-invoive-type"></div>
 
-        <div class="mail-and-phone">
+        <div class="mail-and-phone invoice-send">
           <div class="mail single-item">
             <div class="little-title">姓名</div>
             <input type="text" placeholder="請輸入姓名" class="email-input text-input" />
