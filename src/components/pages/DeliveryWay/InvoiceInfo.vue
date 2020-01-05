@@ -72,21 +72,28 @@
           </div>
         </div>
 
-        <div class="mail-and-phone">
-          <div class="mail single-item">
-            <div class="little-title">姓名</div>
-            <input type="text" placeholder="請輸入姓名" class="email-input text-input" />
-          </div>
+        <div class="contact-address">
+          <p class="address-title">聯絡地址</p>
+          <div class="mail-and-phone address-part">
+            <div class="select-part single-item">
+              <select name="country" id class="country-select">
+                <option value selected>中華民國</option>
+              </select>
+            </div>
 
-          <div class="phone single-item">
-            <div class="little-title">行動電話</div>
-            <input type="text" placeholder="請輸入行動電話" class="phone-input text-input" />
+            <div class="address single-item">
+              <input type="text" placeholder="請輸入地址" class="address-input text-input" />
+            </div>
           </div>
         </div>
       </div>
 
-      <input type="checkbox" name="vehicle1" value="add" class="common-address" />
-      雲端發票服務「雲端發票實施作業要點」我同意辦理退貨時，由媽媽餵Mamaway代為處理發票及銷貨退回證明書，已加速退貨退款作業。
+      <div class="cloud-invoice-check">
+        <input type="checkbox" name="vehicle1" value="add" class="common-address cloud-invoice-box" />
+        <p
+          class="cloud-invoice-text"
+        >雲端發票服務「雲端發票實施作業要點」我同意辦理退貨時，由媽媽餵Mamaway代為處理發票及銷貨退回證明書，已加速退貨退款作業。</p>
+      </div>
       <!-- Modal -->
       <div
         class="modal fade"
