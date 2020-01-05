@@ -1,8 +1,6 @@
 <template>
   <div class="chcek-out order-detail">
     <div class="purchase-detail">
-      <h3 class="detail-title">訂單明細</h3>
-
       <div class="product-img-text">
         <div class="single-item">
           <div class="order-img">

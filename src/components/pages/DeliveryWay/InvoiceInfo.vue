@@ -94,26 +94,6 @@
           class="cloud-invoice-text"
         >雲端發票服務「雲端發票實施作業要點」我同意辦理退貨時，由媽媽餵Mamaway代為處理發票及銷貨退回證明書，已加速退貨退款作業。</p>
       </div>
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="orderModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div
-              class="modal-body"
-            >ＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩ</div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">確 認</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="mobile-line"></div>

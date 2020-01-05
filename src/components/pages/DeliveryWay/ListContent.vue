@@ -8,6 +8,7 @@
           <ChooseDeliveryWay />
           <RecipientInformation />
           <InvoiceInfo />
+          <MobileTotal />
         </div>
         <div class="col-lg-5 check-out-part">
           <OrderDetail />
@@ -24,6 +25,7 @@ import ChooseDeliveryWay from "./ChooseDeliveryWay";
 import RecipientInformation from "./RecipientInformation";
 import OrderDetail from "./OrderDetail";
 import InvoiceInfo from "./InvoiceInfo";
+import MobileTotal from "./MobileTotal";
 
 export default {
   components: {
@@ -32,6 +34,7 @@ export default {
     ChooseDeliveryWay,
     RecipientInformation,
     InvoiceInfo,
+    MobileTotal,
     OrderDetail
   }
 };
