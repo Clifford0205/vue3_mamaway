@@ -5541,7 +5541,7 @@ body {
                     padding: 20px;
                     box-shadow: 0px 3px 6px #00000029;
                     border-radius: 10px;
-                    position: fixed;
+                    // position: fixed;
                     z-index: 0;
 
                     .purchase-detail {
@@ -5750,6 +5750,71 @@ body {
                         border-radius: 5px;
                         font-size: 18px;
                         padding: 7px 0;
+                        margin-top: 20px;
+                    }
+                }
+
+                .order-detail {
+                    .purchase-detail {
+                        .detail-title {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+
+                        .product-img-text {
+                            .single-item {
+                                display: flex;
+                                align-items: center;
+                                font-size: 14px;
+                                border-bottom: 1px solid #A7ACB2;
+                                padding-bottom: 5px;
+                                background-color: #FAFAFA;
+
+                                .order-img {
+                                    max-width: 60px;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .order-product-describe {
+                                    margin-left: 15px;
+
+                                    .p-name {
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        max-width: 60%;
+                                    }
+
+                                    .p-style {
+                                        margin-top: 10px;
+                                    }
+                                }
+
+                                .order-product-price {
+                                    margin-left: 15px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        .purchase {
+                            margin-top: 10px;
+                        }
+
+
+                    }
+
+                    .order-send-btn {
+                        width: 100%;
+                        background-color: #FD4337;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        padding: 10px 0;
                         margin-top: 20px;
                     }
                 }

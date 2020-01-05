@@ -2,14 +2,14 @@
   <div>
     <div class="list-content">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
           <ShopProcess />
           <ShopCartDetail />
           <AddPriceBuy />
           <FullGift2000 />
           <FullGift5000 />
         </div>
-        <div class="col-lg-4 check-out-part">
+        <div class="col-lg-5 check-out-part">
           <CheckOut />
         </div>
       </div>
