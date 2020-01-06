@@ -6,6 +6,7 @@ import Home from '@/views/Home';
 import SortMenu from '@/components/SortMenu';
 import SortMenuImg from '@/components/SortMenuImg';
 import CheckoutBottomMenu from '@/components/CheckoutBottomMenu';
+import SendOrderBottomMenu from '@/components/SendOrderBottomMenu';
 import ProductDetails from '@/views/ProductDetails'
 import DetailsPage from '@/views/DetailsPage'
 import DetailsPage2 from '@/views/DetailsPage2'
@@ -70,7 +71,10 @@ export default new VueRouter({
                 {
                     name: '配送方式',
                     path: '/cart_deliverway',
-                    component: DeliveryWay
+                    components: {
+                        default:DeliveryWay,
+                        sendorderbottommenu:SendOrderBottomMenu
+                    }
                 }
             ]
         },

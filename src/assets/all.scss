@@ -14,6 +14,7 @@ body {
     padding: 0;
     position: relative;
 
+
     #app {
         position: relative;
 
@@ -851,6 +852,93 @@ body {
 
 
         }
+
+        .SendOrderBottom {
+
+            .mobile-block-mobile {
+                height: 40px;
+            }
+
+            .sendorder-bottom-menu {
+                display: none;
+
+
+                @include lg {
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    // padding: 5px 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    z-index: 200;
+                    border-top: 1px solid #A7ACB2;
+                }
+
+                .menu-btn {
+                    font-size: 14px;
+                    padding: 12px 0;
+                }
+
+                .total {
+                    width: 60%;
+                    color: #525B67;
+                    background-color: #fff;
+
+                    p {
+                        text-align: left;
+                        margin-left: 30px;
+                    }
+
+                    .price {
+                        color: #FD4337;
+                        font-size: 16px;
+                    }
+                }
+
+                .send-order-btn {
+                    width: 40%;
+                    background-color: #FD4337;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 200;
+                }
+
+            }
+
+            #nogiftModal {
+                .modal-dialog {
+                    margin-top: 20%;
+
+                    .modal-body {
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+
+                    .modal-footer {
+                        justify-content: center;
+                        padding-bottom: 30px;
+
+                        button {
+                            background-color: #FD4337;
+                            border: none;
+                            width: 265px;
+                            padding: 12px 0;
+
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
 
         .add-in-cart-mobile {
             background-color: #fff;
@@ -5780,12 +5868,13 @@ body {
 
                                 .order-product-describe {
                                     margin-left: 15px;
+                                    max-width: 55%;
 
                                     .p-name {
                                         white-space: nowrap;
                                         overflow: hidden;
                                         text-overflow: ellipsis;
-                                        max-width: 60%;
+                                        max-width: 100%;
                                     }
 
                                     .p-style {

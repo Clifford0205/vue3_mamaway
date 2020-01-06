@@ -8,6 +8,7 @@
     <BottomMenu />
     <router-view name="addincartmobile"></router-view>
     <router-view name="checkoutbottommenu"></router-view>
+    <router-view name="sendorderbottommenu"></router-view>
     <BigMenu />
     <FilterPage />
     <GoTop />
