@@ -58,11 +58,24 @@
 
         <div class="white-area">
           <div class="the-pay-way">
-            <input type="radio" name="location" value="line" class="radio-btn" /> LINE
+            <div class="line">
+              <input type="radio" name="location" value="line" class="radio-btn" />
+              <p>LINE</p>
+              <img src="~@/assets/img/icons/icn_linepay.svg" alt />
+            </div>
             <br />
-            <input type="radio" name="location" value="credit-card" class="radio-btn" /> 線上信用刷卡
+            <div class="credit-card">
+              <input type="radio" name="location" value="credit-card" class="radio-btn" />
+              <p>線上信用刷卡</p>
+              <img src="~@/assets/img/icons/icn_visa.svg" alt />
+              <img src="~@/assets/img/icons/icn_master.svg" alt />
+              <img src="~@/assets/img/icons/icn_jcb.svg" alt />
+            </div>
             <br />
-            <input type="radio" name="location" value="cash" class="radio-btn" /> 貨到付款
+            <div class="cash">
+              <input type="radio" name="location" value="cash" class="radio-btn" />
+              <p>貨到付款</p>
+            </div>
           </div>
 
           <div class="credit-card-part">

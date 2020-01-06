@@ -4197,6 +4197,8 @@ body {
                             height: 40px;
                             background-color: #D3D8DE;
                             border-radius: 5px;
+                            font-size: 35px;
+                            color: #525B67;
 
                         }
 
@@ -6399,10 +6401,39 @@ body {
                         }
 
                         .the-pay-way {
-                            .radio-btn {
-                                margin-bottom: 20px;
+                            margin-bottom: 15px;
+
+                            p {
+                                margin-left: 10px;
                             }
+
+                            .line {
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .credit-card {
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .cash {
+                                display: flex;
+                                align-items: center;
+                            }
+
+
                         }
+
+
 
                         .credit-card-part {
 
@@ -7173,178 +7204,191 @@ body {
                 }
             }
 
-            .use-offer-mobile {
-                background-color: #fff;
-                // min-height: 70vh;
+            .use-offer-mobile-out {
+                background-color: rgba(0, 0, 0, 0.5);
                 position: fixed;
+                z-index: 800;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                z-index: 800;
-                color: #525B67;
-                font-size: 14px;
-                display: none;
+                top: 0;
 
-                .for-pos {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    padding: 20px;
+                .use-offer-mobile {
+                    background-color: #fff;
+                    // min-height: 70vh;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 800;
+                    color: #525B67;
+                    font-size: 14px;
 
-                    .cart-close {
-                        position: absolute;
-                        top: 18px;
-                        right: 18px;
-                        border: none;
-                        background-color: unset;
-                    }
 
-                    .discount-way {
-                        border-radius: 10px;
-                        padding: 10px 20px;
-                        margin-top: 10px;
-                        padding-bottom: 120px;
+                    .for-pos {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        padding: 20px;
 
-                        .discount-title {
-                            font-size: 18px;
-                            font-weight: bold;
-
-                            .remind {
-                                font-size: 14px;
-                                margin-left: 10px;
-                            }
+                        .cart-close {
+                            position: absolute;
+                            top: 18px;
+                            right: 18px;
+                            border: none;
+                            background-color: unset;
                         }
 
-                        .choose-way {
-                            margin-top: 20px;
+                        .discount-way {
+                            border-radius: 10px;
+                            padding: 10px 20px;
+                            margin-top: 10px;
+                            padding-bottom: 120px;
 
-                            .purchase-money {
-                                display: flex;
-                                justify-content: space-between;
+                            .discount-title {
+                                font-size: 18px;
+                                font-weight: bold;
 
-                                .red-text {
-                                    color: #FD4337;
-                                }
-                            }
-
-                            .purchase-money-form {
-                                display: flex;
-                                margin-top: 10px;
-
-                                .money-input {
-                                    border: 1px solid #525B67;
+                                .remind {
                                     font-size: 14px;
-                                    padding: 8px 15px;
-                                    width: 70%;
-                                }
-
-                                .money-btn {
-                                    background-color: #525B67;
-                                    color: #fff;
-                                    font-size: 14px;
-                                    flex-grow: 1;
-                                    border: none;
-
+                                    margin-left: 10px;
                                 }
                             }
 
-                            .coupon {
-                                margin-top: 15px;
+                            .choose-way {
+                                margin-top: 20px;
 
-                                .coupon-select {
-                                    width: 100%;
-                                    background-color: #fff;
-                                    appearance: none;
-                                    background: url('~@/assets/img/icons/icn_arrow_d.svg') no-repeat right center transparent;
-                                    padding: 8px 10px;
-                                    margin-top: 10px;
-                                    color: #A7ACB2;
-                                    border-radius: 0;
+                                .purchase-money {
+                                    display: flex;
+                                    justify-content: space-between;
 
-                                    option {
-                                        background-color: #fff;
-                                    }
-                                }
-                            }
-
-                            .activity-string {
-                                margin-top: 15px;
-
-                                .for-pos-input {
-                                    position: relative;
-
-                                    .string-input {
-                                        width: 100%;
-                                        border-radius: 10px;
-                                        color: #525B67;
-                                        font-size: 14px;
-                                        padding: 8px 15px;
-                                        border: 1px solid #525B67;
-                                        margin-top: 10px;
-
-                                        &:focus {
-                                            border: 1px solid #FD4337;
-                                        }
-                                    }
-
-                                    .discount-price,
-                                    .triangle,
-                                    .close-img {
-                                        position: absolute;
-                                    }
-
-                                    .triangle {
-                                        width: 0;
-                                        height: 0;
-                                        border-style: solid;
-                                        border-width: 0 0 25px 25px;
-                                        border-color: transparent transparent #FD4337 transparent;
-                                        bottom: 0;
-                                        right: 0;
-
-                                        // background-image: url('~@/assets/img/icons/icn_close10.svg');
-                                        // background-position: center center;
-                                        // background-size: 10px 10px;
-                                        // background-repeat: no-repeat;
-                                    }
-
-                                    .close-img {
-                                        right: -1px;
-                                        bottom: 0;
-                                        width: 15px;
-                                        height: 15px;
-                                    }
-
-                                    .discount-price {
-                                        top: 20px;
-                                        right: 25px;
+                                    .red-text {
                                         color: #FD4337;
                                     }
+                                }
+
+                                .purchase-money-form {
+                                    display: flex;
+                                    margin-top: 10px;
+
+                                    .money-input {
+                                        border: 1px solid #525B67;
+                                        font-size: 14px;
+                                        padding: 8px 15px;
+                                        width: 70%;
+                                    }
+
+                                    .money-btn {
+                                        background-color: #525B67;
+                                        color: #fff;
+                                        font-size: 14px;
+                                        flex-grow: 1;
+                                        border: none;
+
+                                    }
+                                }
+
+                                .coupon {
+                                    margin-top: 15px;
+
+                                    .coupon-select {
+                                        width: 100%;
+                                        background-color: #fff;
+                                        appearance: none;
+                                        background: url('~@/assets/img/icons/icn_arrow_d.svg') no-repeat right center transparent;
+                                        padding: 8px 10px;
+                                        margin-top: 10px;
+                                        color: #A7ACB2;
+                                        border-radius: 0;
+
+                                        option {
+                                            background-color: #fff;
+                                        }
+                                    }
+                                }
+
+                                .activity-string {
+                                    margin-top: 15px;
+
+                                    .for-pos-input {
+                                        position: relative;
+
+                                        .string-input {
+                                            width: 100%;
+                                            border-radius: 10px;
+                                            color: #525B67;
+                                            font-size: 14px;
+                                            padding: 8px 15px;
+                                            border: 1px solid #525B67;
+                                            margin-top: 10px;
+
+                                            &:focus {
+                                                border: 1px solid #FD4337;
+                                            }
+                                        }
+
+                                        .discount-price,
+                                        .triangle,
+                                        .close-img {
+                                            position: absolute;
+                                        }
+
+                                        .triangle {
+                                            width: 0;
+                                            height: 0;
+                                            border-style: solid;
+                                            border-width: 12px;
+                                            border-color: transparent #FD4337 #FD4337 transparent;
+                                            border-bottom-right-radius: 10px;
+                                            bottom: 0;
+                                            right: 0;
+
+                                            // background-image: url('~@/assets/img/icons/icn_close10.svg');
+                                            // background-position: center center;
+                                            // background-size: 10px 10px;
+                                            // background-repeat: no-repeat;
+                                        }
+
+                                        .close-img {
+                                            right: 1px;
+                                            bottom: 0;
+                                            width: 15px;
+                                            height: 15px;
+                                        }
+
+                                        .discount-price {
+                                            top: 20px;
+                                            right: 25px;
+                                            color: #FD4337;
+                                        }
+
+
+                                    }
 
 
                                 }
-
-
                             }
+                        }
+
+                        .confirm {
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: #FD4337;
+                            color: #fff;
+                            font-size: 18px;
+                            padding: 12px 0;
+
                         }
                     }
 
-                    .confirm {
-                        width: 100%;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        background-color: #FD4337;
-                        color: #fff;
-                        font-size: 18px;
-                        padding: 12px 0;
 
-                    }
                 }
-
-
             }
+
+
         }
 
 

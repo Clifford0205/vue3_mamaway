@@ -38,8 +38,7 @@ import $ from "jquery";
 export default {
   methods: {
     openUseOffer: function() {
-      console.log($(".use-offer-mobile"));
-      $(".use-offer-mobile").css({ display: "block" });
+      $(".use-offer-mobile-out").css({ display: "block" });
     }
   }
 };
