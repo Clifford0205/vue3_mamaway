@@ -152,7 +152,6 @@
         </carousel>
       </div>
 
-      <!-- <router-view name="sortmenu"></router-view> -->
       <router-view name="sortmenuimg"></router-view>
     </div>
 

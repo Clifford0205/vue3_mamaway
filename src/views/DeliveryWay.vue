@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style  lang="scss" scoped>
+<style  lang="scss" >
 @import "@/assets/helpers/_myset.scss";
 body {
   .breadcrumb {
@@ -32,9 +32,11 @@ body {
     }
   }
 
-  .BottomMenu {
-    @include lg {
-      display: none;
+  .deliver-way {
+    .BottomMenu {
+      @include lg {
+        display: none;
+      }
     }
   }
 }

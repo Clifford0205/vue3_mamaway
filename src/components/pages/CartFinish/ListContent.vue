@@ -1,12 +1,11 @@
 <template>
   <div>
-    <div class="content-area">
+    <div class="content-area order-finish-detail">
       <ShopProcess />
-      <ChoosePayWay />
-      <ChooseDeliveryWay />
-      <RecipientInformation />
-      <InvoiceInfo />
-      <MobileTotal />
+      <div class="check-out">
+        <InformationDetail />
+        <OrderDetail />
+      </div>
     </div>
   </div>
 </template>
@@ -19,6 +18,7 @@ import RecipientInformation from "./RecipientInformation";
 import OrderDetail from "./OrderDetail";
 import InvoiceInfo from "./InvoiceInfo";
 import MobileTotal from "./MobileTotal";
+import InformationDetail from "./InformationDetail";
 
 export default {
   components: {
@@ -28,7 +28,8 @@ export default {
     RecipientInformation,
     InvoiceInfo,
     MobileTotal,
-    OrderDetail
+    OrderDetail,
+    InformationDetail
   }
 };
 </script>

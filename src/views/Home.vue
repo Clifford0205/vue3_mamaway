@@ -5,7 +5,8 @@
     <CustomerInfo />
     <FloatMedia />
     <Footer />
-    <BottomMenu />
+    <!-- <BottomMenu /> -->
+    <router-view name="bottommenu"></router-view>
     <router-view name="addincartmobile"></router-view>
     <router-view name="checkoutbottommenu"></router-view>
     <router-view name="sendorderbottommenu"></router-view>

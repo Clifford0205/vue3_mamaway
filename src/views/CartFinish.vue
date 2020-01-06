@@ -22,6 +22,10 @@ export default {
 body {
   .cart-finish {
     max-width: 750px !important;
+
+    @include lg {
+      max-width: unset !important;
+    }
   }
   .breadcrumb {
     display: flex;
@@ -37,7 +41,7 @@ body {
 
   .BottomMenu {
     @include lg {
-      display: none;
+      // display: none;
     }
   }
 }

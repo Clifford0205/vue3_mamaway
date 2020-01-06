@@ -1,5 +1,6 @@
 <template>
-  <div class="chcek-out order-detail">
+  <div class="order-detail">
+    <h3>訂單資訊</h3>
     <div class="purchase-detail">
       <div class="product-img-text">
         <div class="single-item">
@@ -8,8 +9,13 @@
           </div>
 
           <div class="order-product-describe">
+            <div class="p-num">M1115555552</div>
             <div class="p-name" title="襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</div>
             <div class="p-style">卡其色-S(820)</div>
+          </div>
+
+          <div class="order-product-amount">
+            <p>X3</p>
           </div>
 
           <div class="order-product-price">
@@ -23,8 +29,13 @@
           </div>
 
           <div class="order-product-describe">
+            <div class="p-num">M1115555552</div>
             <div class="p-name" title="襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</div>
             <div class="p-style">卡其色-S(820)</div>
+          </div>
+
+          <div class="order-product-amount">
+            <p>X3</p>
           </div>
 
           <div class="order-product-price">
@@ -38,8 +49,13 @@
           </div>
 
           <div class="order-product-describe">
+            <div class="p-num">M1115555552</div>
             <div class="p-name" title="襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</div>
             <div class="p-style">卡其色-S(820)</div>
+          </div>
+
+          <div class="order-product-amount">
+            <p>X3</p>
           </div>
 
           <div class="order-product-price">
@@ -53,23 +69,13 @@
           </div>
 
           <div class="order-product-describe">
+            <div class="p-num">M1115555552</div>
             <div class="p-name" title="襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</div>
             <div class="p-style">卡其色-S(820)</div>
           </div>
 
-          <div class="order-product-price">
-            <p>NT$99,000</p>
-          </div>
-        </div>
-
-        <div class="single-item">
-          <div class="order-img">
-            <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
-          </div>
-
-          <div class="order-product-describe">
-            <div class="p-name" title="襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝">襯衫式印花孕哺洋裝襯衫式印花孕哺洋裝</div>
-            <div class="p-style">卡其色-S(820)</div>
+          <div class="order-product-amount">
+            <p>X3</p>
           </div>
 
           <div class="order-product-price">
@@ -123,16 +129,11 @@
         <p>總計</p>
         <p class="total-text">NT$99,000</p>
       </div>
-
-      <div class="gap-price">
-        <p>
-          還差
-          <span class="red-text">$500</span>元，就有2000元的滿額贈品
-        </p>
-      </div>
     </div>
-
-    <button class="order-send-btn">送出訂單</button>
+    <div class="two-btns">
+      <button class="see-order-btn">查看訂單</button>
+      <button class="order-send-btn">繼續購物</button>
+    </div>
   </div>
 </template>
 

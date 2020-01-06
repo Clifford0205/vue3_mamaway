@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home';
 import SortMenu from '@/components/SortMenu';
 import SortMenuImg from '@/components/SortMenuImg';
+import BottomMenu from '@/components/BottomMenu';
 import CheckoutBottomMenu from '@/components/CheckoutBottomMenu';
 import SendOrderBottomMenu from '@/components/SendOrderBottomMenu';
 import ProductDetails from '@/views/ProductDetails'
@@ -36,13 +37,16 @@ export default new VueRouter({
                     path: '',
                     components: {
                         default: HomeIndex,
-                        sortmenu: SortMenu,
+                        bottommenu: BottomMenu,
                     },
                 },
                 {
                     name: '商品列表',
                     path: 'product_list',
-                    component: ProductList,
+                    components: {
+                        default: ProductList,
+                        bottommenu: BottomMenu,
+                    }
                 },
                 {
                     name: '商品介紹頁',
@@ -50,6 +54,7 @@ export default new VueRouter({
                     components: {
                         default: ProductIntro,
                         sortmenuimg: SortMenuImg,
+                        bottommenu: BottomMenu,
                     },
                 },
                 {
@@ -79,8 +84,11 @@ export default new VueRouter({
                 },
                 {
                     name: '完成訂購',
-                    path: 'cart_finish',
-                    component: CartFinish
+                    path: '/cart_finish',
+                    components: {
+                        default: CartFinish,
+                        bottommenu: BottomMenu
+                    }
 
                 }
             ]

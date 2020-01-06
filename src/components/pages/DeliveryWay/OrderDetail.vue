@@ -1,5 +1,5 @@
 <template>
-  <div class="chcek-out order-detail">
+  <div class="check-out order-detail">
     <div class="purchase-detail">
       <div class="product-img-text">
         <div class="single-item">

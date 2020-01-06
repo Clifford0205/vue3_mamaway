@@ -1,5 +1,5 @@
 <template>
-  <div class="chcek-out">
+  <div class="check-out">
     <div class="purchase-detail">
       <div class="purchase">
         <div class="subtotal purchase-item">
