@@ -2,17 +2,20 @@
   <div class="cart-list-page">
     <Breadcrumb class="breadcrumb" />
     <ListContent />
+    <UseOfferMobile />
   </div>
 </template>
 
 <script>
 import Breadcrumb from "@/components/Breadcrumb";
 import ListContent from "@/components/pages/CartList/ListContent";
+import UseOfferMobile from "@/components/UseOfferMobile";
 
 export default {
   components: {
     Breadcrumb,
-    ListContent
+    ListContent,
+    UseOfferMobile
   }
 };
 </script>

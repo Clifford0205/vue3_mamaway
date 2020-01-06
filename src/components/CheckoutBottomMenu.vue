@@ -5,7 +5,7 @@
     <!-- fixed留白區域 -->
 
     <div class="checkout-bottom-menu">
-      <a class="coupon-dis-bar">
+      <a class="coupon-dis-bar" @click="openUseOffer">
         <p class="dis-bar-text">使用優惠折抵</p>
         <div class="dis-nu">
           <div class="num">-$10,000</div>
@@ -26,7 +26,7 @@
           <p>繼續購物</p>
         </button>
         <button class="menu-btn checkout">
-          <p>結帳(1)</p>
+          <p>結帳</p>
         </button>
       </div>
     </div>
@@ -34,6 +34,14 @@
 </template>
 
 <script>
-export default {};
+import $ from "jquery";
+export default {
+  methods: {
+    openUseOffer: function() {
+      console.log($(".use-offer-mobile"));
+      $(".use-offer-mobile").css({ display: "block" });
+    }
+  }
+};
 </script>
 

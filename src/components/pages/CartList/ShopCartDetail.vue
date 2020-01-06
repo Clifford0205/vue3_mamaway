@@ -197,7 +197,7 @@
 
           <div class="row4 add-price-row">
             <div class="full-gift">滿額贈</div>
-            <p class="deliver-way">不可超取</p>
+            <p class="deliver-warning">不可超取</p>
           </div>
         </div>
       </div>
