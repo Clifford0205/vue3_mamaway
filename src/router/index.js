@@ -16,6 +16,7 @@ import ProductList from '@/views/ProductList'
 import ProductIntro from '@/views/ProductIntro'
 import CartList from '@/views/CartList'
 import DeliveryWay from '@/views/DeliveryWay'
+import CartFinish from '@/views/CartFinish'
 
 
 //自訂的分頁文件
@@ -67,14 +68,20 @@ export default new VueRouter({
                         default: CartList,
                         checkoutbottommenu: CheckoutBottomMenu,
                     }
-                }, 
+                },
                 {
                     name: '配送方式',
                     path: '/cart_deliverway',
                     components: {
-                        default:DeliveryWay,
-                        sendorderbottommenu:SendOrderBottomMenu
+                        default: DeliveryWay,
+                        sendorderbottommenu: SendOrderBottomMenu
                     }
+                },
+                {
+                    name: '完成訂購',
+                    path: 'cart_finish',
+                    component: CartFinish
+
                 }
             ]
         },

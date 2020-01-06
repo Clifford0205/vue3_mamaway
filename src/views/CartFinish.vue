@@ -1,5 +1,5 @@
 <template>
-  <div class="cart-list-page">
+  <div class="cart-finish">
     <Breadcrumb class="breadcrumb" />
     <ListContent />
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 import Breadcrumb from "@/components/Breadcrumb";
-import ListContent from "@/components/pages/CartList/ListContent";
+import ListContent from "@/components/pages/CartFinish/ListContent";
 
 export default {
   components: {
@@ -17,9 +17,12 @@ export default {
 };
 </script>
 
-<style  lang="scss" scoped>
+<style  lang="scss" >
 @import "@/assets/helpers/_myset.scss";
 body {
+  .cart-finish {
+    max-width: 750px !important;
+  }
   .breadcrumb {
     display: flex;
     margin-top: 20px;
@@ -34,7 +37,7 @@ body {
 
   .BottomMenu {
     @include lg {
-      // display: none;
+      display: none;
     }
   }
 }
