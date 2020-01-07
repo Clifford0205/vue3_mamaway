@@ -73,20 +73,24 @@
           </ul>
 
           <ul class="expand-menu">
-            <li class="expand-item">
-              <a class="expand-menu-title">
+            <li class="expand-item" @click="openLittleItem" :class="{open_menu:MAMAWAY_CLUB}">
+              <a class="expand-menu-title MAMAWAY_CLUB">
                 MAMAWAY CLUB
                 <i class="fas fa-chevron-right transition"></i>
               </a>
             </li>
-            <li class="expand-item">
-              <a class="expand-menu-title">
+            <li class="expand-item" @click="openLittleItem" :class="{open_menu:mom_mom_wiki}">
+              <a class="expand-menu-title mom_mom_wiki">
                 媽媽百科
                 <i class="fas fa-chevron-right transition"></i>
               </a>
             </li>
-            <li class="expand-item for-mobile">
-              <a class="expand-menu-title">
+            <li
+              class="expand-item for-mobile"
+              @click="openLittleItem"
+              :class="{open_menu:shop_guide}"
+            >
+              <a class="expand-menu-title shop_guide">
                 購物指南
                 <i class="fas fa-chevron-right transition"></i>
               </a>
@@ -117,8 +121,12 @@
                 </li>
               </ul>
             </li>
-            <li class="expand-item for-mobile">
-              <a class="expand-menu-title">
+            <li
+              class="expand-item for-mobile"
+              @click="openLittleItem"
+              :class="{open_menu:about_us}"
+            >
+              <a class="expand-menu-title about_us">
                 關於我們
                 <i class="fas fa-chevron-right transition"></i>
               </a>
@@ -140,7 +148,11 @@
                 </li>
               </ul>
             </li>
-            <li class="expand-item for-mobile" @click="openLittleItem">
+            <li
+              class="expand-item for-mobile"
+              @click="openLittleItem"
+              :class="{open_menu:follow_us}"
+            >
               <a class="expand-menu-title follow_us">
                 FOLLOW US
                 <i class="fas fa-chevron-right transition"></i>
@@ -198,7 +210,11 @@ import carousel from "vue-owl-carousel";
 export default {
   data() {
     return {
-      follow_us: false
+      follow_us: false,
+      about_us: false,
+      shop_guide: false,
+      mom_mom_wiki: false,
+      MAMAWAY_CLUB: false
     };
   },
   components: {
@@ -216,10 +232,6 @@ export default {
       let tname = e.target.classList[1];
       let vm = this;
       vm[tname] = !vm[tname];
-      console.log(vm.follow_us);
-
-      vm.follow_us;
-      vm["follow_us"];
     }
   }
 };
