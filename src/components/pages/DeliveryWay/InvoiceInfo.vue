@@ -8,81 +8,69 @@
         </div>
 
         <div class="select-part">
-          <select name="invoice" id class="invoice-select">
-            <option value selected>雲端發票</option>
+          <select name="invoice" id class="invoice-select" @change="whatType">
+            <option value="雲端發票" selected>雲端發票</option>
+            <option value="發票捐贈">發票捐贈</option>
+            <option value="三聯式發票">三聯式發票</option>
+          
           </select>
         </div>
       </div>
 
       <div class="grey-area">
-        <div class="choose-invoive-type">
-          <div class="invoive-type">
-            <p class="text little-title">使用載具</p>
-          </div>
+        <div class="triple-invoice" v-if="invoiceValue=='三聯式發票'">
+          <div class="mail-and-phone triple-invoice-info">
+            <div class="bar-code single-item">
+              <div class="little-title">發票抬頭</div>
+              <input type="text" placeholder="請輸入發票抬頭" class="email-input text-input" />
+            </div>
 
-          <div class="select-part">
-            <select name="invoice" id class="invoice-select">
-              <option value selected>自然人憑證條碼</option>
-            </select>
-          </div>
-        </div>
+            <div class="bar-code-again single-item">
+              <div class="little-title">統一編號</div>
+              <input type="text" placeholder="請輸入統一編號" class="phone-input text-input" />
+            </div>
 
-        <div class="mail-and-phone bar-code-out">
-          <div class="bar-code single-item">
-            <div class="little-title">載具條碼</div>
-            <input type="text" placeholder="請輸入載具條碼" class="email-input text-input" />
-          </div>
-
-          <div class="bar-code-again single-item">
-            <div class="little-title">確認載具條碼</div>
-            <input type="text" placeholder="請再次輸入載具條碼" class="phone-input text-input" />
-          </div>
-        </div>
-      </div>
-
-      <div class="pickup-method">
-        <p class="text little-title">中獎發票寄送</p>
-        <div class="options">
-          <div class="single-option">
-            <input type="radio" name="location" value="Taipei" />
-            <p class="text">同收件人</p>
-          </div>
-
-          <div class="single-option">
-            <input type="radio" name="location" value="Taoyuan" />
-            <div class="text">
-              <p>其他地址</p>
+            <div class="bar-code-again single-item">
+              <div class="little-title">發票地址</div>
+              <input type="text" placeholder="請輸入發票地址" class="phone-input text-input" />
             </div>
           </div>
         </div>
-      </div>
+        <div class="donate" v-if="invoiceValue=='發票捐贈'">
+          <div class="choose-invoive-type">
+            <div class>
+              <p class="text little-title">捐贈對象</p>
+            </div>
 
-      <div class="grey-area">
-        <div class="choose-invoive-type"></div>
-
-        <div class="mail-and-phone invoice-send">
-          <div class="mail single-item">
-            <div class="little-title">姓名</div>
-            <input type="text" placeholder="請輸入姓名" class="email-input text-input" />
-          </div>
-
-          <div class="phone single-item">
-            <div class="little-title">行動電話</div>
-            <input type="text" placeholder="請輸入行動電話" class="phone-input text-input" />
-          </div>
-        </div>
-
-        <div class="contact-address">
-          <p class="address-title">聯絡地址</p>
-          <div class="mail-and-phone address-part">
-            <div class="select-part single-item">
-              <select name="country" id class="country-select">
-                <option value selected>中華民國</option>
+            <div class="select-part">
+              <select name="invoice" id class="invoice-select">
+                <option value selected>111 心路基金會</option>
               </select>
             </div>
+          </div>
+        </div>
+        <div class="cloud" v-if="invoiceValue=='雲端發票'">
+          <div class="choose-invoive-type">
+            <div class>
+              <p class="text little-title">使用載具</p>
+            </div>
 
-            <div class="address single-item">
-              <input type="text" placeholder="請輸入地址" class="address-input text-input" />
+            <div class="select-part">
+              <select name="invoice" id class="invoice-select">
+                <option value selected>自然人憑證條碼</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mail-and-phone bar-code-out">
+            <div class="bar-code single-item">
+              <div class="little-title">載具條碼</div>
+              <input type="text" placeholder="請輸入載具條碼" class="email-input text-input" />
+            </div>
+
+            <div class="bar-code-again single-item">
+              <div class="little-title">確認載具條碼</div>
+              <input type="text" placeholder="請再次輸入載具條碼" class="phone-input text-input" />
             </div>
           </div>
         </div>
@@ -101,5 +89,21 @@
 </template>
 
 <script>
-export default {};
+
+export default {
+  data() {
+    return {
+      invoiceType: ["雲端發票", "發票捐贈", "三聯式發票"],
+      invoiceValue: "雲端發票"
+    };
+  },
+  
+  methods: {
+    whatType: function(e) {
+      console.log(e.target.value);
+      let vm = this;
+      vm.invoiceValue = e.target.value;
+    }
+  }
+};
 </script>

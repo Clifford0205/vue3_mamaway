@@ -6994,7 +6994,7 @@ body {
 
                     .select-part {
                         border-bottom: 1px solid #A7ACB2;
-                        width: 50%;
+                        width: 49%;
 
                         @include lg {
                             width: 100%;
@@ -7048,6 +7048,53 @@ body {
                                 width: 100%;
                                 background-color: transparent;
                             }
+                        }
+
+                        .bar-code-again,
+                        .phone {
+                            margin-left: 20px;
+
+                            @include lg {
+                                margin-left: 0;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+
+                    .triple-invoice-info {
+                        margin-top: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        @include lg {
+                            margin-top: 20px;
+                            flex-wrap: wrap;
+                        }
+
+
+
+                        .single-item {
+                            flex-grow: 1;
+
+
+                            @include lg {
+                                flex-grow: unset;
+                                flex-basis: 100%;
+
+                            }
+
+                            input {
+                                width: 100%;
+                                background-color: transparent;
+                            }
+                        }
+
+                        .single-item:nth-child(3) {
+                            width: 49%;
+                            margin-left: 0;
+                            flex-grow: 0;
+                            margin-top: 20px;
+
                         }
 
                         .bar-code-again,
