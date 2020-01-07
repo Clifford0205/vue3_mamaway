@@ -44,7 +44,7 @@
                 <img src="~@/assets/img/icons/icn_like_g.svg" alt />
               </button>
 
-              <button class="man" @click.stop="openDrop" :class="{active:isMemActive}">
+              <button class="man" @mouseover="openDrop" :class="{active:isMemActive}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
                   <g transform="translate(-273.646 -519.741)">
                     <path
@@ -94,7 +94,7 @@
                   <a class="float-member-item">
                     <img src="~@/assets/img/icons/icn_ticket.svg" alt />
                     <p>抵用券</p>
-                    <p class="red-text">1000元</p>
+                    <p class="red-text">10張</p>
                   </a>
                 </li>
                 <li>
@@ -226,7 +226,7 @@ export default {
 
     openDrop: function() {
       let vm = this;
-      vm.isMemActive = !vm.isMemActive;
+      vm.isMemActive = true;
     },
 
     watchMem: function() {

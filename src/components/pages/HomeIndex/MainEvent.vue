@@ -11,7 +11,6 @@
             items: 2,
             nav: false,
             center: true,
-            autoWidth:true,
           },
           996: {
             item: 3

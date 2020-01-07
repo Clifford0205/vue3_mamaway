@@ -140,8 +140,8 @@
                 </li>
               </ul>
             </li>
-            <li class="expand-item for-mobile">
-              <a class="expand-menu-title">
+            <li class="expand-item for-mobile" @click="openLittleItem">
+              <a class="expand-menu-title follow_us">
                 FOLLOW US
                 <i class="fas fa-chevron-right transition"></i>
               </a>
@@ -197,7 +197,9 @@ import carousel from "vue-owl-carousel";
 
 export default {
   data() {
-    return {};
+    return {
+      follow_us: false
+    };
   },
   components: {
     carousel
@@ -208,6 +210,16 @@ export default {
       setTimeout(function() {
         $(".big-menu").css({ display: "none" });
       }, 500);
+    },
+    openLittleItem: function(e) {
+      console.log(e.target.classList[1]);
+      let tname = e.target.classList[1];
+      let vm = this;
+      vm[tname] = !vm[tname];
+      console.log(vm.follow_us);
+
+      vm.follow_us;
+      vm["follow_us"];
     }
   }
 };

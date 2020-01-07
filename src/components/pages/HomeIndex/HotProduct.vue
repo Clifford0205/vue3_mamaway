@@ -150,7 +150,7 @@
                 </object>
               </div>
             </div>
-            <p class="title">襯衫式印花孕哺洋裝(兩穿)</p>
+            <p class="title">襯衫式印花孕哺洋裝(兩穿)襯衫式印花孕哺洋裝(兩穿)襯衫式印花孕哺洋裝(兩穿)</p>
             <div class="d-flex price">
               <p class="o-price">NT$1380</p>
               <p class="new-price">NT$990</p>

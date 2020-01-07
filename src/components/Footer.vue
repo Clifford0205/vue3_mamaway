@@ -81,15 +81,6 @@
           <option value="calendar" data-image="~@/assets/img/photos/澳大利亞@2x.png">美國</option>
         </select>
 
-        <select title="Select your surfboard" class="selectpicker">
-          <option>Select...</option>
-          <option data-thumbnail="@/assets/img/photos/圖層 10@2x.png">Chrome</option>
-          <option data-thumbnail="images/icon-firefox.png">Firefox</option>
-          <option data-thumbnail="images/icon-ie.png">IE</option>
-          <option data-thumbnail="images/icon-opera.png">Opera</option>
-          <option data-thumbnail="images/icon-safari.png">Safari</option>
-        </select>
-
         <div class="inside-copyright">
           <p>© 2019 家瑞國際有限公司</p>
           <p>台北市中正區新生南路一段50號2樓之4</p>

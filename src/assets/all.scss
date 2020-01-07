@@ -583,7 +583,7 @@ body {
             height: 272px;
 
             @include lg {
-                height: 256px;
+                height: 270px;
             }
         }
 
@@ -1706,8 +1706,8 @@ body {
                             // height: 410px;
 
                             @include lg {
-                                width: 270px;
-                                height: 188px;
+                                // width: 270px;
+                                // height: 188px;
                             }
 
                             img {
@@ -1894,6 +1894,13 @@ body {
                         .title {
                             margin-top: 15px;
                             color: #525b67;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            height: 60px;
+                            line-height: 30px;
                         }
 
                         .price {

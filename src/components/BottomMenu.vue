@@ -5,7 +5,7 @@
     <!-- fixed留白區域 -->
     <div class="bottom-menu">
       <div class></div>
-      <button class="menu-btn">
+      <button class="menu-btn" @click.prevent="openMenu">
         <img src="~@/assets/img/icons/icn_menu.svg" alt />
         <p>主選單</p>
       </button>
@@ -37,6 +37,14 @@ import $ from "jquery";
 export default {
   data() {
     return {};
+  },
+  methods: {
+    openMenu: function() {
+      $(".big-menu").css({ display: "flex" });
+      setTimeout(function() {
+        $(".big-menu").addClass("menu-show");
+      }, 500);
+    }
   }
 };
 </script>

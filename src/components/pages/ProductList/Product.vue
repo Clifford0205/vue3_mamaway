@@ -1,5 +1,5 @@
 <template>
-  <div class="single-product col-lg-3 col-6">
+  <div class="single-product col-lg-3 col-6 col-lg-4">
     <div class="item">
       <router-link :to="{name:'商品詳細頁'}">
         <div class="img-area">
