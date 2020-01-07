@@ -84,15 +84,27 @@
     </div>
 
     <button class="continue-shopping-btn">繼續選購</button>
-    <button class="checkout-btn">
-      結帳
-      <span>(1)</span>
-    </button>
+    <button class="checkout-btn">結帳</button>
   </div>
 </template>
 
 <script>
-export default {};
+import $ from "jquery";
+export default {
+  methods: {
+    handleScroll(event) {
+      let checkout = document.querySelector(".check-out");
+      let checkoutTop = checkout.scrollTop;
+      console.log($(window).scrollTop());
+    }
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+};
 </script>
 
 

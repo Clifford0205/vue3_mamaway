@@ -1,7 +1,7 @@
 <template>
   <div class="shop-cart-detail">
     <div class="full-gift-2000">
-      <div class="add-title">
+      <div class="add-title-red">
         <div class="the-line"></div>
         <p class="title-text">2000元滿額贈</p>
         <div class="the-line"></div>

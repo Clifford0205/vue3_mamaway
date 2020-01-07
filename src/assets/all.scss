@@ -5377,6 +5377,25 @@ body {
 
                         .title-text {
                             font-size: 28px;
+                            color: #006ABC;
+                            margin: 0 20px;
+                        }
+
+                        .the-line {
+                            height: 4px;
+                            background-color: #006ABC;
+                            width: 20%;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .add-title-red {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .title-text {
+                            font-size: 28px;
                             color: #C22119;
                             margin: 0 20px;
                         }
@@ -5621,12 +5640,94 @@ body {
                     height: 10px;
                     background-color: #F3F4F7;
                     display: none;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     margin-right: -5.5%;
                     margin-left: -5.5%;
 
                     @include lg {
                         display: block;
+                    }
+                }
+
+                .order-product-detail {
+                    @include lg {
+                        display: none;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    margin-top: 10px;
+                    padding: 20px;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 10px;
+                    color: #525B67;
+
+
+                    .product-img-text {
+                        background-color: #F3F4F7;
+                        border-radius: 5px;
+                        padding: 5px 30px;
+                        margin-top: 10px;
+
+                        .single-item {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            border-bottom: 1px solid #A7ACB2;
+                            padding-bottom: 5px;
+
+
+                            @include lg {
+                                flex-wrap: wrap;
+                            }
+
+
+                            .order-img {
+                                max-width: 60px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .order-product-describe {
+                                margin-left: 15px;
+                                max-width: 55%;
+
+                                .p-name {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    max-width: 100%;
+                                    margin-top: 10px;
+                                }
+
+                                .p-style {
+                                    margin-top: 10px;
+                                }
+                            }
+
+                            .order-product-amount {
+                                margin-left: auto;
+
+                                @include lg {
+                                    margin-left: 75px;
+                                    flex-basis: 50%;
+                                }
+                            }
+
+                            .order-product-price {
+                                margin-left: 30px;
+                                font-weight: bolder;
+
+                                @include lg {
+                                    margin-left: auto;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -6031,7 +6132,8 @@ body {
                     padding: 20px;
                     box-shadow: 0px 3px 6px #00000029;
                     border-radius: 10px;
-                    // position: fixed;
+                    position: fixed;
+                    width: 30%;
                     z-index: 0;
 
                     .purchase-detail {
@@ -6128,6 +6230,7 @@ body {
                                     border: 1px solid #525B67;
                                     font-size: 14px;
                                     padding: 8px 15px;
+                                    width: 70%;
                                 }
 
                                 .money-btn {
@@ -6189,8 +6292,9 @@ body {
                                         width: 0;
                                         height: 0;
                                         border-style: solid;
-                                        border-width: 0 0 25px 25px;
-                                        border-color: transparent transparent #FD4337 transparent;
+                                        border-width: 12px;
+                                        border-color: transparent #FD4337 #FD4337 transparent;
+                                        border-bottom-right-radius: 10px;
                                         bottom: 0;
                                         right: 0;
 
@@ -6397,6 +6501,7 @@ body {
 
                         // flex: 0 0 50%;
                         @include lg {
+                            margin-top: 20px;
                             flex-basis: 100%;
                         }
 
@@ -7212,6 +7317,7 @@ body {
                 left: 0;
                 right: 0;
                 top: 0;
+                display: none;
 
                 .use-offer-mobile {
                     background-color: #fff;

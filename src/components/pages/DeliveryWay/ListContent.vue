@@ -4,6 +4,7 @@
       <div class="row">
         <div class="col-lg-7">
           <ShopProcess />
+          <OrderProductDetail />
           <ChoosePayWay />
           <ChooseDeliveryWay />
           <RecipientInformation />
@@ -20,6 +21,7 @@
 
 <script>
 import ShopProcess from "./ShopProcess";
+import OrderProductDetail from "./OrderProductDetail";
 import ChoosePayWay from "./ChoosePayWay";
 import ChooseDeliveryWay from "./ChooseDeliveryWay";
 import RecipientInformation from "./RecipientInformation";
@@ -30,6 +32,7 @@ import MobileTotal from "./MobileTotal";
 export default {
   components: {
     ShopProcess,
+    OrderProductDetail,
     ChoosePayWay,
     ChooseDeliveryWay,
     RecipientInformation,

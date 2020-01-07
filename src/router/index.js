@@ -68,7 +68,7 @@ export default new VueRouter({
                 },
                 {
                     name: '購物車清單',
-                    path: '/cart-list',
+                    path: '/cart_list',
                     components: {
                         default: CartList,
                         checkoutbottommenu: CheckoutBottomMenu,
