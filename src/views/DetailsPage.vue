@@ -5,9 +5,11 @@
       <AddInCart />
       <ProductContent />
       <SeeSharing />
-      <Recommend />
-      <RelatedProducts />
-      <BrowsingHistory />
+      <div class="three-carousels">
+        <Recommend />
+        <RelatedProducts />
+        <BrowsingHistory />
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +39,7 @@ export default {
 <style  lang="scss" scoped>
 @import "@/assets/helpers/_myset.scss";
 .details-page {
+  color: #525b67;
   .breadcrumb {
     display: flex;
     margin-top: 20px;
@@ -44,6 +47,12 @@ export default {
 
     @include lg {
       display: none !important;
+    }
+  }
+
+  .three-carousels {
+    @include lg {
+      background-color: #fff;
     }
   }
 }

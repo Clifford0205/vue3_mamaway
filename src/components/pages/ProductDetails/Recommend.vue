@@ -10,8 +10,8 @@
         :loop="true"
         :responsive="{
           0: {
-            items: 1,
-            autoWidth:true,
+            items: 2,
+            
             nav: false,
             center: true,
             margin: 20

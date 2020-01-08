@@ -36,37 +36,40 @@
 
     <div class="product-detail">
       <div class="mobile-content">
-        <a class="expand-item" @click.prevent="expandItem">
-          <div class="expand-menu-title">
+        <div class="expand-item" :class="{open_menu:size_chart}">
+          <a class="expand-menu-title size_chart" @click.prevent="expandSizeChart">
             尺寸表
             <i class="fas fa-chevron-right transition"></i>
-          </div>
+          </a>
 
           <div class="expand-content transition"></div>
-        </a>
+        </div>
       </div>
     </div>
 
     <div class="product-detail">
       <div class="mobile-content">
-        <a class="expand-item" @click.prevent="expandItem">
-          <div class="expand-menu-title">
+        <div class="expand-item" :class="{open_menu:product_description}">
+          <a
+            class="expand-menu-title product_description"
+            @click.prevent="expandProductDescription"
+          >
             商品描述
             <i class="fas fa-chevron-right transition"></i>
-          </div>
+          </a>
 
           <div class="expand-content transition"></div>
-        </a>
+        </div>
       </div>
     </div>
 
     <div class="product-detail">
       <div class="mobile-content">
-        <a class="expand-item" @click.prevent="expandItem">
-          <div class="expand-menu-title">
+        <div class="expand-item" :class="{open_menu:product_quality}">
+          <a class="expand-menu-title product_quality" @click.prevent="expandProductQuality">
             商品材質
             <i class="fas fa-chevron-right transition"></i>
-          </div>
+          </a>
 
           <div class="expand-content transition">
             <ul class="texture">
@@ -78,17 +81,17 @@
               <li>產地：台灣</li>
             </ul>
           </div>
-        </a>
+        </div>
       </div>
     </div>
 
     <div class="product-detail">
       <div class="mobile-content">
-        <a class="expand-item" @click.prevent="expandItem">
-          <div class="expand-menu-title">
+        <div class="expand-item" :class="{open_menu:product_details}">
+          <a class="expand-menu-title product_details" @click="expandProductDetails">
             商品詳情
             <i class="fas fa-chevron-right transition"></i>
-          </div>
+          </a>
 
           <div class="expand-content transition">
             <div class="Intro-img-mobile">
@@ -99,7 +102,7 @@
               <img src="~@/assets/img/photos/尺寸表.svg" alt />
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -113,15 +116,36 @@ export default {
   data() {
     return {
       // expand: false
+      size_chart: false,
+      product_description: false,
+      product_quality: false,
+      product_details: false
     };
   },
   components: {
     carousel
   },
   methods: {
-    expandItem: function() {
-      // this.expand = !this.expand;
-      $(".expand-item").toggleClass("open-menu");
+    expandItem: function(e) {
+      console.log(e.target.classList[1]);
+      let tname = e.target.classList[1];
+      let vm = this;
+      vm[tname] = !vm[tname];
+    },
+    expand(name) {
+      this[name] = !this[name];
+    },
+    expandSizeChart() {
+      this.expand("size_chart");
+    },
+    expandProductDescription() {
+      this.expand("product_description");
+    },
+    expandProductQuality() {
+      this.expand("product_quality");
+    },
+    expandProductDetails() {
+      this.expand("product_details");
     }
   }
 };

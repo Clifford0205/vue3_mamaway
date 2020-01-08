@@ -17,7 +17,7 @@
             margin: 5
           },
           996: {
-            dots: false,
+            dots: true,
             items: 3
           }
         }"

@@ -228,7 +228,6 @@ export default {
       }, 500);
     },
     openLittleItem: function(e) {
-      console.log(e.target.classList[1]);
       let tname = e.target.classList[1];
       let vm = this;
       vm[tname] = !vm[tname];

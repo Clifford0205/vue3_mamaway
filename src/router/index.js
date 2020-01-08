@@ -3,15 +3,12 @@ import VueRouter from 'vue-router'
 //官方的元件
 
 import Home from '@/views/Home';
-import SortMenu from '@/components/SortMenu';
 import SortMenuImg from '@/components/SortMenuImg';
 import BottomMenu from '@/components/BottomMenu';
 import CheckoutBottomMenu from '@/components/CheckoutBottomMenu';
 import SendOrderBottomMenu from '@/components/SendOrderBottomMenu';
 import ProductDetails from '@/views/ProductDetails'
 import DetailsPage from '@/views/DetailsPage'
-import DetailsPage2 from '@/views/DetailsPage2'
-import AddInCartMobile from '@/components/AddInCartMobile'
 import HomeIndex from '@/views/HomeIndex'
 import ProductList from '@/views/ProductList'
 import ProductIntro from '@/views/ProductIntro'
@@ -56,15 +53,6 @@ export default new VueRouter({
                         sortmenuimg: SortMenuImg,
                         bottommenu: BottomMenu,
                     },
-                },
-                {
-                    name: '商品詳細頁2',
-                    path: '/product_details2',
-                    components: {
-                        default: DetailsPage2,
-                        addincartmobile: AddInCartMobile,
-                    }
-
                 },
                 {
                     name: '購物車清單',
