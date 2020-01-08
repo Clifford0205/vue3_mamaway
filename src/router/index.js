@@ -39,7 +39,7 @@ export default new VueRouter({
                 },
                 {
                     name: '商品列表',
-                    path: 'product_list',
+                    path: '/product_list',
                     components: {
                         default: ProductList,
                         bottommenu: BottomMenu,
@@ -47,7 +47,7 @@ export default new VueRouter({
                 },
                 {
                     name: '商品介紹頁',
-                    path: 'product_intro',
+                    path: '/product_intro',
                     components: {
                         default: ProductIntro,
                         sortmenuimg: SortMenuImg,

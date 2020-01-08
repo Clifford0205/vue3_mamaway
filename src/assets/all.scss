@@ -1254,7 +1254,7 @@ body {
                             font-size: 16px;
 
                             li {
-                                margin-top: 15px;
+                                margin-top: 20px;
                             }
 
                             .little-list {
@@ -3839,6 +3839,7 @@ body {
             padding-right: 0px;
             padding-left: 0px;
             margin: 0 auto;
+            position: relative;
 
             @include lg {
                 background-color: #F3F4F7;
@@ -4052,6 +4053,7 @@ body {
                     padding: 15px;
                     align-items: center;
                     margin-top: 10px;
+                    display: flex;
 
                     .red {
                         color: #C22119;
@@ -4282,7 +4284,9 @@ body {
 
                 .the-line {
                     // width: 1140px;
-                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
                     height: 2px;
                     background-color: #D3D8DE;
 
@@ -4293,48 +4297,61 @@ body {
 
                 }
 
-                .product-description {
-                    margin-top: 30px;
+                .content-area {
 
                     @include lg {
                         display: none;
                     }
 
-                    ul {
+                    .product-description {
+                        margin-top: 30px;
+
+
+
+                        ul {
+                            li {
+                                margin-bottom: 12px;
+                            }
+                        }
+
+                        .inform {
+                            margin-top: 30px;
+                        }
+                    }
+
+                    .Intro-img {
+                        margin-top: 30px;
+                        max-width: 900px;
+
+
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .size-table {
+                        img {
+                            width: 100%;
+                        }
+
+                        margin-bottom: 40px;
+                    }
+
+                }
+
+                .product_quality-area {
+                    @include lg {
+                        display: none;
+                    }
+
+                    .texture {
+                        margin-top: 30px;
+
                         li {
                             margin-bottom: 12px;
                         }
                     }
-
-                    .inform {
-                        margin-top: 30px;
-                    }
-                }
-
-                .Intro-img {
-                    margin-top: 30px;
-                    max-width: 900px;
-
-                    @include lg {
-                        width: 100%;
-                        display: none;
-                    }
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .size-table {
-                    @include lg {
-                        display: none;
-                    }
-
-                    img {
-                        width: 100%;
-                    }
-
-                    margin-bottom: 40px;
                 }
 
 
@@ -4582,11 +4599,12 @@ body {
                 margin-bottom: 60px;
 
                 h2 {
-                    font-size: 38px;
+                    font-size: 26px;
                     text-align: left;
                     padding-top: 0;
                     padding-left: 20px;
                     letter-spacing: 1.9px;
+                    color: #000;
                 }
 
                 .the-line {
@@ -4594,6 +4612,10 @@ body {
                     height: 2px;
                     background-color: #F3F4F7;
                     margin-top: 30px;
+
+                    @include lg {
+                        margin-top: 15px;
+                    }
                 }
 
                 .carousel-area {
@@ -4690,6 +4712,13 @@ body {
                             .title {
                                 margin-top: 15px;
                                 color: #525b67;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                height: 60px;
+                                line-height: 30px;
                             }
 
                             .price {

@@ -9,7 +9,7 @@
         </li>
         <li>
           <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+            <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
           </a>
         </li>
         <li>
@@ -19,7 +19,7 @@
         </li>
         <li>
           <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+            <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
           </a>
         </li>
         <li>
@@ -108,22 +108,36 @@
             <p class="special-price">990</p>
           </div>
 
-          <a class="price-activity d-flex">
+          <a class="price-activity">
             <p class="red">活動</p>
             <p class="the-way">秋冬新品 買2送1</p>
 
             <img src="~@/assets/img/icons/icn_arrow_r_b.svg" class="arrow" alt />
           </a>
 
-          <a class="price-activity d-flex">
+          <a class="price-activity">
             <p class="red">活動</p>
             <p class="the-way">全館滿$5000送媽媽包</p>
 
             <img src="~@/assets/img/icons/icn_arrow_r_b.svg" class="arrow" alt />
           </a>
 
-          <p class="more-activity">
-            <a href>看更多活動</a>
+          <a class="price-activity">
+            <p class="red">活動</p>
+            <p class="the-way">全館滿$5000送媽媽包</p>
+
+            <img src="~@/assets/img/icons/icn_arrow_r_b.svg" class="arrow" alt />
+          </a>
+
+          <a class="price-activity">
+            <p class="red">活動</p>
+            <p class="the-way">全館滿$5000送媽媽包</p>
+
+            <img src="~@/assets/img/icons/icn_arrow_r_b.svg" class="arrow" alt />
+          </a>
+
+          <p class="more-activity" v-if="isMoreActive">
+            <a href @click.prevent="showAllActivity">看更多活動</a>
           </p>
         </div>
       </div>
@@ -184,7 +198,9 @@ import carousel from "vue-owl-carousel";
 
 export default {
   data() {
-    return {};
+    return {
+      isMoreActive: true
+    };
   },
   components: {
     carousel
@@ -196,11 +212,27 @@ export default {
     },
     beforePath: function() {
       this.$router.go(-1);
+    },
+    showAllActivity() {
+      let vm = this;
+      let a_bar = document.querySelectorAll(".price-activity");
+      console.log(a_bar);
+      for (let i = 0; i < a_bar.length; i++) {
+        a_bar[i].style.display = "flex";
+      }
+      vm.isMoreActive = false;
     }
-    // closeDArea: function() {
-    //   $(".download-area").css({ display: "none" });
-    //   $(".makeup-block").addClass("short");
-    // }
+  },
+
+  mounted() {
+    let a_bar = document.querySelectorAll(".price-activity");
+    console.log(a_bar);
+    for (let i = 0; i < a_bar.length; i++) {
+      if (i > 1) {
+        console.log(a_bar[i]);
+        a_bar[i].style.display = "none";
+      }
+    }
   }
 };
 </script>

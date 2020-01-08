@@ -1,7 +1,7 @@
 <template>
   <div class="details-page">
     <div>
-      <Breadcrumb class="breadcrumb" />
+      <Breadcrumb />
       <AddInCart />
       <ProductContent />
       <SeeSharing />
@@ -44,6 +44,7 @@ export default {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 15px !important;
 
     @include lg {
       display: none !important;

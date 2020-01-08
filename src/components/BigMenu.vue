@@ -23,7 +23,7 @@
           <div class="list-title">孕哺服飾</div>
           <ul class="mother-list">
             <li>
-              <a href>孕哺內睡衣</a>
+              <router-link :to="{name:'商品詳細頁'}">孕哺內睡衣</router-link>
               <ul class="little-list">
                 <li>
                   <a href>月子內衣</a>
@@ -49,19 +49,19 @@
               </ul>
             </li>
             <li>
-              <a href>產後/產前必須</a>
+              <router-link :to="{name:'商品詳細頁'}">產後/產前必須</router-link>
             </li>
             <li>
-              <a href>寶貝衣服</a>
+              <router-link :to="{name:'商品詳細頁'}">寶貝衣服</router-link>
             </li>
             <li>
-              <a href>雙邊電動吸乳</a>
+              <router-link :to="{name:'商品詳細頁'}">雙邊電動吸乳</router-link>
             </li>
             <li>
-              <a href>背巾/背帶</a>
+              <router-link :to="{name:'商品詳細頁'}">背巾/背帶</router-link>
             </li>
             <li>
-              <a href>抗菌床寢</a>
+              <router-link :to="{name:'商品詳細頁'}">抗菌床寢</router-link>
             </li>
             <!-- 該項目不一定會有 -->
             <li class="sales">
