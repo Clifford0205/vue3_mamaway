@@ -3861,8 +3861,7 @@ body {
 
             .product-photo {
                 display: flex;
-                padding-right: 15px;
-                padding-left: 15px;
+
 
                 @include lg {
                     display: none;
@@ -3875,19 +3874,22 @@ body {
                     margin-right: 15px;
                     max-height: 650px;
 
+                    li.active {
+                        border: 3px solid #525B67;
+                    }
+
                     li {
                         margin-bottom: 6.5px;
+                        max-width: 88px;
+                        max-height: 125px;
 
-                        a {
-                            max-width: 88px;
-                            max-height: 120px;
-                            display: block;
 
-                            img {
-                                width: 100%;
-                                object-fit: cover;
-                            }
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
                         }
+
                     }
                 }
 

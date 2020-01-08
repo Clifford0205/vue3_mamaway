@@ -1,42 +1,45 @@
 <template>
   <div class="row add-in-cart">
-    <div class="col-lg-6 product-photo">
-      <ul class="album">
-        <li>
-          <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
-          </a>
-        </li>
-        <li>
-          <a>
-            <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
-          </a>
-        </li>
-      </ul>
-      <div class="big-img">
-        <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
-        <button class="arrow arrow-left">
-          <img src="~@/assets/img/icons/icn_arrow_l_b.svg" alt />
-        </button>
-        <button class="arrow arrow-right">
-          <img src="~@/assets/img/icons/icn_arrow_r_b.svg" alt />
-        </button>
-      </div>
+    <div class="col-lg-6">
+      <ProductPhoto :album="photos" />
+      <!-- <div class="product-photo">
+        <ul class="album">
+          <li>
+            <a>
+              <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
+            </a>
+          </li>
+        </ul>
+        <div class="big-img">
+          <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
+          <button class="arrow arrow-left">
+            <img src="~@/assets/img/icons/icn_arrow_l_b.svg" alt />
+          </button>
+          <button class="arrow arrow-right">
+            <img src="~@/assets/img/icons/icn_arrow_r_b.svg" alt />
+          </button>
+        </div>
+      </div>-->
     </div>
 
     <div class="col-lg-6 mobile-slider">
@@ -195,15 +198,24 @@
 <script>
 import $ from "jquery";
 import carousel from "vue-owl-carousel";
+import ProductPhoto from "@/components/pages/ProductDetails/ProductPhoto";
 
 export default {
   data() {
     return {
-      isMoreActive: true
+      isMoreActive: true,
+      photos: [
+        "https://images2.imgbox.com/d3/eb/RyWGmKXT_o.png",
+        "https://images2.imgbox.com/be/12/cZ9YajXz_o.png",
+        "https://images2.imgbox.com/d3/eb/RyWGmKXT_o.png",
+        "https://images2.imgbox.com/be/12/cZ9YajXz_o.png",
+        "https://images2.imgbox.com/d3/eb/RyWGmKXT_o.png"
+      ]
     };
   },
   components: {
-    carousel
+    carousel,
+    ProductPhoto
   },
 
   methods: {
