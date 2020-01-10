@@ -7,12 +7,14 @@
         :dots="false"
         :items="7"
         :loop="true"
+        :slideBy="3"
         :nav="true"
         :margin="15"
         :responsive="{
           0: {
             dots: true,
             items: 3,
+           
             nav: false,
             center: true,
             margin: 6
@@ -81,6 +83,7 @@
             </div>
           </a>
         </div>
+
         <div class="item">
           <a href>
             <div class="img-area">

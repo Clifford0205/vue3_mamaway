@@ -1,0 +1,37 @@
+body {
+    #app {
+
+        .event-description {
+            max-width: 1200px;
+            width: 90%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin: 0 auto;
+            color: #525B67;
+
+            // * {
+            //     border: 1px solid red;
+            // }
+
+            @include lg {
+                margin-bottom: 120px;
+                width: 100%;
+            }
+
+
+
+            .long-img {
+                margin-top: 20px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+
+
+
+        }
+    }
+}

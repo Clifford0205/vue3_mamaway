@@ -89,6 +89,10 @@
         </div>
       </div>
     </div>
+
+    <div class="copyright forweb">
+      <p>© 2020 Mamaway Maternity. All Rights Reserved.</p>
+    </div>
   </div>
 </template>
 
