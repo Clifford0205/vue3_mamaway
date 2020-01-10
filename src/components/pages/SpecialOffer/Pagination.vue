@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination">
+  <div class>
     <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li class="page-item">

@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="top-float">
-      <div class="top-area">
-        <section class="download-area">
+      <div class="top-area" :class="{longer:babyDownLoad}">
+        <section class="download-area" v-show="babyDownLoad">
           <a class="close-d" @click="closeDArea">
             <img src="~@/assets/img/icons/icn_close-1.svg" alt />
           </a>
@@ -19,7 +19,7 @@
               <img src="~@/assets/img/icons/LOGO2@2x.png" alt class="logo" />
             </div>
             <div class="features ml-auto d-flex justify-content-end">
-              <button class="open-sch">
+              <button class="open-sch" @click="openMobileSeach">
                 <img src="~@/assets/img/icons/icn_search.svg" alt />
               </button>
 
@@ -128,14 +128,18 @@
           </div>
         </nav>
 
-        <div class="search-area transition" style="display: none;">
+        <div
+          class="search-area transition"
+          v-show="mobileSearchArea"
+          :class="{showit:mobileSearchArea2}"
+        >
           <div class="search-bar-area d-flex align-items-center justify-content-between">
             <input type="text" placeholder="search" class="search-bar" />
             <button class="s-btn">
               <img src="~@/assets/img/icons/icn_search.svg" alt />
             </button>
           </div>
-          <button class="cancel">取消</button>
+          <button class="cancel" @click="closeMobileSearch">取消</button>
         </div>
       </div>
 
@@ -171,7 +175,10 @@ export default {
       schNoShow: false,
       schBarShow: false,
       isMemActive: false,
-      memberShow: "none"
+      memberShow: "none",
+      mobileSearchArea: false,
+      mobileSearchArea2: false,
+      babyDownLoad: true
     };
   },
   components: {
@@ -185,7 +192,8 @@ export default {
       }, 500);
     },
     closeDArea: function() {
-      $(".download-area").css({ display: "none" });
+      let vm = this;
+      vm.babyDownLoad = false;
       $(".makeup-block").addClass("short");
     },
 
@@ -236,6 +244,24 @@ export default {
       } else {
         vm.memberShow = "none";
       }
+    },
+
+    //開啟手機版搜尋
+    openMobileSeach() {
+      let vm = this;
+      vm.mobileSearchArea = true;
+      setTimeout(function() {
+        vm.mobileSearchArea2 = true;
+      }, 500);
+    },
+
+    //關掉手機版搜尋
+    closeMobileSearch() {
+      let vm = this;
+      vm.mobileSearchArea2 = false;
+      setTimeout(function() {
+        vm.mobileSearchArea2 = false;
+      }, 500);
     }
   },
 
@@ -266,5 +292,4 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 

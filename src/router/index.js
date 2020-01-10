@@ -15,6 +15,7 @@ import ProductIntro from '@/views/ProductIntro'
 import CartList from '@/views/CartList'
 import DeliveryWay from '@/views/DeliveryWay'
 import CartFinish from '@/views/CartFinish'
+import SpecialOffer from '@/views/SpecialOffer'
 
 
 //自訂的分頁文件
@@ -78,6 +79,13 @@ export default new VueRouter({
                         bottommenu: BottomMenu
                     }
 
+                }, {
+                    name: '特惠活動頁',
+                    path: '/special_offer',
+                    components: {
+                        default: SpecialOffer,
+                        bottommenu: BottomMenu
+                    }
                 }
             ]
         },

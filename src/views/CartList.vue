@@ -1,6 +1,6 @@
 <template>
   <div class="cart-list-page">
-    <Breadcrumb class="breadcrumb" />
+    <Breadcrumb />
     <ListContent />
     <UseOfferMobile />
   </div>

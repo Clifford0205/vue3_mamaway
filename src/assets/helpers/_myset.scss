@@ -79,3 +79,24 @@ h6,
 .h6 {
     font-weight: unset;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    #app {
+        position: relative;
+
+
+        .transition {
+            transition: 0.4s;
+        }
+
+        button:focus {
+            outline: 0px dotted;
+            outline: 0px auto -webkit-focus-ring-color;
+        }
+    }
+
+}

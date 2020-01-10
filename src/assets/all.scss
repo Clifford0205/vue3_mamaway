@@ -3,6 +3,8 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./helpers/_myset";
 @import "./helpers/_reset";
+@import "./pages/SpecialOffer";
+
 
 .modal-open {
     padding: 0 !important;
@@ -10,23 +12,10 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    position: relative;
 
 
     #app {
-        position: relative;
 
-
-        .transition {
-            transition: 0.4s;
-        }
-
-        button:focus {
-            outline: 0px dotted;
-            outline: 0px auto -webkit-focus-ring-color;
-        }
 
         .top-float {
             position: fixed;
@@ -38,369 +27,385 @@ body {
             left: 0;
             background-color: #fff;
 
-            .download-area {
-                display: none;
-
-                @include lg {
-                    background-color: #fd4337;
-                    font-size: 14px;
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    padding: 10px 10px;
-
-                    button {
-                        background-color: unset;
-                        border: none;
-                        padding: 0;
-
-                        img {
-                            width: 32px;
-                            height: 32px;
-                        }
-                    }
-
-                    p {
-                        margin-left: 5px;
-                    }
-
-                    .d-btn {
-                        margin-left: auto;
-                        color: #fff;
-                        padding: 3px 20px;
-                        border: 1px solid #fff;
-                        border-radius: 3px;
-                    }
+            .top-area.longer {
+                .search-area {
+                    top: 105px
                 }
             }
 
-            nav {
-                padding: 10px 13px;
-                width: 100%;
-                box-shadow: 3px 5px 10px #51515133;
+            .top-area {
+                position: relative;
 
-                background-color: #fff;
+                .download-area {
+                    display: none;
 
-                .nav-inside {
-                    position: relative;
-
-                    .web-menu {
-                        position: absolute;
-                        top: 50%;
-                        transform: translate(0, -50%);
-                        left: 30px;
-
-                        @include lg {
-                            display: none;
-                        }
-                    }
-
-                    .theLogo {
-                        width: 224px;
-                        height: 75px;
-
-                        @include lg {
-                            margin: 0 auto;
-                            display: block;
-                            width: 90px;
-                            height: 30px;
-                        }
-                    }
-
-                    .logo {
-                        width: 100%;
-                    }
-
-                    .features {
-                        position: absolute;
-                        right: 0;
-                        top: 50%;
-                        transform: translate(0, -50%);
+                    @include lg {
+                        background-color: #fd4337;
+                        font-size: 14px;
+                        color: #fff;
                         display: flex;
                         align-items: center;
-                        width: 40%;
+                        padding: 10px 10px;
 
                         button {
                             background-color: unset;
                             border: none;
-                            height: 28px;
-                            width: 28px;
-                            margin-right: 40px;
                             padding: 0;
-                            box-sizing: content-box;
-
-                            @include lg {
-                                height: fit-content;
-                                width: fit-content;
-                                margin-right: 0px;
-                                margin-left: 20px;
-                            }
 
                             img {
-                                width: 100%;
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+
+                        p {
+                            margin-left: 5px;
+                        }
+
+                        .d-btn {
+                            margin-left: auto;
+                            color: #fff;
+                            padding: 3px 20px;
+                            border: 1px solid #fff;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+
+                nav {
+                    padding: 10px 13px;
+                    width: 100%;
+                    box-shadow: 3px 5px 10px #51515133;
+
+                    background-color: #fff;
+
+                    .nav-inside {
+                        position: relative;
+
+                        .web-menu {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            left: 30px;
+
+                            @include lg {
+                                display: none;
+                            }
+                        }
+
+                        .theLogo {
+                            width: 224px;
+                            height: 75px;
+
+                            @include lg {
+                                margin: 0 auto;
+                                display: block;
+                                width: 90px;
+                                height: 30px;
+                            }
+                        }
+
+                        .logo {
+                            width: 100%;
+                        }
+
+                        .features {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            display: flex;
+                            align-items: center;
+                            width: 40%;
+
+                            button {
+                                background-color: unset;
+                                border: none;
                                 height: 28px;
                                 width: 28px;
-                            }
-                        }
+                                margin-right: 40px;
+                                padding: 0;
+                                box-sizing: content-box;
 
-                        .man {
-                            svg {
-                                .man-icon {
-                                    fill: #a7acb2;
+                                @include lg {
+                                    height: fit-content;
+                                    width: fit-content;
+                                    margin-right: 0px;
+                                    margin-left: 20px;
                                 }
 
-                                .back {
-                                    fill: none;
-                                }
-                            }
-                        }
-
-                        .man.active {
-                            svg {
-                                .man-icon {
-                                    fill: #FD4337;
-                                }
-
-                                .back {
-                                    fill: none;
-                                }
-                            }
-                        }
-
-                        .cart {
-                            position: relative;
-
-                            .num {
-                                position: absolute;
-                                top: 5px;
-                                right: -4px;
-                                font-size: 12px;
-                                width: 18px;
-                                // height: 14px;
-                                padding: 1px 0;
-                                border-radius: 10px;
-                                background-color: #FD4337;
-                                color: #fff;
-
-                            }
-                        }
-
-                        .like {
-                            @include lg {
-                                display: none;
-                            }
-                        }
-
-                        .man {
-                            @include lg {
-                                display: none;
-                            }
-                        }
-
-                        .search-btn {
-                            margin-right: 0;
-                        }
-
-                        .open-sch {
-                            display: none;
-
-                            @include lg {
-                                display: inline-block;
-                            }
-                        }
-
-                        .open-sch-forweb {
-                            opacity: 1;
-
-                            @include lg {
-                                display: none;
-                            }
-                        }
-
-                        .open-sch-forweb.noshow {
-                            opacity: 0;
-                        }
-
-
-                        .search-for-web {
-                            margin-right: 40px;
-                            height: 40px;
-                            width: 40%;
-                            display: none;
-                            opacity: 0;
-
-                            .search-bar-area {
-                                background-color: #f8f9fa;
-                                // width: 70%;
-                                border-radius: 5px;
-                                height: 100%;
-
-                                // height: 24px;
-                                // padding: 3px 10px;
-                                .search-bar {
-                                    border: none;
-                                    background-color: unset;
-                                    font-size: 14px;
-                                    height: 100%;
+                                img {
                                     width: 100%;
+                                    height: 28px;
+                                    width: 28px;
                                 }
+                            }
 
-                                .s-btn {
-                                    background-color: unset;
-                                    border: none;
+                            .man {
+                                svg {
+                                    .man-icon {
+                                        fill: #a7acb2;
+                                    }
 
-                                    img {
-                                        height: 14px;
-                                        width: 14px;
+                                    .back {
+                                        fill: none;
                                     }
                                 }
                             }
 
-                            @include lg {
+                            .man.active {
+                                svg {
+                                    .man-icon {
+                                        fill: #FD4337;
+                                    }
+
+                                    .back {
+                                        fill: none;
+                                    }
+                                }
+                            }
+
+                            .cart {
+                                position: relative;
+
+                                .num {
+                                    position: absolute;
+                                    top: 5px;
+                                    right: -4px;
+                                    font-size: 12px;
+                                    width: 18px;
+                                    // height: 14px;
+                                    padding: 1px 0;
+                                    border-radius: 10px;
+                                    background-color: #FD4337;
+                                    color: #fff;
+
+                                }
+                            }
+
+                            .like {
+                                @include lg {
+                                    display: none;
+                                }
+                            }
+
+                            .man {
+                                @include lg {
+                                    display: none;
+                                }
+                            }
+
+                            .search-btn {
+                                margin-right: 0;
+                            }
+
+                            .open-sch {
                                 display: none;
+
+                                @include lg {
+                                    display: inline-block;
+                                }
                             }
+
+                            .open-sch-forweb {
+                                opacity: 1;
+
+                                @include lg {
+                                    display: none;
+                                }
+                            }
+
+                            .open-sch-forweb.noshow {
+                                opacity: 0;
+                            }
+
+
+                            .search-for-web {
+                                margin-right: 40px;
+                                height: 40px;
+                                width: 40%;
+                                display: none;
+                                opacity: 0;
+
+                                .search-bar-area {
+                                    background-color: #f8f9fa;
+                                    // width: 70%;
+                                    border-radius: 5px;
+                                    height: 100%;
+
+                                    // height: 24px;
+                                    // padding: 3px 10px;
+                                    .search-bar {
+                                        border: none;
+                                        background-color: unset;
+                                        font-size: 14px;
+                                        height: 100%;
+                                        width: 100%;
+                                    }
+
+                                    .s-btn {
+                                        background-color: unset;
+                                        border: none;
+
+                                        img {
+                                            height: 14px;
+                                            width: 14px;
+                                        }
+                                    }
+                                }
+
+                                @include lg {
+                                    display: none;
+                                }
+                            }
+
+                            .search-for-web.show {
+                                display: inline-block;
+                                opacity: 1;
+                            }
+
+                            // .open-sch-forweb {
+                            //     @include lg {
+                            //         display: none;
+                            //     }
+                            // }
                         }
 
-                        .search-for-web.show {
-                            display: inline-block;
-                            opacity: 1;
-                        }
+                        .float-member-area {
+                            position: absolute;
+                            background-color: #fff;
+                            right: 100px;
+                            top: 60px;
+                            box-shadow: 0px 3px 6px #00000029;
+                            display: none;
 
-                        // .open-sch-forweb {
-                        //     @include lg {
-                        //         display: none;
-                        //     }
-                        // }
+                            ul {
+                                li {
+
+
+
+                                    .float-member-item {
+                                        display: flex;
+                                        align-items: center;
+                                        color: #A7ACB2;
+                                        font-size: 18px;
+                                        padding: 15px 25px;
+                                        padding-left: 0;
+                                        margin: 0 25px;
+                                        // margin-left: 15px;
+                                        border-bottom: 1px solid #00000029;
+                                        white-space: nowrap;
+
+                                        img {
+                                            margin-right: 20px;
+                                        }
+
+                                        .red-text {
+                                            color: #FD4337;
+                                            margin-left: 85px;
+                                            text-align: left;
+                                            min-width: 50px;
+                                        }
+
+                                        .four-text {
+                                            margin-left: 65px;
+                                        }
+
+                                    }
+
+                                    .title {
+                                        color: #525B67;
+                                        background-color: #F3F4F7;
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        border-bottom: none;
+                                        margin: 0;
+                                        height: 30px;
+                                        box-sizing: content-box;
+
+                                        p {
+                                            margin-left: 40px;
+                                        }
+                                    }
+
+                                }
+
+                                li:last-child {
+                                    .float-member-item {
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+
+
+
+
+
+
+                        }
                     }
+                }
 
-                    .float-member-area {
-                        position: absolute;
+                .search-area {
+                    background-color: #525b67;
+                    opacity: 0;
+                    display: flex;
+                    padding: 20px 0;
+                    z-index: 100;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 50px;
+
+                    // z-index: -100;
+
+                    .search-bar-area {
                         background-color: #fff;
-                        right: 100px;
-                        top: 60px;
-                        box-shadow: 0px 3px 6px #00000029;
-                        display: none;
+                        width: 70%;
+                        border-radius: 5px;
+                        height: 31px;
+                        padding: 3px 10px;
 
-                        ul {
-                            li {
-
-
-
-                                .float-member-item {
-                                    display: flex;
-                                    align-items: center;
-                                    color: #A7ACB2;
-                                    font-size: 18px;
-                                    padding: 15px 25px;
-                                    padding-left: 0;
-                                    margin: 0 25px;
-                                    // margin-left: 15px;
-                                    border-bottom: 1px solid #00000029;
-                                    white-space: nowrap;
-
-                                    img {
-                                        margin-right: 20px;
-                                    }
-
-                                    .red-text {
-                                        color: #FD4337;
-                                        margin-left: 85px;
-                                        text-align: left;
-                                        min-width: 50px;
-                                    }
-
-                                    .four-text {
-                                        margin-left: 65px;
-                                    }
-
-                                }
-
-                                .title {
-                                    color: #525B67;
-                                    background-color: #F3F4F7;
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    border-bottom: none;
-                                    margin: 0;
-                                    height: 30px;
-                                    box-sizing: content-box;
-
-                                    p {
-                                        margin-left: 40px;
-                                    }
-                                }
-
-                            }
-
-                            li:last-child {
-                                .float-member-item {
-                                    border-bottom: none;
-                                }
-                            }
+                        .search-bar {
+                            border: none;
+                            background-color: unset;
+                            font-size: 12px;
+                            height: 100%;
+                            width: 100%;
                         }
 
+                        .s-btn {
+                            background-color: unset;
+                            border: none;
 
-
-
-
-
+                            img {
+                                height: 14px;
+                                width: 14px;
+                            }
+                        }
                     }
-                }
-            }
 
-            .search-area {
-                background-color: #525b67;
-                opacity: 0;
-                padding: 11px 0;
-                z-index: 100;
-                width: 100%;
-                align-items: center;
-                justify-content: center;
-                top: 40px;
-
-                // z-index: -100;
-
-                .search-bar-area {
-                    background-color: #fff;
-                    width: 70%;
-                    border-radius: 5px;
-                    height: 24px;
-                    padding: 3px 10px;
-
-                    .search-bar {
-                        border: none;
-                        background-color: unset;
+                    .cancel {
                         font-size: 12px;
-                        height: 100%;
-                        width: 100%;
-                    }
-
-                    .s-btn {
+                        color: #ffffff;
+                        margin-left: 15px;
                         background-color: unset;
                         border: none;
-
-                        img {
-                            height: 14px;
-                            width: 14px;
-                        }
                     }
                 }
 
-                .cancel {
-                    font-size: 12px;
-                    color: #ffffff;
-                    margin-left: 15px;
-                    background-color: unset;
-                    border: none;
+                .search-area.showit {
+                    z-index: 100;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 90%;
                 }
             }
 
-            .search-area.showit {
-                z-index: 100;
-                align-items: center;
-                justify-content: center;
-                opacity: 90%;
-            }
+
 
             .sort-menu {
                 font-size: 18px;
@@ -2974,7 +2979,7 @@ body {
         .breadcrumb {
             display: flex;
             font-size: 14px;
-            padding: 10px;
+            padding: 20px;
             color: #525C68;
             background-color: unset;
             margin: 0;
@@ -2982,7 +2987,7 @@ body {
 
             @include lg {
                 display: flex;
-                padding-left: 0;
+                padding-left: 20px;
             }
 
             .breadcrumb-item+.breadcrumb-item::before {
@@ -3807,6 +3812,12 @@ body {
                     margin: 0 7.5px;
                     color: #fff;
                     background: #525B67;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    padding: 0;
+                    text-align: center;
                 }
 
                 .active {
@@ -5050,6 +5061,8 @@ body {
                         &:before {
                             background-color: #A7ACB2;
                         }
+
+
                     }
                 }
 
@@ -7628,6 +7641,11 @@ body {
                 button {
                     border: none;
                     background-color: unset;
+                    color: #525B67;
+
+                    span {
+                        margin-left: 15px;
+                    }
                 }
 
                 .clear-all {
