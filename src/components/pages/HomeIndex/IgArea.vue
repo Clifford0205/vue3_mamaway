@@ -2,7 +2,7 @@
   <div class="ig-area">
     <h2>Instagram</h2>
 
-    <div class="carousel-area">
+    <!-- <div class="carousel-area">
       <carousel
         :dots="false"
         :items="7"
@@ -127,6 +127,108 @@
 
             <div class="img-area">
               <img src="~@/assets/img/photos/圖層 3@3x-2@2x.png" alt />
+            </div>
+          </a>
+        </div>
+      </carousel>
+    </div>-->
+    <div class="carousel-area">
+      <carousel
+        :dots="false"
+        :items="2"
+        :loop="true"
+        :nav="true"
+        :responsive="{
+          0: {
+            dots: true,
+            items: 1,
+            nav: false,
+          },
+          996: {
+            dots: false,
+            items: 2
+          }
+        }"
+      >
+        <div class="item">
+          <a>
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x-1@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x-1@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x-1@2x.png" alt />
+            </div>
+          </a>
+        </div>
+
+        <div class="item">
+          <a>
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a>
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
+            </div>
+
+            <div class="img-area">
+              <img src="~@/assets/img/photos/圖層 3@3x@2x.png" alt />
             </div>
           </a>
         </div>

@@ -1417,8 +1417,24 @@ body {
 
         //側邊選單結束
 
+        .main-KV.for-web {
+            height: 700px;
+
+            @include lg {
+                display: none;
+            }
+        }
+
+        .main-KV.for-mobile {
+            display: none;
+
+            @include lg {
+                display: block;
+            }
+        }
+
         .main-KV {
-            // height: 700px;
+
 
             @include lg {
                 // height: 100vw;
@@ -2524,18 +2540,50 @@ body {
                 }
 
                 .item {
-                    margin-right: 5px;
+                    height: 34vw;
 
-                    .img-area {
-                        max-width: 290px;
-                        // max-height: 240px;
-                        margin-bottom: 5px;
-
-                        @include lg {
-                            // width: 90px;
-                            // height: 90px;
-                        }
+                    @include lg {
+                        height: 68vw;
                     }
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        height: 100%;
+                        width: 100%;
+
+                        .img-area {
+                            // max-width: 240px;
+                            // width: 240px;
+                            // height: 240px;
+                            // max-width: 240px;
+                            // max-height: 240px;
+                            width: 33.3333333%;
+                            padding-left: 7.5px;
+                            padding-right: 7.5px;
+                            padding-bottom: 15px;
+
+                            @include lg {
+                                padding-left: 3.5px;
+                                padding-right: 3.5px;
+                                padding-bottom: 7.5px;
+                            }
+
+                            img {
+                                // width: 100%;
+                                height: 100%;
+                            }
+
+                            @include lg {
+                                // width: 90px;
+                                // height: 90px;
+                            }
+                        }
+
+                    }
+
+
                 }
 
                 .owl-carousel {
