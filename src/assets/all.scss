@@ -1899,7 +1899,10 @@ body {
 
                                         svg {
                                             width: 24px;
-                                            // height: 31px;
+
+                                            .a {
+                                                background-color: #fff;
+                                            }
                                         }
 
                                         .black {
@@ -1920,6 +1923,32 @@ body {
                                         //         transform: translate(0, 0);
                                         //     }
                                         // }
+
+
+
+
+                                        .love-icon.is-x2 {
+                                            width: 26px;
+                                            height: 26px;
+                                        }
+
+
+                                        .love-icon.is-outlined {
+                                            stroke: black;
+                                            stroke-width: 2px;
+                                            fill: transparent;
+
+                                        }
+
+                                        .love-icon.is-hoverable:hover {
+                                            fill: #000;
+                                            background-color: #fff;
+                                            cursor: pointer;
+                                        }
+
+                                        .love-icon.is-transit {
+                                            transition: all .35s ease-out;
+                                        }
                                     }
                                 }
                             }
