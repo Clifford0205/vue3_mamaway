@@ -2056,8 +2056,12 @@ body {
             // display: flex;
             // align-items: center;
             @include lg {
-                height: 230px;
+                height: 550px;
                 margin-top: 50px;
+            }
+
+            @include md {
+                height: 265px;
             }
 
             .item {
@@ -2086,6 +2090,13 @@ body {
                                     .item-video {
                                         height: 100%;
                                     }
+
+                                    .owl-video-tn {
+                                        @include lg {
+                                            background-size: cover;
+                                        }
+                                    }
+
                                 }
                             }
                         }
