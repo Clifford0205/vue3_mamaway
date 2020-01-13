@@ -1,6 +1,6 @@
 <template>
-  <div class>
-    <ol class="breadcrumb">
+  <div class="breadcrumb">
+    <ol>
       <li class="breadcrumb-item">
         <a href="#">首頁</a>
       </li>

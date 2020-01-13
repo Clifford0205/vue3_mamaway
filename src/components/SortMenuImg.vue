@@ -1,48 +1,84 @@
 <template>
   <div>
     <div class="sort-menu-img">
-      <carousel :items="4" :dots="false" :nav="false">
-        <a class="text-center classify activity">
-          <p class="text-center">
-            <img src="~@/assets/img/icons/btn_fb_h.svg" alt />
-          </p>
-          <p class="title">全部商品</p>
-        </a>
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
+      <div class="carousel-area">
+        <carousel
+          :items="8"
+          :dots="false"
+          :nav="false"
+          :responsive="{
+          0: {
+            items: 4,
+            nav: false,
+          },
+          996: {
+            items: 8,
+          }
+        }"
+        >
+          <template slot="prev">
+            <button class="prev">
+              <img src="~@/assets/img/icons/icn_arrow_l.svg" alt />
+            </button>
+          </template>
 
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
+          <template slot="next">
+            <button class="next" @click="preventRoute" style="display:block">
+              <img src="~@/assets/img/icons/icn_arrow_r_b.svg" alt />
+            </button>
+          </template>
+          <a class="text-center classify activity">
+            <p class="text-center">
+              <img src="~@/assets/img/icons/btn_fb_h.svg" alt />
+            </p>
+            <p class="title">全部商品</p>
+          </a>
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
 
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
 
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
 
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
 
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
 
-        <a class="text-center classify">
-          <img src="~@/assets/img/icons/btn_line_h.svg" alt />
-          <p class="title">寶寶衣著</p>
-        </a>
-      </carousel>
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
+
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
+
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
+
+          <a class="text-center classify">
+            <img src="~@/assets/img/icons/btn_line_h.svg" alt />
+            <p class="title">寶寶衣著</p>
+          </a>
+        </carousel>
+      </div>
     </div>
   </div>
 </template>

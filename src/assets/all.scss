@@ -456,50 +456,113 @@ body {
 
             .sort-menu-img {
                 font-size: 18px;
+                background-color: #f3f4f7;
 
                 @include lg {
                     font-size: 13px;
                 }
 
-                background-color: #f3f4f7;
-
-                .owl-carousel {
-                    width: 700px;
+                .carousel-area {
+                    width: 1200px;
                     margin: 0 auto;
-
-                    .owl-item {
-                        .classify {
-                            padding: 27px 0;
-                            padding-bottom: 5px;
-                            width: 80.5px;
-                            display: block;
-                        }
-                    }
-
-                    .classify.activity {
-                        border-bottom: 3.5px solid #fd4337;
-                        color: #000;
-
-                    }
-
-                    a {
-                        color: #525b67;
-
-                        img {
-                            width: 40px;
-                            height: 40px;
-                            display: inline-block;
-                        }
-
-                        .title {
-                            margin-top: 5px;
-                        }
-                    }
+                    position: relative;
 
                     @include lg {
                         width: 100%;
                     }
+
+                    .owl-carousel {
+
+                        margin: 0 auto;
+
+                        .owl-item {
+                            .classify {
+                                padding: 27px 0;
+                                padding-bottom: 5px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                @include lg {
+                                    display: block;
+                                }
+
+                                .title {
+                                    margin-left: 15px;
+                                    font-size: 14px;
+
+                                    @include lg {
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+
+
+
+                        .classify.activity {
+                            border-bottom: 3.5px solid #fd4337;
+                            color: #000;
+
+                        }
+
+                        a {
+                            color: #525b67;
+
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                display: inline-block;
+                            }
+
+                            .title {
+                                margin-top: 5px;
+                            }
+                        }
+
+                        @include lg {
+                            width: 100%;
+                        }
+                    }
+
+                    .next {
+                        position: absolute;
+                        right: -1%;
+                        top: 66%;
+                        transform: translate(0, -50%);
+                        z-index: 100;
+                        background-color: unset;
+                        border: none;
+
+                        @include lg {
+                            right: 0;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .prev {
+                        position: absolute;
+                        left: -1%;
+                        top: 66%;
+                        transform: translate(0, -50%);
+                        z-index: 100;
+                        background-color: unset;
+                        border: none;
+
+                        @include lg {
+                            right: 0;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
                 }
+
+
             }
         }
 
@@ -598,7 +661,7 @@ body {
             height: 272px;
 
             @include lg {
-                height: 270px;
+                height: 241px;
             }
         }
 
@@ -618,7 +681,7 @@ body {
 
         .makeup-block.two-sort.short {
             @include lg {
-                height: 216px;
+                height: 188px;
             }
         }
 

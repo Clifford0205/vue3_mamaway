@@ -1,6 +1,6 @@
 <template>
   <div class="product-intro-page">
-    <Breadcrumb class="breadcrumb" />
+    <Breadcrumb />
     <MainKv />
     <ExpandBar />
     <Slider />
@@ -30,14 +30,14 @@ export default {
 };
 </script>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
 @import "@/assets/helpers/_myset.scss";
 body {
   .breadcrumb {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 0;
+    padding-left: 0;
 
     @include lg {
       // display: none;
