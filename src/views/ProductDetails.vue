@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/all.scss";
+@import "@/assets/helpers/_myset.scss";
 .top-nav {
   @include lg {
     display: none;

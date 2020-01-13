@@ -40,6 +40,7 @@
           <div class="circle">
             <object>
               <a class="love-area">
+                <span class="icon-icon_heart"></span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
