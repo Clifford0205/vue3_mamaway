@@ -27,32 +27,7 @@
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area" @click="showBlack">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="20.16"
-                      viewBox="0 0 24 20.16"
-                    >
-                      <path
-                        class="a"
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673ZM135.052,6.884a4.84,4.84,0,0,0-3.642,2.107c-.815,1.149-1.533,3.113-.431,6.273s8.241,7.758,9.918,8.667c1.629-.91,8.769-5.411,9.919-8.667s.383-5.124-.431-6.273a4.84,4.84,0,0,0-3.642-2.107,5.234,5.234,0,0,0-5.175,2.969l-.671,1.58-.671-1.58A5.273,5.273,0,0,0,135.052,6.884Z"
-                        transform="translate(-128.845 -5.4)"
-                      />
-                    </svg>
-                    <svg
-                      class="black transition"
-                      :class="{show:isShow}"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="20.16"
-                      viewBox="0 0 24 20.16"
-                    >
-                      <path
-                        class="love"
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673Z"
-                        transform="translate(-128.845 -5.4)"
-                      />
-                    </svg>
+                    <div class="icon-icn_like_b_h"></div>
                   </a>
                 </object>
               </div>
@@ -74,18 +49,7 @@
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
-                    <svg
-                      class="love-icon is-x2 is-outlined is-hoverable is-transit"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                    >
-                      <path
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673Z"
-                        transform="translate(-126.845 -1.4)"
-                      />
-                    </svg>
+                    <div class="icon-icn_like_b_h"></div>
                   </a>
                 </object>
               </div>
@@ -101,25 +65,14 @@
           </a>
         </div>
 
-         <div class="item">
+        <div class="item">
           <a href>
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
-                    <svg
-                      class="love-icon is-x2 is-outlined is-hoverable is-transit"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                    >
-                      <path
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673Z"
-                        transform="translate(-126.845 -1.4)"
-                      />
-                    </svg>
+                    <div class="icon-icn_like_b_h"></div>
                   </a>
                 </object>
               </div>
@@ -135,25 +88,14 @@
           </a>
         </div>
 
-         <div class="item">
+        <div class="item">
           <a href>
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
-                    <svg
-                      class="love-icon is-x2 is-outlined is-hoverable is-transit"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                    >
-                      <path
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673Z"
-                        transform="translate(-126.845 -1.4)"
-                      />
-                    </svg>
+                    <div class="icon-icn_like_b_h"></div>
                   </a>
                 </object>
               </div>
@@ -169,25 +111,14 @@
           </a>
         </div>
 
-         <div class="item">
+        <div class="item">
           <a href>
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
-                    <svg
-                      class="love-icon is-x2 is-outlined is-hoverable is-transit"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                    >
-                      <path
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673Z"
-                        transform="translate(-126.845 -1.4)"
-                      />
-                    </svg>
+                    <div class="icon-icn_like_b_h"></div>
                   </a>
                 </object>
               </div>
@@ -203,25 +134,14 @@
           </a>
         </div>
 
-         <div class="item">
+        <div class="item">
           <a href>
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x@2x.png" alt />
               <div class="circle">
                 <object>
                   <a href="https://github.com/dashboard" class="love-area">
-                    <svg
-                      class="love-icon is-x2 is-outlined is-hoverable is-transit"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 28 28"
-                    >
-                      <path
-                        d="M140.9,25.56l-.335-.144c-.1-.048-9.439-5.315-10.973-9.673s-.383-6.177.623-7.614a6.278,6.278,0,0,1,4.839-2.73A6.832,6.832,0,0,1,140.9,8.034,6.832,6.832,0,0,1,146.744,5.4a6.278,6.278,0,0,1,4.839,2.73c1.006,1.389,1.917,3.879.623,7.614s-10.877,9.673-10.973,9.673Z"
-                        transform="translate(-126.845 -1.4)"
-                      />
-                    </svg>
+                    <div class="icon-icn_like_b_h"></div>
                   </a>
                 </object>
               </div>
@@ -236,8 +156,6 @@
             </object>
           </a>
         </div>
-
-        
       </carousel>
     </div>
   </div>
