@@ -25,13 +25,13 @@
 
               <button
                 class="open-sch-forweb transition"
-                :class="{noshow:schNoShow}"
+                :class="{ noshow: schNoShow }"
                 @click="showTheInput"
               >
                 <img src="~@/assets/img/icons/icn_search.svg" alt />
               </button>
 
-              <div class="search-for-web transition" :class="{show:schBarShow}">
+              <div class="search-for-web transition" :class="{ show: schBarShow }">
                 <div class="search-bar-area d-flex align-items-center justify-content-between">
                   <input type="text" placeholder="search" class="search-bar" />
                   <button class="search-btn" @click="hideInput">
@@ -55,7 +55,7 @@
             </div>
 
             <!-- 會員下拉式選單 -->
-            <div class="float-member-area" :style="{display:memberShow}">
+            <div class="float-member-area" :style="{ display: memberShow }">
               <ul>
                 <li>
                   <a class="float-member-item title">
@@ -116,8 +116,8 @@
 
         <div
           class="search-area transition"
-          v-show="mobileSearchArea"
-          :class="{showit:mobileSearchArea2}"
+          v-show="mobileSearchAreaDisplay"
+          :class="{ showit: mobileSearchAreaOpacity }"
         >
           <div class="search-bar-area d-flex align-items-center justify-content-between">
             <input type="text" placeholder="search" class="search-bar" />
@@ -162,8 +162,8 @@ export default {
       schBarShow: false,
       isMemActive: false,
       memberShow: "none",
-      mobileSearchArea: false,
-      mobileSearchArea2: false,
+      mobileSearchAreaDisplay: false,
+      mobileSearchAreaOpacity: false,
       babyDownLoad: true
     };
   },
@@ -235,18 +235,18 @@ export default {
     //開啟手機版搜尋
     openMobileSeach() {
       let vm = this;
-      vm.mobileSearchArea = true;
+      vm.mobileSearchAreaDisplay = true;
       setTimeout(function() {
-        vm.mobileSearchArea2 = true;
+        vm.mobileSearchAreaOpacity = true;
       }, 500);
     },
 
     //關掉手機版搜尋
     closeMobileSearch() {
       let vm = this;
-      vm.mobileSearchArea2 = false;
+      vm.mobileSearchAreaOpacity = false;
       setTimeout(function() {
-        vm.mobileSearchArea2 = false;
+        vm.mobileSearchAreaDisplay = false;
       }, 500);
     }
   },

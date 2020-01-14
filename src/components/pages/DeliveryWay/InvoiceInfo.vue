@@ -8,11 +8,10 @@
         </div>
 
         <div class="select-part">
-          <select name="invoice" id class="invoice-select" @change="whatType">
+          <select name="invoice" id class="invoice-select" v-model="invoiceValue">
             <option value="雲端發票" selected>雲端發票</option>
             <option value="發票捐贈">發票捐贈</option>
             <option value="三聯式發票">三聯式發票</option>
-          
           </select>
         </div>
       </div>
@@ -89,21 +88,12 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       invoiceType: ["雲端發票", "發票捐贈", "三聯式發票"],
       invoiceValue: "雲端發票"
     };
-  },
-  
-  methods: {
-    whatType: function(e) {
-      console.log(e.target.value);
-      let vm = this;
-      vm.invoiceValue = e.target.value;
-    }
   }
 };
 </script>

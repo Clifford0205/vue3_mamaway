@@ -23,7 +23,7 @@
           <div class="list-title">孕哺服飾</div>
           <ul class="mother-list">
             <li>
-              <router-link :to="{name:'商品詳細頁'}">孕哺內睡衣</router-link>
+              <router-link :to="{ name: '商品詳細頁' }">孕哺內睡衣</router-link>
               <ul class="little-list">
                 <li>
                   <a href>月子內衣</a>
@@ -49,19 +49,19 @@
               </ul>
             </li>
             <li>
-              <router-link :to="{name:'商品詳細頁'}">產後/產前必須</router-link>
+              <router-link :to="{ name: '商品詳細頁' }">產後/產前必須</router-link>
             </li>
             <li>
-              <router-link :to="{name:'商品詳細頁'}">寶貝衣服</router-link>
+              <router-link :to="{ name: '商品詳細頁' }">寶貝衣服</router-link>
             </li>
             <li>
-              <router-link :to="{name:'商品詳細頁'}">雙邊電動吸乳</router-link>
+              <router-link :to="{ name: '商品詳細頁' }">雙邊電動吸乳</router-link>
             </li>
             <li>
-              <router-link :to="{name:'商品詳細頁'}">背巾/背帶</router-link>
+              <router-link :to="{ name: '商品詳細頁' }">背巾/背帶</router-link>
             </li>
             <li>
-              <router-link :to="{name:'商品詳細頁'}">抗菌床寢</router-link>
+              <router-link :to="{ name: '商品詳細頁' }">抗菌床寢</router-link>
             </li>
             <!-- 該項目不一定會有 -->
             <li class="sales">
@@ -73,13 +73,13 @@
           </ul>
 
           <ul class="expand-menu">
-            <li class="expand-item" @click="openLittleItem" :class="{open_menu:MAMAWAY_CLUB}">
-              <a class="expand-menu-title MAMAWAY_CLUB">
+            <li class="expand-item" @click="openLittleItem" :class="{ open_menu: mamaway_club }">
+              <a class="expand-menu-title mamaway_club">
                 MAMAWAY CLUB
                 <i class="fas fa-chevron-right transition"></i>
               </a>
             </li>
-            <li class="expand-item" @click="openLittleItem" :class="{open_menu:mom_mom_wiki}">
+            <li class="expand-item" @click="openLittleItem" :class="{ open_menu: mom_mom_wiki }">
               <a class="expand-menu-title mom_mom_wiki">
                 媽媽百科
                 <i class="fas fa-chevron-right transition"></i>
@@ -88,7 +88,7 @@
             <li
               class="expand-item for-mobile"
               @click="openLittleItem"
-              :class="{open_menu:shop_guide}"
+              :class="{ open_menu: shop_guide }"
             >
               <a class="expand-menu-title shop_guide">
                 購物指南
@@ -124,7 +124,7 @@
             <li
               class="expand-item for-mobile"
               @click="openLittleItem"
-              :class="{open_menu:about_us}"
+              :class="{ open_menu: about_us }"
             >
               <a class="expand-menu-title about_us">
                 關於我們
@@ -151,7 +151,7 @@
             <li
               class="expand-item for-mobile"
               @click="openLittleItem"
-              :class="{open_menu:follow_us}"
+              :class="{ open_menu: follow_us }"
             >
               <a class="expand-menu-title follow_us">
                 FOLLOW US
@@ -214,7 +214,7 @@ export default {
       about_us: false,
       shop_guide: false,
       mom_mom_wiki: false,
-      MAMAWAY_CLUB: false
+      mamaway_club: false
     };
   },
   components: {
