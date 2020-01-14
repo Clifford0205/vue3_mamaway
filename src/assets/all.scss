@@ -463,7 +463,8 @@ body {
                 }
 
                 .carousel-area {
-                    width: 1200px;
+                    width: 100%;
+                    max-width: 1200px;
                     margin: 0 auto;
                     position: relative;
 
@@ -658,7 +659,7 @@ body {
         }
 
         .makeup-block.two-sort {
-            height: 272px;
+            height: 208px;
 
             @include lg {
                 height: 241px;
@@ -3163,6 +3164,10 @@ body {
             margin: 0;
             padding-left: 0;
 
+            ol {
+                display: flex;
+            }
+
             @include lg {
                 display: flex;
                 padding-left: 20px;
@@ -3912,6 +3917,22 @@ body {
                                     position: relative;
                                     height: 100%;
                                     width: 100%;
+
+                                    .icon-icon_heart {
+                                        transition: all 500ms ease-in-out;
+                                        -webkit-text-stroke: 1px black;
+                                        color: transparent;
+                                        background-image: -webkit-linear-gradient(top, #f3f4f7 0, #000 100%);
+                                        background-size: 100% 400%;
+                                        background-position-y: 400%;
+                                        background-clip: text;
+                                        // -webkit-background-clip: text;
+
+                                        &:hover {
+                                            -webkit-background-clip: text;
+                                            background-position-y: 369%;
+                                        }
+                                    }
 
                                     svg {
                                         width: 15px;

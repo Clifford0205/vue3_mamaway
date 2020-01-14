@@ -32,7 +32,7 @@
         }"
       >
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -88,7 +88,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -116,7 +116,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -144,7 +144,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -172,7 +172,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -200,7 +200,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -228,7 +228,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -256,7 +256,7 @@
         </div>
 
         <div class="item">
-          <router-link :to="{name:'商品列表'}">
+          <router-link :to="{ name: '商品列表' }">
             <div class="img-area">
               <img src="~@/assets/img/photos/M106192065-900n@3x-1@2x.png" alt />
               <button class="cancel-btn">
@@ -290,14 +290,8 @@
 <script>
 import carousel from "vue-owl-carousel";
 export default {
-  data() {
-    return {};
-  },
   components: {
     carousel
   }
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
