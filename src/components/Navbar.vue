@@ -44,22 +44,8 @@
                 <img src="~@/assets/img/icons/icn_like_g.svg" alt />
               </button>
 
-              <button class="man" @mouseover="openDrop" :class="{active:isMemActive}">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                  <g transform="translate(-273.646 -519.741)">
-                    <path
-                      class="man-icon"
-                      d="M403.428,15A5.69,5.69,0,0,1,397.8,9.25a5.629,5.629,0,1,1,11.255,0A5.69,5.69,0,0,1,403.428,15Zm0-10a4.251,4.251,0,1,0,4.16,4.25A4.206,4.206,0,0,0,403.428,5Z"
-                      transform="translate(-115.036 519.241)"
-                    />
-                    <path
-                      class="man-icon"
-                      d="M408.3,35.75h-1.468a10.034,10.034,0,1,0-20.064,0H385.3a11.5,11.5,0,1,1,23,0Z"
-                      transform="translate(-108.653 508.991)"
-                    />
-                  </g>
-                  <rect class="back" width="28" height="28" />
-                </svg>
+              <button class="man" @mouseover="openDrop" :class="{ active: isMemActive }">
+                <div class="icon-icn_man_h"></div>
               </button>
 
               <button class="cart">

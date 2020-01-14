@@ -29,19 +29,10 @@
         </button>
 
         <a href class="arrange active">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <rect class="four" width="14" height="14" />
-            <rect class="four" width="14" height="14" transform="translate(18)" />
-            <rect class="four" width="14" height="14" transform="translate(0 18)" />
-            <rect class="four" width="14" height="14" transform="translate(18 18)" />
-          </svg>
+          <div class="icon-icn_array4 active"></div>
         </a>
         <a href class="arrange">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-            <rect class="three" width="9" height="32" />
-            <rect class="three" width="9" height="32" transform="translate(11.5)" />
-            <rect class="three" width="9" height="32" transform="translate(23)" />
-          </svg>
+          <div class="icon-icn_array3"></div>
         </a>
       </div>
     </div>

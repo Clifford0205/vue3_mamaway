@@ -38,7 +38,7 @@
           <div class="circle">
             <object>
               <a href="https://github.com/dashboard" class="love-area">
-                <div class="icon-icon_heart"></div>
+                <div class="icon-icn_like_b_h"></div>
               </a>
             </object>
           </div>

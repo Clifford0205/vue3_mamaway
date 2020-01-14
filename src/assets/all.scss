@@ -144,6 +144,11 @@ body {
                             }
 
                             .man {
+
+                                .icon-icn_man_h {
+                                    font-size: 28px;
+                                }
+
                                 svg {
                                     .man-icon {
                                         fill: #a7acb2;
@@ -156,6 +161,14 @@ body {
                             }
 
                             .man.active {
+
+                                .icon-icn_man_h {
+                                    &::before {
+                                        color: #FD4337;
+                                    }
+
+                                }
+
                                 svg {
                                     .man-icon {
                                         fill: #FD4337;
@@ -849,7 +862,7 @@ body {
                         color: #FD4337;
                     }
 
-                    .arrow {}
+
                 }
             }
 
@@ -3631,11 +3644,26 @@ body {
                         .arrange {
                             margin-left: 20px;
 
+                            .icon-icn_array4 {
+                                font-size: 32px;
+                            }
+
+                            .icon-icn_array3 {
+                                font-size: 32px;
+                            }
+
 
                             .four,
                             .three {
                                 fill: #a7acb2;
                             }
+                        }
+
+                        .icon-icn_array4.active {
+                            &::before {
+                                color: #525B67;
+                            }
+
                         }
 
                         .active .four {
@@ -3918,7 +3946,7 @@ body {
                                     height: 100%;
                                     width: 100%;
 
-                                    .icon-icon_heart {
+                                    .icon-icn_like_b_h {
                                         transition: all 500ms ease-in-out;
                                         -webkit-text-stroke: 1px black;
                                         color: transparent;
@@ -3926,9 +3954,10 @@ body {
                                         background-size: 100% 400%;
                                         background-position-y: 400%;
                                         background-clip: text;
-                                        // -webkit-background-clip: text;
+                                        -webkit-background-clip: text;
 
                                         &:hover {
+                                            background-clip: text;
                                             -webkit-background-clip: text;
                                             background-position-y: 369%;
                                         }
@@ -4165,7 +4194,7 @@ body {
                     padding: 5px 10px;
 
 
-                    span {}
+
                 }
             }
 
@@ -5365,10 +5394,35 @@ body {
                                 }
 
                                 .two-icon {
+                                    display: flex;
+                                    align-items: center;
+
                                     button {
                                         background-color: unset;
                                         border: none;
                                         padding: 0;
+
+                                        .icon-icn_like_b_h {
+                                            transition: all 500ms ease-in-out;
+                                            -webkit-text-stroke: 1px black;
+                                            color: transparent;
+                                            background-image: -webkit-linear-gradient(top, #f3f4f7 50%, #000 100%);
+                                            background-size: 100% 400%;
+                                            background-position-y: 400%;
+                                            background-clip: text;
+                                            -webkit-background-clip: text;
+                                            font-size: 18px;
+
+                                            &:hover {
+                                                background-clip: text;
+                                                -webkit-background-clip: text;
+                                                background-position-y: 372%;
+                                            }
+                                        }
+
+                                        .icon-icn_delete {
+                                            font-size: 18px;
+                                        }
 
                                         .like {
                                             fill: none;
@@ -5731,12 +5785,12 @@ body {
                                     }
 
                                     .circle {
-                                        width: 60px;
-                                        height: 60px;
+                                        width: 30px;
+                                        height: 30px;
                                         background-color: #f3f4f7;
                                         position: absolute;
-                                        right: 16px;
-                                        bottom: 20px;
+                                        right: 15px;
+                                        bottom: 15px;
                                         border-radius: 50%;
                                         display: flex;
                                         justify-content: center;
@@ -5755,6 +5809,23 @@ body {
                                                 position: relative;
                                                 height: 100%;
                                                 width: 100%;
+
+                                                .icon-icn_like_b_h {
+                                                    transition: all 500ms ease-in-out;
+                                                    -webkit-text-stroke: 1px black;
+                                                    color: transparent;
+                                                    background-image: -webkit-linear-gradient(top, #f3f4f7 0, #000 100%);
+                                                    background-size: 100% 400%;
+                                                    background-position-y: 396%;
+                                                    background-clip: text;
+                                                    -webkit-background-clip: text;
+
+                                                    &:hover {
+                                                        background-clip: text;
+                                                        -webkit-background-clip: text;
+                                                        background-position-y: 369%;
+                                                    }
+                                                }
 
                                                 svg {
                                                     width: 31px;
