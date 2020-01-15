@@ -51,9 +51,17 @@
             </div>
 
             <div class="style-input">
-              <input type="text" placeholder="尺寸" />
-              <input type="text" placeholder="罩杯" />
-              <input type="text" placeholder="數量" />
+              <select name="size" id @click.prevent>
+                <option value>尺寸</option>
+              </select>
+
+              <select name="cup" id @click.prevent>
+                <option value>罩杯</option>
+              </select>
+
+              <select name="num" id @click.prevent>
+                <option value>數量</option>
+              </select>
             </div>
             <div class="buy-it">
               <button>選 購</button>
@@ -77,9 +85,17 @@
             </div>
 
             <div class="style-input">
-              <input type="text" placeholder="尺寸" />
-              <input type="text" placeholder="罩杯" />
-              <input type="text" placeholder="數量" />
+              <select name="size" id @click.prevent>
+                <option value>尺寸</option>
+              </select>
+
+              <select name="cup" id @click.prevent>
+                <option value>罩杯</option>
+              </select>
+
+              <select name="num" id @click.prevent>
+                <option value>數量</option>
+              </select>
             </div>
             <div class="buy-it">
               <button>選 購</button>
@@ -104,9 +120,17 @@
             </div>
 
             <div class="style-input">
-              <input type="text" placeholder="尺寸" />
-              <input type="text" placeholder="罩杯" />
-              <input type="text" placeholder="數量" />
+              <select name="size" id @click.prevent>
+                <option value>尺寸</option>
+              </select>
+
+              <select name="cup" id @click.prevent>
+                <option value>罩杯</option>
+              </select>
+
+              <select name="num" id @click.prevent>
+                <option value>數量</option>
+              </select>
             </div>
             <div class="buy-it">
               <button>選 購</button>

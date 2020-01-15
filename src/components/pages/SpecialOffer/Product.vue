@@ -52,15 +52,15 @@
         </div>
 
         <div class="style-input">
-          <select name="size" id @change.prevent @click.prevent>
+          <select name="size" id @click.prevent>
             <option value>尺寸</option>
           </select>
 
-          <select name="cup" id @change.prevent @click.prevent>
+          <select name="cup" id @click.prevent>
             <option value>罩杯</option>
           </select>
 
-          <select name="num" id @change.prevent @click.prevent>
+          <select name="num" id @click.prevent>
             <option value>數量</option>
           </select>
         </div>

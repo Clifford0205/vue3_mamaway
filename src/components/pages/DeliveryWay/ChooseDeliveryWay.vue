@@ -56,7 +56,11 @@
               class="modal-body"
             >ＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩＡＰＩ</div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">確 認</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >確{{ '\xa0\xa0\xa0\xa0'}} 認</button>
             </div>
           </div>
         </div>

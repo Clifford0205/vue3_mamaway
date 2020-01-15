@@ -6,6 +6,7 @@
 @import "./helpers/_font_face";
 @import "./pages/SpecialOffer";
 @import "./pages/EventDescription";
+@import "./pages/Member";
 
 
 .modal-open {
@@ -4562,7 +4563,7 @@ body {
                     }
 
                     .btns {
-
+                        position: relative;
 
                         a {
                             font-size: 20px;
@@ -4604,8 +4605,6 @@ body {
                     .product-description {
                         margin-top: 30px;
 
-
-
                         ul {
                             li {
                                 margin-bottom: 12px;
@@ -4637,6 +4636,83 @@ body {
                     }
 
                 }
+
+                .chart-size-web {
+                    @include lg {
+                        display: none;
+                    }
+
+                    .size-table {
+                        margin-top: 30px;
+
+
+                        th,
+                        td {
+                            border-top: none;
+                            border-right: 2px solid #fff;
+                            border-bottom: 2px solid #fff;
+                            text-align: center;
+                            padding: 13px 21px;
+
+                        }
+
+                        thead {
+                            tr {
+                                th {
+                                    background-color: #FFE4E2;
+                                    font-weight: bolder;
+
+
+                                }
+
+                                .table-title {
+                                    background-color: #FFC4C0;
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+
+                        tbody {
+
+                            tr {
+                                background-color: #F3F4F7;
+
+                                &:nth-of-type(odd) {
+                                    background-color: #fff;
+                                }
+
+                                th {
+                                    background-color: #FFC4C0;
+                                }
+                            }
+                        }
+                    }
+
+                    .comment {
+                        margin-top: 20px;
+
+                        ul {
+                            li {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+
+                    .measure {
+                        margin-top: 30px;
+
+                        .measure-title {
+                            background-color: #000;
+                            padding: 11px 32px;
+
+                            p {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+
 
                 .product_quality-area {
                     @include lg {
@@ -4686,6 +4762,84 @@ body {
                         .expand-content {
                             max-height: 0;
                             overflow: hidden;
+
+                            .chart-size-mobile {
+                                padding: 0 15px;
+
+                                .size-table {
+                                    margin-top: 30px;
+
+
+                                    th,
+                                    td {
+                                        font-size: 14px;
+                                        font-weight: normal;
+                                        white-space: nowrap;
+                                        border-top: none;
+                                        border-right: 2px solid #fff;
+                                        border-bottom: 2px solid #fff;
+                                        text-align: center;
+                                        padding: 13px 10px;
+
+                                    }
+
+                                    thead {
+                                        tr {
+                                            th {
+                                                background-color: #FFE4E2;
+                                                font-weight: bolder;
+                                                font-size: 16px;
+                                            }
+
+                                            .table-title {
+                                                background-color: #FFC4C0;
+                                                font-size: 14px;
+                                                font-weight: normal;
+
+                                            }
+                                        }
+                                    }
+
+                                    tbody {
+
+                                        tr {
+                                            background-color: #F3F4F7;
+
+                                            &:nth-of-type(odd) {
+                                                background-color: #fff;
+                                            }
+
+                                            th {
+                                                background-color: #FFC4C0;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .comment {
+                                    margin-top: 20px;
+
+                                    ul {
+                                        li {
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+
+                                .measure {
+                                    margin-top: 30px;
+
+                                    .measure-title {
+                                        background-color: #000;
+                                        padding: 11px 32px;
+
+                                        p {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
                         }
 
                         .texture {
@@ -5963,6 +6117,23 @@ body {
 
                                         &::placeholder {
                                             color: #A7ACB2;
+                                        }
+                                    }
+
+                                    select {
+                                        background-color: #fff;
+                                        appearance: none;
+                                        color: #A7ACB2;
+                                        width: 30%;
+                                        padding: 8px 10px;
+
+                                        @include xl {
+                                            padding: 4px 5px;
+                                            font-size: 14px;
+                                        }
+
+                                        @include lg {
+                                            padding: 8px 6px;
                                         }
                                     }
                                 }

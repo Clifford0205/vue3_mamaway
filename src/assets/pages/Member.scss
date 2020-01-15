@@ -1,0 +1,81 @@
+@import "./MyAccount";
+
+body {
+    #app {
+
+        .member-page {
+            max-width: 1200px;
+            width: 90%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin: 0 auto;
+            color: #525B67;
+
+
+
+            @include lg {
+                margin-bottom: 120px;
+                width: 100%;
+            }
+
+            .member-kv {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .member-side-menu {
+                .content-box {
+                    padding: 30px;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 10px;
+                    color: #525B67;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    font-size: 20px;
+
+                    .member-name {
+                        border-bottom: 2px solid #525B67;
+                        padding-bottom: 10px;
+                        font-weight: bold;
+
+                        .member-level {
+                            color: #FD4337;
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            padding-top: 20px;
+
+                            a {
+                                display: flex;
+                                color: #525B67;
+                                font-weight: bold;
+                                align-items: center;
+
+                                img {
+                                    width: 24px;
+                                }
+
+                                .side-icon {
+                                    font-size: 24px;
+                                }
+
+                                p {
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

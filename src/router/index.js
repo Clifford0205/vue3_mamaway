@@ -17,6 +17,8 @@ import DeliveryWay from '@/views/DeliveryWay'
 import CartFinish from '@/views/CartFinish'
 import SpecialOffer from '@/views/SpecialOffer'
 import EventDescription from '@/views/EventDescription'
+import Member from '@/views/Member'
+import MyAccount from '@/views/MyAccount'
 
 
 //自訂的分頁文件
@@ -41,7 +43,7 @@ export default new VueRouter({
                 },
                 {
                     name: '商品列表',
-                    path: '/product_list',
+                    path: 'product_list',
                     components: {
                         default: ProductList,
                         bottommenu: BottomMenu,
@@ -49,7 +51,7 @@ export default new VueRouter({
                 },
                 {
                     name: '商品介紹頁',
-                    path: '/product_intro',
+                    path: 'product_intro',
                     components: {
                         default: ProductIntro,
                         sortmenuimg: SortMenuImg,
@@ -58,7 +60,7 @@ export default new VueRouter({
                 },
                 {
                     name: '購物車清單',
-                    path: '/cart_list',
+                    path: 'cart_list',
                     components: {
                         default: CartList,
                         checkoutbottommenu: CheckoutBottomMenu,
@@ -66,7 +68,7 @@ export default new VueRouter({
                 },
                 {
                     name: '配送方式',
-                    path: '/cart_deliverway',
+                    path: 'cart_deliverway',
                     components: {
                         default: DeliveryWay,
                         sendorderbottommenu: SendOrderBottomMenu
@@ -74,7 +76,7 @@ export default new VueRouter({
                 },
                 {
                     name: '完成訂購',
-                    path: '/cart_finish',
+                    path: 'cart_finish',
                     components: {
                         default: CartFinish,
                         bottommenu: BottomMenu
@@ -83,7 +85,7 @@ export default new VueRouter({
                 }, 
                 {
                     name: '特惠活動頁',
-                    path: '/special_offer',
+                    path: 'special_offer',
                     components: {
                         default: SpecialOffer,
                         bottommenu: BottomMenu
@@ -91,11 +93,28 @@ export default new VueRouter({
                 },
                 {
                     name: '活動說明頁',
-                    path: '/event_description',
+                    path: 'event_description',
                     components: {
                         default: EventDescription,
                         bottommenu: BottomMenu
                     }
+                },
+                {
+                    path: '/member', //對應的虛擬路徑
+                    // component: Member, //對應的元件
+                    components: {
+                        default: Member,
+                    },
+                    children:[
+                        {
+                            name: '我的帳戶',
+                            path: 'my_account',
+                            components: {
+                                default: MyAccount,
+                                
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -108,6 +127,12 @@ export default new VueRouter({
                 path: '',
                 component: DetailsPage,
             }]
+        },
+        {
+            path: '*', 
+            redirect: {
+                name: '首頁'
+            }
         }
 
     ]

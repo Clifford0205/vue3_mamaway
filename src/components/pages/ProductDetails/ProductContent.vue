@@ -44,6 +44,113 @@
       </div>
     </div>
 
+    <div class="chart-size-web" v-if="whatShow=='chart_size'">
+      <table class="table size-table table-striped">
+        <thead>
+          <tr>
+            <th scope="col" class="table-title">尺寸表</th>
+            <th scope="col">XS</th>
+            <th scope="col">S</th>
+            <th scope="col">M</th>
+            <th scope="col">L</th>
+            <th scope="col">XL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">胸圍</th>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <th scope="row">肩寬</th>
+            <td>34</td>
+            <td>34</td>
+            <td>34</td>
+            <td>34</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <th scope="row">前身長</th>
+            <td>42</td>
+            <td>42</td>
+            <td>42</td>
+            <td>42</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <th scope="row">後身長</th>
+            <td>52</td>
+            <td>52</td>
+            <td>52</td>
+            <td>52</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <th scope="row">下擺寬</th>
+            <td>35.1</td>
+            <td>35.1</td>
+            <td>35.1</td>
+            <td>35.1</td>
+            <td>35.1</td>
+          </tr>
+
+          <tr>
+            <th scope="row">袖攏</th>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <th scope="row">袖長</th>
+            <td>55.7</td>
+            <td>55.7</td>
+            <td>55.7</td>
+            <td>55.7</td>
+            <td>55.7</td>
+          </tr>
+
+          <tr>
+            <th scope="row">袖口寬</th>
+            <td>124.2</td>
+            <td>124.2</td>
+            <td>124.2</td>
+            <td>124.2</td>
+            <td>124.2</td>
+          </tr>
+
+          <tr>
+            <th scope="row">胸圍</th>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="comment">
+        <ul>
+          <li>※單位：吋(1吋=2.54公分)</li>
+          <li>※以上尺吋為平放攤開測量(來回一圈請乘於2)，誤差±1吋為正常範圍</li>
+          <li>※平量時需視衣料彈性，再針酌個人穿衣鬆緊度來做選擇！</li>
+        </ul>
+      </div>
+
+      <div class="measure">
+        <div class="measure-title">
+          <p>尺寸丈量法 How To Measure</p>
+        </div>
+      </div>
+    </div>
+
     <div class="product_quality-area" v-if="whatShow=='product_quality'">
       <ul class="texture">
         <li>MAIN：100%POLYESTER</li>
@@ -65,7 +172,114 @@
             <i class="fas fa-chevron-right transition"></i>
           </a>
 
-          <div class="expand-content transition"></div>
+          <div class="expand-content transition">
+            <div class="chart-size-mobile">
+              <table class="table size-table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" class="table-title">尺寸表</th>
+                    <th scope="col">XS</th>
+                    <th scope="col">S</th>
+                    <th scope="col">M</th>
+                    <th scope="col">L</th>
+                    <th scope="col">XL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">胸圍</th>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>21</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">肩寬</th>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">前身長</th>
+                    <td>42</td>
+                    <td>42</td>
+                    <td>42</td>
+                    <td>42</td>
+                    <td>42</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">後身長</th>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>52</td>
+                    <td>52</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">下擺寬</th>
+                    <td>35.1</td>
+                    <td>35.1</td>
+                    <td>35.1</td>
+                    <td>35.1</td>
+                    <td>35.1</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">袖攏</th>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>15</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">袖長</th>
+                    <td>55.7</td>
+                    <td>55.7</td>
+                    <td>55.7</td>
+                    <td>55.7</td>
+                    <td>55.7</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">袖口寬</th>
+                    <td>124.2</td>
+                    <td>124.2</td>
+                    <td>124.2</td>
+                    <td>124.2</td>
+                    <td>124.2</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">胸圍</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="comment">
+                <ul>
+                  <li>※單位：吋(1吋=2.54公分)</li>
+                  <li>※以上尺吋為平放攤開測量(來回一圈請乘於2)，誤差±1吋為正常範圍</li>
+                  <li>※平量時需視衣料彈性，再針酌個人穿衣鬆緊度來做選擇！</li>
+                </ul>
+              </div>
+
+              <div class="measure">
+                <div class="measure-title">
+                  <p>尺寸丈量法 How To Measure</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
