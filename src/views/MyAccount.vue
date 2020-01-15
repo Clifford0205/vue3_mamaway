@@ -1,11 +1,18 @@
 <template>
-  <div>
-    <p class="test"></p>
+  <div class="my-account-page">
+    <AccountTitle />
+    <MyMoney />
   </div>
 </template>
 
 <script>
-import Breadcrumb from "@/components/Breadcrumb";
+import AccountTitle from "@/components/pages/MyAccount/AccountTitle";
+import MyMoney from "@/components/pages/MyAccount/MyMoney";
 
-export default {};
+export default {
+  components: {
+    AccountTitle,
+    MyMoney
+  }
+};
 </script>

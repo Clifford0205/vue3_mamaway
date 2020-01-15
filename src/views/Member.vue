@@ -5,9 +5,8 @@
       <MemberKv />
       <div class="row">
         <MemberSideMenu class="col-lg-3" />
+        <router-view class="col-lg-9"></router-view>
       </div>
-
-      <router-view></router-view>
     </div>
   </div>
 </template>

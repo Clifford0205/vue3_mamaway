@@ -1,3 +1,21 @@
-.test {
-    color: red;
+.my-account-page {
+    margin-top: 20px;
+
+    .account-title {
+        background-color: #FD4337;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .my-money {
+        display: flex;
+        box-shadow: 0px 3px 6px #00000029;
+
+        .block {
+            flex: 0 0 20%;
+        }
+    }
 }
