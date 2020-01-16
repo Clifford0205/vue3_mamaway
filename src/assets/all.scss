@@ -240,7 +240,6 @@ body {
                                 margin-right: 40px;
                                 height: 40px;
                                 width: 55%;
-                                display: none;
                                 opacity: 0;
 
                                 .search-bar-area {
@@ -277,7 +276,6 @@ body {
                             }
 
                             .search-for-web.show {
-                                display: inline-block;
                                 opacity: 1;
                             }
 
@@ -294,13 +292,11 @@ body {
                             right: 100px;
                             top: 60px;
                             box-shadow: 0px 3px 6px #00000029;
-                            display: none;
+                            z-index: 100;
+
 
                             ul {
                                 li {
-
-
-
                                     .float-member-item {
                                         display: flex;
                                         align-items: center;
@@ -672,7 +668,7 @@ body {
             }
         }
 
-        .makeup-block.two-sort {
+        .makeup-block.two_sort {
             height: 208px;
 
             @include lg {
@@ -694,7 +690,7 @@ body {
             }
         }
 
-        .makeup-block.two-sort.short {
+        .makeup-block.two_sort.short {
             @include lg {
                 height: 188px;
             }

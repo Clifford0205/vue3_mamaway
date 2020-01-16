@@ -25,13 +25,14 @@
 
               <button
                 class="open-sch-forweb transition"
-                :class="{ noshow: schNoShow }"
+                :class="{ noshow: theOpacity }"
+                v-if="!isOpen"
                 @click="showTheInput"
               >
                 <img src="~@/assets/img/icons/icn_search.svg" alt />
               </button>
 
-              <div class="search-for-web transition" :class="{ show: schBarShow }">
+              <div class="search-for-web transition" :class="{ show: schBarShow }" v-if="isOpen">
                 <div class="search-bar-area d-flex align-items-center justify-content-between">
                   <input type="text" placeholder="search" class="search-bar" />
                   <button class="search-btn" @click="hideInput">
@@ -55,7 +56,7 @@
             </div>
 
             <!-- 會員下拉式選單 -->
-            <div class="float-member-area" :style="{ display: memberShow }">
+            <div class="float-member-area" v-show="isMemActive">
               <ul>
                 <li>
                   <a class="float-member-item title">
@@ -63,11 +64,11 @@
                   </a>
                 </li>
                 <li>
-                  <a class="float-member-item">
+                  <router-link :to="{ name: '我的帳戶' }" class="float-member-item">
                     <img src="~@/assets/img/icons/icn_bonus.svg" alt />
                     <p>紅利點數</p>
                     <p class="red-text four-text">30點</p>
-                  </a>
+                  </router-link>
                 </li>
                 <li>
                   <a class="float-member-item">
@@ -146,7 +147,7 @@
     </div>
 
     <!-- fixed留白區域 -->
-    <div class="makeup-block"></div>
+    <div class="makeup-block" :class="classList"></div>
     <!-- fixed留白區域 -->
   </div>
 </template>
@@ -158,14 +159,23 @@ import carousel from "vue-owl-carousel";
 export default {
   data() {
     return {
-      schNoShow: false,
+      theOpacity: false,
+      isOpen: false,
       schBarShow: false,
       isMemActive: false,
-      memberShow: "none",
       mobileSearchAreaDisplay: false,
       mobileSearchAreaOpacity: false,
-      babyDownLoad: true
+      babyDownLoad: true,
+      productIntroPage: false
     };
+  },
+  computed: {
+    classList() {
+      return {
+        two_sort: this.productIntroPage,
+        short: !this.babyDownLoad
+      };
+    }
   },
   components: {
     carousel
@@ -180,15 +190,13 @@ export default {
     closeDArea: function() {
       let vm = this;
       vm.babyDownLoad = false;
-      $(".makeup-block").addClass("short");
     },
 
     showTheInput: function(e) {
       let vm = this;
-      vm.schNoShow = !vm.schNoShow;
+      vm.theOpacity = !vm.theOpacity;
       setTimeout(function() {
-        e.target.parentNode.style.display = "none";
-        $(".search-for-web").css({ display: "inline-block" });
+        vm.isOpen = true;
         //search BAR出現的動畫
         setTimeout(function() {
           vm.schBarShow = !vm.schBarShow;
@@ -201,35 +209,25 @@ export default {
       vm.schBarShow = !vm.schBarShow;
       //search BAR消失的動畫
       setTimeout(function() {
-        $(".search-for-web").css({ display: "none" });
-        $(".open-sch-forweb").css({ display: "block" });
+        vm.isOpen = false;
         //出現指標的動畫
         setTimeout(function() {
-          vm.schNoShow = !vm.schNoShow;
+          vm.theOpacity = !vm.theOpacity;
         }, 200);
       }, 200);
     },
 
     sortChange: function() {
       if (this.$route.name == "商品介紹頁") {
-        $(".makeup-block").addClass("two-sort");
+        this.productIntroPage = true;
       } else {
-        $(".makeup-block").removeClass("two-sort");
+        this.productIntroPage = false;
       }
     },
 
     openDrop: function() {
       let vm = this;
       vm.isMemActive = true;
-    },
-
-    watchMem: function() {
-      let vm = this;
-      if (vm.isMemActive) {
-        vm.memberShow = "block";
-      } else {
-        vm.memberShow = "none";
-      }
     },
 
     //開啟手機版搜尋
@@ -251,12 +249,6 @@ export default {
     }
   },
 
-  watch: {
-    isMemActive: function() {
-      this.watchMem();
-    }
-  },
-
   updated() {
     this.sortChange();
   },
@@ -270,7 +262,6 @@ export default {
       "click",
       function() {
         vm.isMemActive = false;
-        vm.memberShow = "none";
       },
       false
     );
