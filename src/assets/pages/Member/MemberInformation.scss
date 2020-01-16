@@ -1,0 +1,259 @@
+.member-information-page {
+    margin-top: 20px;
+
+    .basic-information {
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .information-area {
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .form-area {
+                width: 90%;
+                margin: 0 auto;
+
+                .form-inside {
+                    width: 70%;
+                    margin: 0 auto;
+
+                    .single-item {
+                        margin-bottom: 21px;
+                    }
+
+                    .text-input {
+                        border: none;
+                        border-bottom: 1px solid #A7ACB2;
+                        padding: 13px 10px;
+                        width: 100%;
+
+                        &::placeholder {
+                            color: #A7ACB2;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .select-part {
+                        border-bottom: 1px solid #A7ACB2;
+
+                        .my-select {
+                            appearance: none;
+                            color: #525B67;
+                            font-size: 16px;
+                            width: 100%;
+                            padding: 13px 10px;
+                            border: none;
+                            background: url('~@/assets/img/icons/icn_arrow_d_g.svg') no-repeat right center transparent;
+                        }
+                    }
+
+                    .multi-select {
+                        display: flex;
+
+                        .select-part {
+                            flex-grow: 1;
+                            margin-right: 7.5px;
+                            margin-left: 7.5px;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+
+
+                    }
+                }
+
+
+
+
+
+            }
+
+            .two-buttons {
+                display: flex;
+
+                button {
+                    border: none;
+                    padding: 12px 0;
+                    -webkit-box-flex: 1;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+
+                .cancel-btn {
+                    background-color: #525B67;
+                    margin-right: 22.5px;
+                }
+
+                .send-btn {
+                    background-color: #FD4337;
+                    margin-left: 22.5px;
+                }
+            }
+        }
+    }
+
+    .my-money {
+        margin-top: 20px;
+        display: flex;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+
+        @include lg {
+            flex-wrap: wrap;
+            box-shadow: unset;
+            border-radius: 0px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .block {
+            flex: 0 0 20%;
+
+            @include lg {
+                flex: 0 0 50%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 20px;
+
+            }
+
+            a {
+                width: 100%;
+                height: 100%;
+                color: #525B67;
+                display: block;
+
+                @include lg {
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 10px;
+                }
+
+
+
+                .money-title {
+                    padding-top: 15px;
+                }
+
+                .money-number {
+                    font-size: 28px;
+                    letter-spacing: 1.4px;
+                    margin-top: 5px;
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                .color-area {
+                    margin-top: 10px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+
+                    p {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                }
+
+                .yellow {
+                    background-color: #FFB838;
+                    border-radius: 0 0 0px 10px;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .pink {
+                    background-color: #FC8FB0;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .grey {
+                    background-color: #B9C3D7;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .purple {
+                    background-color: #B9C3D7;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .brown {
+                    background-color: #B97A57;
+                    border-radius: 0 0 10px 0px;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+            }
+        }
+
+        .block:last-child {
+            @include lg {
+                flex: 0 0 100%;
+            }
+        }
+    }
+
+    .detail-list {
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+
+        ul {
+
+            .single-item {
+                margin-top: 10px;
+
+                .single-item-link {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #D3D8DE;
+
+                    .serial-number,
+                    .pay-status {
+                        color: #FD4337;
+                    }
+                }
+            }
+
+            .single-item:nth-child(1) {
+                margin-top: 0;
+            }
+
+            .single-item:last-child {
+                .single-item-link {
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+        }
+
+
+
+    }
+}

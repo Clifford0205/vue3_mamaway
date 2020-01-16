@@ -18,7 +18,8 @@ import CartFinish from '@/views/CartFinish'
 import SpecialOffer from '@/views/SpecialOffer'
 import EventDescription from '@/views/EventDescription'
 import Member from '@/views/Member'
-import MyAccount from '@/views/MyAccount'
+import MyAccount from '@/views/Member/MyAccount'
+import MemberInformation from '@/views/Member/MemberInformation'
 
 
 //自訂的分頁文件
@@ -82,7 +83,7 @@ export default new VueRouter({
                         bottommenu: BottomMenu
                     }
 
-                }, 
+                },
                 {
                     name: '特惠活動頁',
                     path: 'special_offer',
@@ -104,17 +105,22 @@ export default new VueRouter({
                     // component: Member, //對應的元件
                     components: {
                         default: Member,
+                        bottommenu: BottomMenu
                     },
-                    children:[
-                        {
-                            name: '我的帳戶',
-                            path: 'my_account',
-                            components: {
-                                default: MyAccount,
-                                
-                            }
+                    children: [{
+                        name: '我的帳戶',
+                        path: 'my_account',
+                        components: {
+                            default: MyAccount,
+
                         }
-                    ]
+                    }, {
+                        name: '會員基本資料',
+                        path: 'my_information',
+                        components: {
+                            default: MemberInformation,
+                        }
+                    }]
                 }
             ]
         },
@@ -129,7 +135,7 @@ export default new VueRouter({
             }]
         },
         {
-            path: '*', 
+            path: '*',
             redirect: {
                 name: '首頁'
             }
@@ -137,10 +143,10 @@ export default new VueRouter({
 
     ],
 
-    scrollBehavior () {
+    scrollBehavior() {
         return {
-          x: 0,
-          y: 0
+            x: 0,
+            y: 0
         }
-      }
+    }
 });
