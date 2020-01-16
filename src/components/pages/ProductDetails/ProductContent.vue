@@ -166,7 +166,7 @@
 
     <div class="product-detail">
       <div class="mobile-content">
-        <div class="expand-item" :class="{open_menu:size_chart}">
+        <div class="expand-item" :class="{ open_menu: size_chart }">
           <a class="expand-menu-title size_chart" @click.prevent="expandSizeChart">
             尺寸表
             <i class="fas fa-chevron-right transition"></i>

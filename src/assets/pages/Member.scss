@@ -4,10 +4,9 @@ body {
     #app {
 
         .member-page {
-            max-width: 1200px;
+            max-width: 1230px;
             width: 90%;
-            padding-right: 0px;
-            padding-left: 0px;
+
             margin: 0 auto;
             color: #525B67;
 
@@ -26,7 +25,116 @@ body {
                 }
             }
 
+            .row {
+                @include lg {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+
+            .member-menu-ph {
+                width: 100%;
+
+                .member-drop-down {
+                    display: none;
+                    width: 100%;
+                    font-size: 25px;
+                    box-shadow: 0px 3px 6px #00000029;
+                    margin-top: 20px;
+
+
+                    @include lg {
+                        display: block;
+                    }
+
+                    .the-drop-down {
+                        display: flex;
+                        padding: 20px;
+                        justify-content: space-between;
+
+                        .icon-title {
+                            display: flex;
+
+                            p {
+                                margin-left: 20px;
+                                font-weight: bold;
+                            }
+
+                        }
+
+                        .fa-chevron-down {
+                            color: #FD4337;
+                        }
+                    }
+
+                    .expand-content {
+                        max-height: 0;
+                        overflow: hidden;
+
+                        ul {
+                            li {
+                                a {
+                                    display: flex;
+                                    padding: 20px;
+
+                                    p {
+                                        margin-left: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .member-drop-down.expand {
+
+
+                    .the-drop-down {
+                        border-bottom: 1px solid #FD4337;
+
+                        .icon-title {
+                            color: #FD4337;
+
+                            .icon-icn_man {
+                                &:before {
+                                    color: #FD4337;
+                                    transition: 0.4s;
+                                }
+                            }
+                        }
+
+                        .fa-chevron-down {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+
+                    .expand-content {
+                        max-height: 800px;
+                    }
+                }
+
+                .member-name {
+                    padding: 20px;
+                    font-size: 25px;
+                    font-weight: bold;
+
+                    .member-level {
+                        font-size: 20px;
+                        color: #FD4337;
+                        font-weight: 300;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+
+
             .member-side-menu {
+                @include lg {
+                    display: none;
+                }
+
                 .content-box {
                     padding: 30px;
                     box-shadow: 0px 3px 6px #00000029;

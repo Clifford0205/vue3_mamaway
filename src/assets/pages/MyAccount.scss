@@ -11,11 +11,154 @@
     }
 
     .my-money {
+        margin-top: 20px;
         display: flex;
         box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+
+        @include lg {
+            flex-wrap: wrap;
+            box-shadow: unset;
+            border-radius: 0px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
 
         .block {
             flex: 0 0 20%;
+
+            @include lg {
+                flex: 0 0 50%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 20px;
+
+            }
+
+            a {
+                width: 100%;
+                height: 100%;
+                color: #525B67;
+                display: block;
+
+                @include lg {
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 10px;
+                }
+
+
+
+                .money-title {
+                    padding-top: 15px;
+                }
+
+                .money-number {
+                    font-size: 28px;
+                    letter-spacing: 1.4px;
+                    margin-top: 5px;
+                    color: #000;
+                    font-weight: bold;
+                }
+
+                .color-area {
+                    margin-top: 10px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+
+                    p {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                }
+
+                .yellow {
+                    background-color: #FFB838;
+                    border-radius: 0 0 0px 10px;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .pink {
+                    background-color: #FC8FB0;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .grey {
+                    background-color: #B9C3D7;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .purple {
+                    background-color: #B9C3D7;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+
+                .brown {
+                    background-color: #B97A57;
+                    border-radius: 0 0 10px 0px;
+
+                    @include lg {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+            }
         }
+
+        .block:last-child {
+            @include lg {
+                flex: 0 0 100%;
+            }
+        }
+    }
+
+    .detail-list {
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+
+        ul {
+
+            .single-item {
+                margin-top: 10px;
+
+                .single-item-link {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #D3D8DE;
+
+                    .serial-number,
+                    .pay-status {
+                        color: #FD4337;
+                    }
+                }
+            }
+
+            .single-item:nth-child(1) {
+                margin-top: 0;
+            }
+
+            .single-item:last-child {
+                .single-item-link {
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+        }
+
+
+
     }
 }
