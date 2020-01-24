@@ -38,11 +38,20 @@ export default {
   data() {
     return {};
   },
+  computed: {
+    isBigMenuShow() {
+      return this.$store.state.isBigMenuShow;
+    },
+    BigMenuOpacity() {
+      return this.$store.state.BigMenuOpacity;
+    }
+  },
   methods: {
-    openMenu: function() {
-      $(".big-menu").css({ display: "flex" });
+    openMenu() {
+      const vm = this;
+      vm.$store.dispatch("BigMenuShow", true);
       setTimeout(function() {
-        $(".big-menu").addClass("menu-show");
+        vm.$store.dispatch("BigMenuOpacity", true);
       }, 500);
     }
   }

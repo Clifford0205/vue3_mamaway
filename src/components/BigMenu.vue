@@ -1,5 +1,10 @@
 <template>
-  <div class="big-menu transition" style="display: none;" @click="closeMenu">
+  <div
+    class="big-menu transition"
+    v-show="isBigMenuShow"
+    :class="{menu_show:BigMenuOpacity}"
+    @click="closeMenu"
+  >
     <div class="menu-frame" @click.stop>
       <div class="logo-search">
         <div class="menu-logo">
@@ -220,11 +225,20 @@ export default {
   components: {
     carousel
   },
+  computed: {
+    isBigMenuShow() {
+      return this.$store.state.isBigMenuShow;
+    },
+    BigMenuOpacity() {
+      return this.$store.state.BigMenuOpacity;
+    }
+  },
   methods: {
-    closeMenu: function() {
-      $(".big-menu").removeClass("menu-show");
+    closeMenu() {
+      const vm = this;
+      vm.$store.dispatch("BigMenuOpacity", false);
       setTimeout(function() {
-        $(".big-menu").css({ display: "none" });
+        vm.$store.dispatch("BigMenuShow", false);
       }, 500);
     },
     openLittleItem: function(e) {

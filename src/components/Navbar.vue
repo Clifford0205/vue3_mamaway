@@ -160,6 +160,7 @@ export default {
   data() {
     return {
       theOpacity: false,
+      menuOpacity: false,
       isOpen: false,
       schBarShow: false,
       isMemActive: false,
@@ -175,16 +176,30 @@ export default {
         two_sort: this.productIntroPage,
         short: !this.babyDownLoad
       };
+    },
+
+    isBigMenuShow() {
+      return this.$store.state.isBigMenuShow;
+    },
+    BigMenuOpacity() {
+      return this.$store.state.BigMenuOpacity;
     }
   },
   components: {
     carousel
   },
   methods: {
-    openMenu: function() {
-      $(".big-menu").css({ display: "flex" });
+    // openMenu: function() {
+    //   $(".big-menu").css({ display: "flex" });
+    //   setTimeout(function() {
+    //     $(".big-menu").addClass("menu-show");
+    //   }, 500);
+    // },
+    openMenu() {
+      const vm = this;
+      vm.$store.dispatch("BigMenuShow", true);
       setTimeout(function() {
-        $(".big-menu").addClass("menu-show");
+        vm.$store.dispatch("BigMenuOpacity", true);
       }, 500);
     },
     closeDArea: function() {
