@@ -1,5 +1,5 @@
 <template>
-  <div class="add-in-cart-mobile">
+  <div class="add-in-cart-mobile" v-show="cartMobileShow">
     <div class="for-pos">
       <button class="cart-close" @click="closeCartMobile">
         <img src="~@/assets/img/icons/icn_close_b.svg" alt />
@@ -77,8 +77,14 @@ export default {
   },
 
   methods: {
-    closeCartMobile: function() {
-      $(".add-in-cart-mobile").css({ display: "none" });
+    closeCartMobile() {
+      this.$store.dispatch("cartMobileShow", false);
+    }
+  },
+
+  computed: {
+    cartMobileShow() {
+      return this.$store.state.cartMobileShow;
     }
   }
 };

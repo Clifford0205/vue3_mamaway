@@ -8,6 +8,7 @@ export default new Vuex.Store({
     state:{
         isBigMenuShow:false,
         BigMenuOpacity:false,
+        cartMobileShow:false
     },
     actions:{
         closeMenu(context,payload){
@@ -22,6 +23,9 @@ export default new Vuex.Store({
         BigMenuOpacity(context,payload){
             context.commit('BIG_MENU_OPACITY',payload);
         },
+        cartMobileShow(context,payload){
+            context.commit('CART_MOBILE_SHOW',payload);
+        }
     },
     mutations:{
         BIG_MENU_SHOW(state,payload){
@@ -30,5 +34,8 @@ export default new Vuex.Store({
         BIG_MENU_OPACITY(state,payload){
             state.BigMenuOpacity=payload;
         },
+        CART_MOBILE_SHOW(state,payload){
+            state.cartMobileShow=payload;
+        }
     },
 })
