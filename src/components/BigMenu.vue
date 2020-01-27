@@ -2,8 +2,8 @@
   <div
     class="big-menu transition"
     v-show="isBigMenuShow"
-    :class="{menu_show:BigMenuOpacity}"
-    @click="closeMenu"
+    :class="{ menu_show: BigMenuOpacity }"
+    @click="closeMenu(false)"
   >
     <div class="menu-frame" @click.stop>
       <div class="logo-search">
@@ -11,7 +11,9 @@
           <img src="~@/assets/img/icons/logo.png" alt />
         </div>
 
-        <div class="search-bar-area d-flex align-items-center justify-content-between">
+        <div
+          class="search-bar-area d-flex align-items-center justify-content-between"
+        >
           <input type="text" placeholder="search" class="search-bar" />
           <button class="s-btn">
             <img src="~@/assets/img/icons/icn_search.svg" alt />
@@ -19,7 +21,7 @@
         </div>
       </div>
 
-      <div class="web-close" @click="closeMenu">
+      <div class="web-close" @click="closeMenu(false)">
         <img src="~@/assets/img/icons/icn_close_b.svg" alt />
       </div>
 
@@ -54,13 +56,17 @@
               </ul>
             </li>
             <li>
-              <router-link :to="{ name: '商品詳細頁' }">產後/產前必須</router-link>
+              <router-link :to="{ name: '商品詳細頁' }"
+                >產後/產前必須</router-link
+              >
             </li>
             <li>
               <router-link :to="{ name: '商品詳細頁' }">寶貝衣服</router-link>
             </li>
             <li>
-              <router-link :to="{ name: '商品詳細頁' }">雙邊電動吸乳</router-link>
+              <router-link :to="{ name: '商品詳細頁' }"
+                >雙邊電動吸乳</router-link
+              >
             </li>
             <li>
               <router-link :to="{ name: '商品詳細頁' }">背巾/背帶</router-link>
@@ -78,13 +84,21 @@
           </ul>
 
           <ul class="expand-menu">
-            <li class="expand-item" @click="openLittleItem" :class="{ open_menu: mamaway_club }">
+            <li
+              class="expand-item"
+              @click="openLittleItem"
+              :class="{ open_menu: mamaway_club }"
+            >
               <a class="expand-menu-title mamaway_club">
                 MAMAWAY CLUB
                 <i class="fas fa-chevron-right transition"></i>
               </a>
             </li>
-            <li class="expand-item" @click="openLittleItem" :class="{ open_menu: mom_mom_wiki }">
+            <li
+              class="expand-item"
+              @click="openLittleItem"
+              :class="{ open_menu: mom_mom_wiki }"
+            >
               <a class="expand-menu-title mom_mom_wiki">
                 媽媽百科
                 <i class="fas fa-chevron-right transition"></i>
@@ -209,7 +223,7 @@
 </template>
 
 <script>
-import $ from "jquery";
+import { mapActions, mapGetters } from "vuex";
 import carousel from "vue-owl-carousel";
 
 export default {
@@ -234,18 +248,20 @@ export default {
     }
   },
   methods: {
-    closeMenu() {
-      const vm = this;
-      vm.$store.dispatch("BigMenuOpacity", false);
-      setTimeout(function() {
-        vm.$store.dispatch("BigMenuShow", false);
-      }, 500);
-    },
+    // closeMenu() {
+    //   const vm = this;
+    //   vm.$store.dispatch("BigMenuOpacity", false);
+    //   setTimeout(function() {
+    //     vm.$store.dispatch("BigMenuShow", false);
+    //   }, 500);
+    // },
     openLittleItem: function(e) {
       let tname = e.target.classList[1];
       let vm = this;
       vm[tname] = !vm[tname];
-    }
+    },
+
+    ...mapActions(["closeMenu"])
   }
 };
 </script>
