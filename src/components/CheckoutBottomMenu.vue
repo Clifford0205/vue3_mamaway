@@ -36,9 +36,14 @@
 <script>
 import $ from "jquery";
 export default {
+  computed: {
+    userForMobile() {
+      return this.$store.state.userForMobile;
+    }
+  },
   methods: {
-    openUseOffer: function() {
-      $(".use-offer-mobile-out").css({ display: "block" });
+    openUseOffer() {
+      this.$store.dispatch("userForMobile", true);
     }
   }
 };

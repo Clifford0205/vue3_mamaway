@@ -25,14 +25,6 @@ export default {
   },
   components: {
     carousel
-  },
-  methods: {
-    openMenu: function() {
-      $(".big-menu").css({ display: "flex" });
-      setTimeout(function() {
-        $(".big-menu").addClass("menu-show");
-      }, 500);
-    }
   }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="use-offer-mobile-out" @click="closeCartMobile">
+  <div class="use-offer-mobile-out" @click="closeCartMobile" v-show="userForMobile">
     <div class="use-offer-mobile" @click.stop>
       <div class="for-pos">
         <button class="cart-close" @click="closeCartMobile">
@@ -74,10 +74,15 @@ export default {
       isSend: false
     };
   },
+  computed: {
+    userForMobile() {
+      return this.$store.state.userForMobile;
+    }
+  },
 
   methods: {
     closeCartMobile: function() {
-      $(".use-offer-mobile-out").css({ display: "none" });
+      this.$store.dispatch("userForMobile", false);
     },
     sendActiveString: function() {
       let vm = this;

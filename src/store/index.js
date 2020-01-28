@@ -8,7 +8,8 @@ export default new Vuex.Store({
     state:{
         isBigMenuShow:false,
         BigMenuOpacity:false,
-        cartMobileShow:false
+        cartMobileShow:false,
+        userForMobile:false
     },
     actions:{
         closeMenu(context,payload){
@@ -25,7 +26,10 @@ export default new Vuex.Store({
         },
         cartMobileShow(context,payload){
             context.commit('CART_MOBILE_SHOW',payload);
-        }
+        },
+        userForMobile(context,payload){
+            context.commit('USER_FOR_MOBILE',payload);
+        },
     },
     mutations:{
         BIG_MENU_SHOW(state,payload){
@@ -36,6 +40,9 @@ export default new Vuex.Store({
         },
         CART_MOBILE_SHOW(state,payload){
             state.cartMobileShow=payload;
+        },
+        USER_FOR_MOBILE(state,payload){
+            state.userForMobile=payload;
         }
     },
 })

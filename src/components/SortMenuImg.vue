@@ -93,17 +93,6 @@ export default {
   },
   components: {
     carousel
-  },
-  methods: {
-    openMenu: function() {
-      $(".big-menu").css({ display: "flex" });
-      setTimeout(function() {
-        $(".big-menu").addClass("menu-show");
-      }, 500);
-    }
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
