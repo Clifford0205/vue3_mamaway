@@ -1,5 +1,5 @@
 <template>
-  <div class="filter-box">
+  <div class="filter-box" v-show="isFilterBox">
     <div class="single-item">
       <div class="item-titile">尺寸</div>
       <div class="options">
@@ -72,9 +72,9 @@ export default {
   components: {
     carousel
   },
-  methods: {
-    openFilter: function() {
-      $(".filter-page").css({ display: "block" });
+  computed: {
+    isFilterBox() {
+      return this.$store.state.isFilterBox;
     }
   }
 };

@@ -9,7 +9,9 @@ export default new Vuex.Store({
         isBigMenuShow:false,
         BigMenuOpacity:false,
         cartMobileShow:false,
-        userForMobile:false
+        userForMobile:false,
+        isFilterBox:false,
+        filterPageOpen:false
     },
     actions:{
         closeMenu(context,payload){
@@ -30,6 +32,12 @@ export default new Vuex.Store({
         userForMobile(context,payload){
             context.commit('USER_FOR_MOBILE',payload);
         },
+        isFilterBox(context,payload){
+            context.commit('IS_FILTER_BOX',payload);
+        },
+        filterPageOpen(context,payload){
+            context.commit('FILTER_PAGE_OPEN',payload);
+        }
     },
     mutations:{
         BIG_MENU_SHOW(state,payload){
@@ -43,6 +51,12 @@ export default new Vuex.Store({
         },
         USER_FOR_MOBILE(state,payload){
             state.userForMobile=payload;
+        },
+        IS_FILTER_BOX(state,payload){
+            state.isFilterBox=payload;
+        },
+        FILTER_PAGE_OPEN(state,payload){
+            state.filterPageOpen=payload;
         }
     },
 })

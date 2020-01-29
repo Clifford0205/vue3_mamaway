@@ -1,5 +1,5 @@
 <template>
-  <div class="content-list-nav" :class="{show:isShow}">
+  <div class="content-list-nav" :class="{show:isFilterBox}">
     <div class="top-nav">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -16,7 +16,7 @@
       </nav>
 
       <div class="d-flex ar-nav">
-        <button class="filter-btn" :class="{active:isFilterBlock}" @click="openFilterBlock">
+        <button class="filter-btn" :class="{active:isFilterBox}" @click="openFilterBlock">
           <img src="~@/assets/img/icons/组件 33 – 3.svg" alt />
           <span>篩選</span>
           <i class="fas fa-chevron-down"></i>
@@ -70,25 +70,27 @@ import carousel from "vue-owl-carousel";
 
 export default {
   data() {
-    return {
-      isShow: false,
-      isFilterBlock: false
-    };
+    return {};
   },
   components: {
     carousel
   },
+  computed: {
+    isFilterBox() {
+      return this.$store.state.isFilterBox;
+    },
+    filterPageOpen() {
+      return this.$store.state.filterPageOpen;
+    }
+  },
   methods: {
     openFilter: function() {
       $("body").addClass("filter-page-open");
-      $(".filter-page").css({ display: "block" });
+      this.$store.dispatch("filterPageOpen", true);
     },
 
-    openFilterBlock: function() {
-      let vm = this;
-      vm.isFilterBlock = !vm.isFilterBlock;
-      vm.isShow = !vm.isShow;
-      $(".filter-box").toggleClass("show");
+    openFilterBlock() {
+      this.$store.dispatch("isFilterBox", !this.$store.state.isFilterBox);
     }
   }
 };

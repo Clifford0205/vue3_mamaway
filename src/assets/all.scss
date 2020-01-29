@@ -1039,7 +1039,7 @@ body {
             z-index: 800;
             color: #525B67;
             font-size: 14px;
-           
+
 
             .for-pos {
                 width: 100%;
@@ -3768,8 +3768,8 @@ body {
                 font-size: 14px;
                 color: #525B67;
                 padding: 20px;
-                display: none;
                 border-bottom: 1px solid #D3D8DE;
+                display: flex;
 
                 .single-item {
                     flex: 0 0 33.33333%;
@@ -3857,9 +3857,7 @@ body {
                 }
             }
 
-            .filter-box.show {
-                display: flex;
-            }
+
 
             .products {
                 margin-top: 5px;
@@ -7951,7 +7949,7 @@ body {
                 left: 0;
                 right: 0;
                 top: 0;
-                
+
 
                 .use-offer-mobile {
                     background-color: #fff;
@@ -8143,7 +8141,6 @@ body {
             z-index: 800;
             color: #525B67;
             font-size: 14px;
-            display: none;
 
             .top-btns {
                 display: flex;

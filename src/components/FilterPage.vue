@@ -1,5 +1,5 @@
 <template>
-  <div class="filter-page transition">
+  <div class="filter-page transition" v-show="filterPageOpen">
     <div class="top-btns">
       <button @click="closeFilter">
         <i class="fas fa-chevron-left"></i>
@@ -74,9 +74,16 @@ export default {
   components: {
     carousel
   },
+
+  computed: {
+    filterPageOpen() {
+      return this.$store.state.filterPageOpen;
+    }
+  },
+
   methods: {
     closeFilter: function() {
-      $(".filter-page").css({ display: "none" });
+      this.$store.dispatch("filterPageOpen", false);
       $("body").removeClass("filter-page-open");
     }
   }
