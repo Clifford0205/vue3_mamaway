@@ -163,9 +163,6 @@ export default {
   },
 
   methods: {
-    openMenu: function() {
-      $(".add-in-cart-mobile").css({ display: "block" });
-    },
     beforePath: function() {
       this.$router.go(-1);
     },

@@ -189,12 +189,6 @@ export default {
     carousel
   },
   methods: {
-    // openMenu: function() {
-    //   $(".big-menu").css({ display: "flex" });
-    //   setTimeout(function() {
-    //     $(".big-menu").addClass("menu-show");
-    //   }, 500);
-    // },
     openMenu() {
       const vm = this;
       vm.$store.dispatch("BigMenuShow", true);
@@ -283,5 +277,3 @@ export default {
   }
 };
 </script>
-
-
