@@ -15,13 +15,13 @@
         }"
     >
       <template slot="prev">
-        <button class="prev" @click="preventRoute">
+        <button class="prev">
           <img src="~@/assets/img/icons/icn_arrow_l.svg" alt />
         </button>
       </template>
 
       <template slot="next">
-        <button class="next" @click="preventRoute" style="display:block">
+        <button class="next" style="display:block">
           <img src="~@/assets/img/icons/icn_arrow_r_b.svg" alt />
         </button>
       </template>
