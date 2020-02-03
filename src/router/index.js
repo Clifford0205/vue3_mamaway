@@ -48,7 +48,8 @@ export default new VueRouter({
                     components: {
                         default: ProductList,
                         bottommenu: BottomMenu,
-                    }
+                    },
+                   
                 },
                 {
                     name: '商品介紹頁',
@@ -58,6 +59,15 @@ export default new VueRouter({
                         sortmenuimg: SortMenuImg,
                         bottommenu: BottomMenu,
                     },
+                    meta:{
+                        breadcrumb: [{
+                            name: '首頁',
+                            link: '首頁'
+                          },
+                          {
+                            name: '商品介紹頁'
+                          }]
+                    }
                 },
                 {
                     name: '購物車清單',

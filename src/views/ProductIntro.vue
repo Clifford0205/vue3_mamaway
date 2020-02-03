@@ -1,6 +1,6 @@
 <template>
   <div class="product-intro-page">
-    <Breadcrumb />
+    <Breadcrumb2 />
     <MainKv />
     <ExpandBar />
     <Slider />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb2 from "@/components/Breadcrumb2";
 import AddInCart from "@/components/pages/ProductDetails/AddInCart";
 import MainKv from "@/components/pages/ProductIntro/MainKv";
 import ExpandBar from "@/components/pages/ProductIntro/ExpandBar";
@@ -20,7 +20,7 @@ import LookAll from "@/components/pages/ProductIntro/LookAll";
 
 export default {
   components: {
-    Breadcrumb,
+    Breadcrumb2,
     MainKv,
     ExpandBar,
     Slider,
